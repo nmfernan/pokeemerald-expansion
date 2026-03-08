@@ -8,7 +8,7 @@ from openpyxl import load_workbook
 #Globals for making header, opening data, debug prints, etc
 Debug = 1
 WriteOrAdd = 'w'
-GenName = "PkmnEvolved"
+GenName = "pkmnevolved"
 PkmnData = load_workbook('pkmndata.xlsx')
 PkmnDataFile = PkmnData.active
 
@@ -26,7 +26,8 @@ for row in PkmnDataFile.iter_rows(min_row=1, max_row=1, min_col=1, max_col=PkmnD
         SpeciesStructAttributes.append(str(data.value))
         print(data.value)
         
-with open(GenName+".h", WriteOrAdd) as file:
+#with open(GenName+".h", WriteOrAdd) as file:
+with open("test.h", WriteOrAdd) as file:
     #Print high level information about datafile being accessed
     if Debug:
         print(f"First row for species {PkmnDataFile.min_row}")
