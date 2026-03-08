@@ -8,7 +8,7 @@ from openpyxl import load_workbook
 #Globals for making header, opening data, debug prints, etc
 Debug = 1
 WriteOrAdd = 'w'
-GenName = "pkmnevolved"
+GenName = "PkmnEvolved"
 PkmnData = load_workbook('pkmndata.xlsx')
 PkmnDataFile = PkmnData.active
 
@@ -39,16 +39,28 @@ with open('test.h', WriteOrAdd) as file:
 
     #Begin writing species information to .h file
     if Debug == 1:
-        for species in PkmnDataFile.iter_rows(min_row=2, max_row=5, min_col=1, max_col=PkmnDataFile.max_column):
-        #for species in PkmnDataFile.iter_rows(min_row=1, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+        #Start from second row so you do not grab data headers
+        for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=1, max_col=PkmnDataFile.max_column):
+            #Check if new species
             if species[PkmnDataFile.max_column-1].value == 1:
                 print("New Species Found")
                 file.write("#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
             file.write("\t[SPECIES_" + species[PkmnDataFile.min_column - 1].value + "] =\n")
             file.write("\t{\n")
+            #step through each element of the species
             for data in species:
-                file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
-                
+                #types are stupid and need to be handled like this to deal with indexing issues
+                if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".types":
+                    types = data.value.split(',')
+                    type1 = types[0]
+                    type2 = types[1]
+                    if type1 == type2:
+                        file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + "),\n")
+                    else:
+                        file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + ", TYPE_"+ type2 + "),\n")    
+                else:
+                    file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
+                    
                 
             #for data in species:
                 #print(data.value)
