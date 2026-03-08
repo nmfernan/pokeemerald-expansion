@@ -40,8 +40,8 @@ with open(GenName+".h", WriteOrAdd) as file:
     #Begin writing species information to .h file
     if Debug == 1:
         #Start from second row so you do not grab data headers
-        for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
             if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
                 print("New Species Found!: " + species[PkmnDataFile.min_column-1].value)
                 file.write("#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
@@ -77,11 +77,18 @@ with open(GenName+".h", WriteOrAdd) as file:
                     type3 = "ABILITY_" + types[2]
                     file.write("\t\t.abilities = { " + type1 + ", " + type2 + " , " + type3 + " },\n")
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".bodyColor":
-                    file.write("\t\t.bodyColor = BODY_COLOR_" + data.value.upper() + ",\n")
+                    file.write("\t\t.bodyColor = BODY_COLOR_" + data.value + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".categoryName":
+                    fixCase = data.value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".description":
+                    file.write("\t\t.description = COMPOUD_STRING(\n\t\t\t" + data.value + "),\n")
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
                     continue
                 else:
                     file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
+            #close this species
             file.write("\t\t},\n\n")
     elif Debug == 0:
         for species in PkmnDataFile.rows:
