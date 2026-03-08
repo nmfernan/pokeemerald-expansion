@@ -37,7 +37,6 @@ with open('test.h', WriteOrAdd) as file:
                 if data.column == PkmnDataFile.max_column and data.value == 	1:
                     print("New Species Found")
                 print(data.value)
-                print(data.column)
     
     elif Debug == 0:
         for species in PkmnDataFile.rows:
