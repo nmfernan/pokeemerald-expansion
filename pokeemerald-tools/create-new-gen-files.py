@@ -24,9 +24,9 @@ SpeciesStructAttributes = []
 for row in PkmnDataFile.iter_rows(min_row=1, max_row=1, min_col=1, max_col=PkmnDataFile.max_column):
     for data in row:
         SpeciesStructAttributes.append(str(data.value))
-        #print(data.value)
-
-with open('test.h', WriteOrAdd) as file:
+        print(data.value)
+        
+with open(GenName+".h", WriteOrAdd) as file:
     #Print high level information about datafile being accessed
     if Debug:
         print(f"First row for species {PkmnDataFile.min_row}")
@@ -40,19 +40,16 @@ with open('test.h', WriteOrAdd) as file:
     #Begin writing species information to .h file
     if Debug == 1:
         #Start from second row so you do not grab data headers
-        for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=1, max_col=PkmnDataFile.max_column):
-        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=350, min_col=1, max_col=PkmnDataFile.max_column):
-            
-            #Check if new species
-            if species[PkmnDataFile.max_column-1].value == 1:
-                print("New Species Found")
+        for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+            if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
+                print("New Species Found!: " + species[PkmnDataFile.min_column-1].value)
                 file.write("#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
-            file.write("\t[SPECIES_" + species[PkmnDataFile.min_column - 1].value + "] =\n")
+            file.write("\t[SPECIES_" + str(species[PkmnDataFile.min_column-1].value) + "] =\n")
             file.write("\t{\n")
             
             #step through each element of the species
             for data in species:
-                #types are stupid and need to be handled like this to deal with indexing issues
                 if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".speciesName":
                     fixCase = data.value
                     fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
@@ -65,16 +62,32 @@ with open('test.h', WriteOrAdd) as file:
                         file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + "),\n")
                     else:
                         file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + ", TYPE_"+ type2 + "),\n")    
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggGroups":
+                    types = data.value.split(',')
+                    type1 = types[0]
+                    type2 = types[1]
+                    if type1 == type2: #Check for single egg group
+                        file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + "),\n")
+                    else:
+                        file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + ", EGG_GROUP_"+ type2 + "),\n")    
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".abilities":
+                    types = data.value.split(',')
+                    type1 = "ABILITY_" + types[0]
+                    type2 = "ABILITY_" + types[1]
+                    type3 = "ABILITY_" + types[2]
+                    file.write("\t\t.abilities = { " + type1 + ", " + type2 + " , " + type3 + " },\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".bodyColor":
+                    file.write("\t\t.bodyColor = BODY_COLOR_" + data.value.upper() + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
+                    continue
                 else:
                     file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
-    
+            file.write("\t\t},\n\n")
     elif Debug == 0:
         for species in PkmnDataFile.rows:
             for data in species:
                 if data.max_column.value == 1:
                     print("New Species Found")
                 print(data.value)
-
-    
-    if Debug:
-        file.write("//end of program")
+                
+    file.write("//end of program")
