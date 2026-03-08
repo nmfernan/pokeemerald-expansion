@@ -19,6 +19,13 @@ const struct SpeciesInfo gSpeciesInfo""" + GenName + """[] =
 {
 #endif"""
 
+#Definiton of species information in array format for adding to .h file when iterating through data values
+SpeciesStructAttributes = []
+for row in PkmnDataFile.iter_rows(min_row=1, max_row=1, min_col=1, max_col=PkmnDataFile.max_column):
+    for data in row:
+        SpeciesStructAttributes.append(str(data.value))
+        #print(data.value)
+
 with open('test.h', WriteOrAdd) as file:
     #Print high level information about datafile being accessed
     if Debug:
@@ -32,11 +39,19 @@ with open('test.h', WriteOrAdd) as file:
 
     #Begin writing species information to .h file
     if Debug == 1:
-        for species in PkmnDataFile.iter_rows(min_row=1, max_row=5, min_col=1, max_col=PkmnDataFile.max_column):
+        for species in PkmnDataFile.iter_rows(min_row=2, max_row=5, min_col=1, max_col=PkmnDataFile.max_column):
+        #for species in PkmnDataFile.iter_rows(min_row=1, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+            if species[PkmnDataFile.max_column-1].value == 1:
+                print("New Species Found")
+                file.write("#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
+            file.write("\t[SPECIES_" + species[PkmnDataFile.min_column - 1].value + "] =\n")
+            file.write("\t{\n")
             for data in species:
-                if data.column == PkmnDataFile.max_column and data.value == 	1:
-                    print("New Species Found")
-                print(data.value)
+                file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
+                
+                
+            #for data in species:
+                #print(data.value)
     
     elif Debug == 0:
         for species in PkmnDataFile.rows:
