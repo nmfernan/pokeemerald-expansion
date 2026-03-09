@@ -8,7 +8,7 @@ from openpyxl import load_workbook
 #Globals for making header, opening data, debug prints, etc
 Debug = 1
 WriteOrAdd = 'w'
-GenName = "pkmnevolved"
+GenName = "PkmnEvolved"
 PkmnData = load_workbook('pkmndata.xlsx')
 PkmnDataFile = PkmnData.active
 
@@ -17,7 +17,8 @@ Header ="""//gen file for """ + GenName + """
 #ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfo""" + GenName + """[] =
 {
-#endif"""
+#endif
+"""
 
 #Definiton of species information in array format for adding to .h file when iterating through data values
 SpeciesStructAttributes = []
@@ -41,8 +42,8 @@ with open("test.h", WriteOrAdd) as file:
     #Begin writing species information to .h file
     if Debug == 1:
         #Start from second row so you do not grab data headers
-        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-        for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
             if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
                 print("New Species Found!: " + species[PkmnDataFile.min_column-1].value)
                 file.write("#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
@@ -84,8 +85,48 @@ with open("test.h", WriteOrAdd) as file:
                     fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
                     file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".description":
+                    fixCase = data.value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
                     file.write("\t\t.description = COMPOUD_STRING(\n\t\t\t" + data.value + "),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPic":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.frontPic = gMonFrontPic_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPicSize":
+                    file.write("\t\t.frontPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPic":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.backPic = gMonBackPic_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPic":
+                    file.write("\t\t.backPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".palette":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.palette = gMonPalette_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".shinyPalette":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.shinyPalette = gMonShinyPalette_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".iconSprite":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.iconSprite = gMonIconSprite_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".levelUpLearnSet":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.iconSprite = s" + fixCase  + "LevelUpLearnset,\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".teachableLearnset":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.iconSprite = s" + fixCase  + "TeachableLearnset,\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".teachableLearnset":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.iconSprite = s" + fixCase  + "TeachableLearnset,\n")
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
+                    continue
+                elif not data.value:
                     continue
                 else:
                     file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
