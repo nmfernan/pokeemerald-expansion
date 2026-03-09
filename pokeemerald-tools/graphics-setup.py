@@ -13,16 +13,18 @@ PkmnDataFile = PkmnData.active
 
 with open("new-pokemon-graphics.h", WriteOrAdd) as file:
     file.write("//data prep start\n")
-    #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-    for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    #for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
         for data in species:
             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
                 fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                 fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                
                 if Anim == True:
                     file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/anim_front.4bpp.lz\");\n")
                 else:
                     file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/front.4bpp.lz\");\n")
+                
                 file.write("\t const u32 gMonBackPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/back.4bpp.lz\");\n")
                 file.write("\t const u16 gMonPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/normal.gbapal\");\n")
                 file.write("\t const u16 gMonShinyPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/normal.gbapal\");\n")

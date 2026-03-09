@@ -2,6 +2,7 @@
 #ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 {
+
 #endif
 
 #if P_FAMILY_BULBASAUR
@@ -25,7 +26,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_OVERGROW, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_GREEN,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_BULBASAUR,
 		.categoryName = _("Seed"),
 		.height = 7,
@@ -77,7 +78,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_OVERGROW, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_GREEN,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_IVYSAUR,
 		.categoryName = _("Seed"),
 		.height = 10,
@@ -128,7 +129,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_OVERGROW, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_GREEN,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_VENUSAUR,
 		.categoryName = _("Seed"),
 		.height = 20,
@@ -179,7 +180,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_GREEN,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_VENUSAUR,
 		.categoryName = _("Overgrown"),
 		.height = 20,
@@ -205,7 +206,6 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.levelUpLearnset = sEcosaurLevelUpLearnset,
 		.teachableLearnSet = sEcosaurTeachableLearnset,
 		.eggMoveLearnset = sEcosaurTeachableLearnset,
-		.natDexNeeded = 1,
 		},
 
 	[SPECIES_TERARISAUR] =
@@ -229,7 +229,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_GREEN,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_VENUSAUR,
 		.categoryName = _("Jungle"),
 		.height = 20,
@@ -255,7 +255,6 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.levelUpLearnset = sTerarisaurLevelUpLearnset,
 		.teachableLearnSet = sTerarisaurTeachableLearnset,
 		.eggMoveLearnset = sTerarisaurTeachableLearnset,
-		.natDexNeeded = 1,
 		},
 
 	[SPECIES_SYMBISAUR] =
@@ -279,7 +278,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_GREEN,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_VENUSAUR,
 		.categoryName = _("Ecosystem"),
 		.height = 20,
@@ -305,8 +304,9 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.levelUpLearnset = sSymbisaurLevelUpLearnset,
 		.teachableLearnSet = sSymbisaurTeachableLearnset,
 		.eggMoveLearnset = sSymbisaurTeachableLearnset,
-		.natDexNeeded = 1,
 		},
+
+#endif
 
 #if P_FAMILY_CHARMANDER
 	[SPECIES_CHARMANDER] =
@@ -329,7 +329,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_BLAZE, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_RED,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_CHARMANDER,
 		.categoryName = _("Lizard"),
 		.height = 6,
@@ -380,7 +380,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_BLAZE, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_RED,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_CHARMELEON,
 		.categoryName = _("Flame"),
 		.height = 11,
@@ -430,7 +430,7 @@ const struct SpeciesInfo gSpeciesInfoPkmnEvolved[] =
 		.eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
 		.abilities = { ABILITY_BLAZE, ABILITY_NONE , ABILITY_NONE },
 		.bodyColor = BODY_COLOR_RED,
-		.noFlip = =TRUE(),
+		.noFlip = True,
 		.cryId = CRY_CHARIZARD,
 		.categoryName = _("Flame"),
 		.height = 17,

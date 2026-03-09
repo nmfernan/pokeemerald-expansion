@@ -22,7 +22,7 @@ with open("new-pokedex.txt", WriteOrAdd) as file:
             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
                 file.write("\t" + National + "_DEX_" + PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value + ",\n")
     
-    file.write("\n//" + Region + "Dex Start\n")
+    file.write("\n//" + Region + " Dex Start\n")
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
         for data in species:
             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".speciesName":
