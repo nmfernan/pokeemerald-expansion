@@ -11,7 +11,7 @@ GenName = "pkmnevolved"
 PkmnData = load_workbook('pkmndata.xlsx')
 PkmnDataFile = PkmnData.active
 
-with open("new-pokemon-graphics.h", WriteOrAdd) as file:
+with open("test_graphics.h", WriteOrAdd) as file:
     file.write("//data prep start\n")
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
     #for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):

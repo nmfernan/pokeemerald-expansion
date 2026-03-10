@@ -16,7 +16,7 @@ Region = "KANTO"
 National = "NATIONAL"
 SpeciesIndex = 1573 #based on mega_glimmora being 1572
 
-with open("new-pokedex.txt", WriteOrAdd) as file:
+with open("test_pokedex.txt", WriteOrAdd) as file:
     file.write("//Species File Update\n")
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
         for data in species:
