@@ -9,12 +9,12 @@ WriteOrAdd = 'w'
 Anim = False
 GenName = "pkmnevolved"
 PkmnData = load_workbook('pkmndata.xlsx')
-PkmnDataFile = PkmnData.active
+PkmnDataFile = PkmnData['sanity-data']
 
 with open("test_graphics.h", WriteOrAdd) as file:
     file.write("//data prep start\n")
-    for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-    #for species in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    for species in PkmnDataFile.iter_rows(min_row=2, max_row=13, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
         for data in species:
             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
                 fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value

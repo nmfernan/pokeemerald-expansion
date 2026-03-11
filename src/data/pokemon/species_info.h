@@ -150,6 +150,57 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
 
+    [SPECIES_CHARIATHAN] =
+    {
+        .speciesName = _("Chariathan"),
+        .baseHP = 93,
+        .baseAttack = 132,
+        .baseDefense = 80,
+        .baseSpeed = 127,
+        .baseSpAttack = 139,
+        .baseSpDefense = 88,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_WATER),
+        .catchRate =  45,
+        .expYield = 220,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles =  20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_MARVEL_SCALE, ABILITY_NONE , ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .noFlip = TRUE,
+        .cryId = CRY_CHARIZARD,
+        .categoryName = _("Abyss"),
+        .height = 102,
+        .weight = 3694,
+        .description = COMPOUND_STRING(
+            "It feeds others toxic mochi that\n"
+            "draw out desires and capabilities.\n"
+            "Those who eat the mochi fall under\n"
+            "Pecharunt's control, chained to its will."),
+        .pokemonScale = 271,
+        .trainerScale = 317,
+        .trainerOffset = 3,
+        .frontPic = gMonFrontPic_Chariathan,
+        .frontPicSize = MON_COORDS_SIZE(8,8),
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
+        .frontAnimDelay = 15,
+        .backPic = gMonBackPic_Chariathan,
+        .backPicSize = MON_COORDS_SIZE(6,8),
+        .backPicYOffset = 8,
+        //.palette = gMonPalette_Chariathan,
+        //.shinyPalette = gMonShinyPalette_Chariathan,
+        .iconSprite = gMonIcon_Chariathan,
+        .iconPalIndex = 2,
+        //FOOTPRINT(Chariathan)
+        .levelUpLearnset = sChariathanLevelUpLearnset,
+        //.teachableLearnSet = sChariathanTeachableLearnset,
+        //.eggMoveLearnset = sChariathanTeachableLearnset,
+    },
+
     #include "species_info/gen_1_families.h"
     #include "species_info/gen_2_families.h"
     #include "species_info/gen_3_families.h"
