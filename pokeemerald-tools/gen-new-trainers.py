@@ -10,7 +10,7 @@ Debug = 1
 WriteOrAdd = 'w'
 GenName = "PkmnEvolved"
 PkmnData = load_workbook('pkmndata.xlsx')
-PkmnDataFile = PkmnData.['trainers']
+PkmnDataFile = PkmnData['trainers']
 
 #Header Description for files, etc
 Header ="//gen file for " + GenName + " trainers"
@@ -32,8 +32,8 @@ with open("test_trainers.h", WriteOrAdd) as file:
         #Start from second row so you do not grab data headers
         for row in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
         #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-            if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
+            if row[PkmnDataFile.max_column-1].value != None:#species tuple is 0 indexed; maxcol is 1 indexed
                 print("New Trainer Found!: " + row[PkmnDataFile.min_column-1].value)
-                file.write("===" + species[PkmnDataFile.min_column-1].value + " ===\n")
+                file.write("===" + row[PkmnDataFile.min_column-1].value + " ===\n")
             #file.write("\t[SPECIES_" + str(species[PkmnDataFile.min_column-1].value) + "] =\n")
             #file.write("\t{\n")
