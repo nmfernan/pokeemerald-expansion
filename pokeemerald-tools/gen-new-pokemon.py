@@ -84,7 +84,7 @@ with open("test_families.h", WriteOrAdd) as file:
                     fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
                     file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".description":
-                    file.write("\t\t.description = COMPOUD_STRING(\n\t\t\t" + data.value + "),\n")
+                    file.write("\t\t.description = COMPOUD_STRING(\n\t\t\t\"" + data.value + "\"),\n")
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPic":
                     fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                     fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
@@ -125,6 +125,8 @@ with open("test_families.h", WriteOrAdd) as file:
                     fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                     fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
                     file.write("\t\t.eggMoveLearnset = s" + fixCase  + "TeachableLearnset,\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".evolutions" and data.value != None:
+                    file.write("\t\t.evolutions = EVOLUTION({EVO_LEVEL, " + data.value  + ", SPECIES_" + PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value + "}),\n")
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
                     continue
                 elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded":

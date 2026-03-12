@@ -21,13 +21,13 @@ with open("test_graphics.h", WriteOrAdd) as file:
                 fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
                 
                 if Anim == True:
-                    file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/anim_front.4bpp.lz\");\n")
+                    file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/anim_front.4bpp.smol\");\n")
                 else:
-                    file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/front.4bpp.lz\");\n")
+                    file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/front.4bpp.smol\");\n")
                 
-                file.write("\t const u32 gMonBackPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/back.4bpp.lz\");\n")
-                file.write("\t const u16 gMonPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/normal.gbapal\");\n")
-                file.write("\t const u16 gMonShinyPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/normal.gbapal\");\n")
+                file.write("\t const u32 gMonBackPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/back.4bpp.smol\");\n")
+                file.write("\t const u16 gMonPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/front.gbapal\");\n")
+                file.write("\t const u16 gMonShinyPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/back.gbapal\");\n")
                 file.write("\t const u8 gMonIcon_" + fixCase + "[] = INCBIN_U8(\"graphics/pokemon/" + fixCase.lower() + "/icon.4bpp\");\n")
                 file.write("\t const u8 gMonFootprint_" + fixCase + "[] = INCBIN_U8(\"graphics/pokemon/" + fixCase.lower() + "/footprint.1bpp\");\n")
                 file.write("\n")

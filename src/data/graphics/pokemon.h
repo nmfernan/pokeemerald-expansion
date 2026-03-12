@@ -27508,9 +27508,9 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");
 
 
-    const u32 gMonFrontPic_Chariathan[] = INCBIN_U32("graphics/pokemon/chariathan/front.4bpp.lz");
-    const u32 gMonBackPic_Chariathan[] = INCBIN_U32("graphics/pokemon/chariathan/back.4bpp.lz");
-    const u16 gMonPalette_Chariathan[] = INCBIN_U16("graphics/pokemon/chariathan/normal.gbapal");
-    const u16 gMonShinyPalette_Chariathan[] = INCBIN_U16("graphics/pokemon/chariathan/normal.gbapal");
+    const u32 gMonFrontPic_Chariathan[] = INCBIN_U32("graphics/pokemon/chariathan/front.4bpp.smol");
+    const u16 gMonPalette_Chariathan[] = INCBIN_U16("graphics/pokemon/chariathan/front.gbapal");
+    const u32 gMonBackPic_Chariathan[] = INCBIN_U32("graphics/pokemon/chariathan/back.4bpp.smol");
+    const u16 gMonShinyPalette_Chariathan[] = INCBIN_U16("graphics/pokemon/chariathan/back.gbapal");
     const u8 gMonIcon_Chariathan[] = INCBIN_U8("graphics/pokemon/chariathan/icon.4bpp");
     //const u8 gMonFootprint_Chariathan[] = INCBIN_U8("graphics/pokemon/chariathan/footprint.1bpp");

@@ -191,8 +191,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .backPic = gMonBackPic_Chariathan,
         .backPicSize = MON_COORDS_SIZE(6,8),
         .backPicYOffset = 8,
-        //.palette = gMonPalette_Chariathan,
-        //.shinyPalette = gMonShinyPalette_Chariathan,
+        .palette = gMonPalette_Chariathan,
+        .shinyPalette = gMonShinyPalette_Chariathan,
         .iconSprite = gMonIcon_Chariathan,
         .iconPalIndex = 2,
         //FOOTPRINT(Chariathan)
