@@ -175,11 +175,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .categoryName = _("Abyss"),
         .height = 102,
         .weight = 3694,
-        .description = COMPOUND_STRING(
-            "It feeds others toxic mochi that\n"
-            "draw out desires and capabilities.\n"
-            "Those who eat the mochi fall under\n"
-            "Pecharunt's control, chained to its will."),
+        .description = COMPOUND_STRING("This POKéMON lurks in deep deep\nwaters. You can tell it is nearby\nvia low bassy vibrations."),
         .pokemonScale = 271,
         .trainerScale = 317,
         .trainerOffset = 3,
