@@ -4,6 +4,7 @@
 
 import openpyxl as pyxl
 
+from openpyxl.utils import get_column_letter
 from openpyxl.workbook import Workbook
 from openpyxl import load_workbook
 
@@ -17,7 +18,16 @@ National = "NATIONAL"
 #SpeciesIndex = 1573 #based on mega_glimmora being 1572
 SpeciesIndex = 0 #based on making new species.h
 
-with open("test_pokedex.h", WriteOrAdd) as file:
+#Print high level information about datafile being accessed
+if Debug:
+    print(f"First row for species {PkmnDataFile.min_row}")
+    print(f"Last row for species {PkmnDataFile.max_row}")
+    print(f"First column of species-data ")
+    print(f"Last column of species-data  ")
+    print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
+    print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")
+
+with open("test_species.h", WriteOrAdd) as file:
     file.write("//Species File Update\n")
     file.write("#ifndef GUARD_CONSTANTS_SPECIES_H\n")
     file.write("#define GUARD_CONSTANTS_SPECIES_H\n\n")
@@ -36,13 +46,15 @@ with open("test_pokedex.h", WriteOrAdd) as file:
     file.write(f"#define NUM_SPECIES SPECIES_EGG\n")
     file.write(f"#define SPECIES_SHINY_TAG 5000\n")
     file.write(f"#endif  // GUARD_CONSTANTS_SPECIES_H\n")
-       
+    
+    file.write("//end of program")       
 #     file.write("//National Dex Start\n")
 #     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
 #         for data in species:
 #             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
 #                 file.write("\t" + National + "_DEX_" + PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value + ",\n")
-    
+
+with open("test_dex.h", WriteOrAdd) as file:   
     file.write("\n//" + Region + " Dex Start\n")
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
         for data in species:
