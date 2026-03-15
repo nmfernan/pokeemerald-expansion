@@ -8,55 +8,88 @@ import openpyxl as pyxl
 from openpyxl.workbook import Workbook
 from openpyxl import load_workbook
 
+Debug = 0
+
 FrontSprite = "front.png"
 BackSprite = "back.png"
 Icon = "icon.png"
-#FolderPath = "graphics"
+InputFolderPath = "Sprites-MASTER/"
+FrontSpritePath = "FrontSprite"
+FrontSpriteShinyPath = "FrontSpriteShiny"
+BackSpritePath = "BackSprite"
+BackSpriteShinyPath = "BackSpriteShiny"
+IconPath = "Icon"
+OutputFolderPath = "graphics"
+
+SpecialCases = ["NIDORAN_M",#Nidoran_m
+                "NIDORAN_F",#Nidoran_f
+                "MR_MIME",#mr mime
+                "MR_JEST",#mr jest
+                "MR_FOOL"]#mr fool
 
 #Globals for making header, opening data, debug prints, etc
-PkmnData = load_workbook('/home/nicksnax/pokeemerald-expansion/pokeemerald-tools/pkmndata.xlsx')
+PkmnData = load_workbook('pkmndata.xlsx')
 PkmnDataFile = PkmnData['sanity-data']
 
-#print(os.walk('.'))
-
-root_directory = "."
-print(f"FrontSprite Dir: {os.path.isdir("./FrontSprite")}")
-print(f"BackSprite Dir: {os.path.isdir("./BackSprite")}")
-print(f"FrontSpriteShiny Dir: {os.path.isdir("./FrontSpriteShiny")}")
-print(f"BackSpriteShiny Dir: {os.path.isdir("./BackSpriteShiny")}")
-print(f"Icon Dir: {os.path.isdir("./Icon")}\n")
-os.makedirs("graphics", exist_ok = True)
+print(f"FrontSprite Dir: {os.path.isdir(InputFolderPath + FrontSpritePath)}")
+print(f"BackSprite Dir: {os.path.isdir(InputFolderPath + BackSpritePath)}")
+print(f"FrontSpriteShiny Dir: {os.path.isdir(InputFolderPath + FrontSpriteShinyPath)}")
+print(f"BackSpriteShiny Dir: {os.path.isdir(InputFolderPath + BackSpriteShinyPath)}")
+print(f"Icon Dir: {os.path.isdir(InputFolderPath + IconPath)}\n")
+os.makedirs(OutputFolderPath, exist_ok = True)
 
 #Step through source file and see if sprite files have a matching sprite
 #for species in PkmnDataFile.iter_rows(min_row=2, max_row=2, min_col=1, max_col=1):
-for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
-    for data in species:
-        for file in os.listdir("./FrontSprite"):
+if Debug == 0:
+    for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
+        for file in os.listdir(f"{InputFolderPath + FrontSpritePath}"):
             fileSplit = re.split(r"[_.]",file)
-            #print(fileSplit)
             for word in fileSplit:
-                if data.value == word:
-                    os.makedirs(f"graphics/{data.value.lower()}", exist_ok = True)
-                    shutil.copy(f"FrontSprite/{file}", f"graphics/{data.value.lower()}/front.png")
-#         for file in os.listdir("./FrontSpriteShiny"):
+                if row[0].value == word:
+                    os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
+                    shutil.copy(f"{InputFolderPath + FrontSpritePath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/front.png")
+#         for file in os.listdir("./Sprites-MASTER/FrontSpriteShiny"):
 #             if data.value in file:
 #                 os.makedirs(f"graphics/{data.value.lower()}", exist_ok = True)
 #                 shutil.copy(f"FrontSpriteShiny/{file}", f"graphics/{data.value.lower()}/front-shiny.png")
-#         for file in os.listdir("./BackSprite"):
+#         for file in os.listdir("./Sprites-MASTER/BackSprite"):
 #             if data.value in file:
 #                 os.makedirs(f"graphics/{data.value.lower()}", exist_ok = True)
 #                 shutil.copy(f"BackSprite/{file}", f"graphics/{data.value.lower()}/back.png")
-        for file in os.listdir("./BackSpriteShiny"):#backsprite copy name is still shiny due to palette generation of make
+        for file in os.listdir(f"{InputFolderPath + BackSpriteShinyPath}"):#backsprite copy name is still shiny due to palette generation of make
+            fileSplit = re.split(r"[_.]",file)
+            for word in fileSplit:
+                if row[0].value == word:
+                    os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
+                    shutil.copy(f"{InputFolderPath + BackSpriteShinyPath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/back.png")
+                
+        for file in os.listdir(f"{InputFolderPath + IconPath}"):
             fileSplit = re.split(r"[_.]",file)
             #print(fileSplit)
             for word in fileSplit:
-                if data.value == word:
-                    os.makedirs(f"graphics/{data.value.lower()}", exist_ok = True)
-                    shutil.copy(f"BackSpriteShiny/{file}", f"graphics/{data.value.lower()}/back.png")
-        for file in os.listdir("./Icon"):
-            fileSplit = re.split(r"[_.]",file)
-            #print(fileSplit)
-            for word in fileSplit:
-                if data.value == word:
-                    os.makedirs(f"graphics/{data.value.lower()}", exist_ok = True)
-                    shutil.copy(f"Icon/{file}", f"graphics/{data.value.lower()}/icon.png")
+                if row[0].value == word:
+                    os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
+                    shutil.copy(f"{InputFolderPath + IconPath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/icon.png")
+        
+        for case in SpecialCases:
+            for file in os.listdir(f"{InputFolderPath + FrontSpritePath}"):
+                if row[0].value in file:
+                    os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
+                    shutil.copy(f"{InputFolderPath + FrontSpritePath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/front.png")
+#         for file in os.listdir("./Sprites-MASTER/FrontSpriteShiny"):
+#             if data.value in file:
+#                 os.makedirs(f"graphics/{data.value.lower()}", exist_ok = True)
+#                 shutil.copy(f"FrontSpriteShiny/{file}", f"graphics/{data.value.lower()}/front-shiny.png")
+#         for file in os.listdir("./Sprites-MASTER/BackSprite"):
+#             if data.value in file:
+#                 os.makedirs(f"graphics/{data.value.lower()}", exist_ok = True)
+#                 shutil.copy(f"BackSprite/{file}", f"graphics/{data.value.lower()}/back.png")
+            for file in os.listdir(f"{InputFolderPath + BackSpriteShinyPath}"):#backsprite copy name is still shiny due to palette generation of make
+                if row[0].value in file:
+                    os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
+                    shutil.copy(f"{InputFolderPath + BackSpriteShinyPath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/back.png")
+                    
+            for file in os.listdir(f"{InputFolderPath + IconPath}"):
+                if row[0].value in file:
+                    os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
+                    shutil.copy(f"{InputFolderPath + IconPath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/icon.png")

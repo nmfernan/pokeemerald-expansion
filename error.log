@@ -1,0 +1,6 @@
+JSONPROC_ERROR: [json.exception.parse_error.101] parse error at line 291, column 0: syntax error while parsing object key - invalid string: control character U+000A (LF) must be escaped to \u000A or \n; last read: '"id<U+000A>'; expected string literal
+JSONPROC_ERROR: [json.exception.parse_error.101] parse error at line 291, column 0: syntax error while parsing object key - invalid string: control character U+000A (LF) must be escaped to \u000A or \n; last read: '"id<U+000A>'; expected string literal
+make[1]: *** [json_data_rules.mk:16: src/data/heal_locations.h] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [json_data_rules.mk:22: include/constants/heal_locations.h] Error 1
+Makefile:302: *** Errors occurred while generating map-related sources. See error messages above for more details.  Stop.

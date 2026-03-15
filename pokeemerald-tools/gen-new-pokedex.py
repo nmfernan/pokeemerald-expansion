@@ -27,7 +27,7 @@ if Debug:
     print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
     print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")
 
-with open("test_species.h", WriteOrAdd) as file:
+with open("species.h", WriteOrAdd) as file:
     file.write("//Species File Update\n")
     file.write("#ifndef GUARD_CONSTANTS_SPECIES_H\n")
     file.write("#define GUARD_CONSTANTS_SPECIES_H\n\n")
@@ -48,18 +48,70 @@ with open("test_species.h", WriteOrAdd) as file:
     file.write(f"#endif  // GUARD_CONSTANTS_SPECIES_H\n")
     
     file.write("//end of program")       
-#     file.write("//National Dex Start\n")
-#     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-#         for data in species:
-#             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
-#                 file.write("\t" + National + "_DEX_" + PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value + ",\n")
 
-with open("test_dex.h", WriteOrAdd) as file:   
-    file.write("\n//" + Region + " Dex Start\n")
+with open("pokedex.h", WriteOrAdd) as file:   
+    file.write("//National Dex Start\n")
+    file.write("#ifndef GUARD_CONSTANTS_POKEDEX_H\n")
+    file.write("#define GUARD_CONSTANTS_POKEDEX_H\n\n")
+    file.write("// National Pokédex order\n")
+    file.write("// These constants are NOT disabled by P_GEN_X_POKEMON to keep pokedex_orders.h clean.\n")
+    file.write("enum NationalDexOrder\n{\n")
+    file.write("\tNATIONAL_DEX_NONE\n")
+    file.write("\t//" + National + " Dex Start\n")
+
+    for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
+        for data in species:
+            #if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
+            file.write("\t" + National + "_DEX_" + PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value + ",\n")
+        
+    file.write("};\n\n")
+    file.write(f"#define NATIONAL_DEX_COUNT NATIONAL_DEX_{PkmnDataFile.cell(PkmnDataFile.max_row,PkmnDataFile.min_column).value}\n")
+    file.write(f"#define POKEMON_SLOTS_NUMBER NATIONAL_DEX_COUNT + 1\n")
+    
+    
+    file.write("// Kanto Pokédex order\n\n")
+    file.write("enum KantoDexOrder\n{\n")
+    file.write("\tKANTO_DEX_NONE\n")
+    file.write("\t//" + Region + " Dex Start\n")
+
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
         for data in species:
             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".speciesName":
                 file.write("\t" + Region + "_DEX_" + data.value + ",\n")
+
+    file.write("};\n\n")
+    file.write(f"#define KANTO_DEX_COUNT (KANTO_DEX_{PkmnDataFile.cell(PkmnDataFile.max_row,PkmnDataFile.min_column).value} + 1)\n")
+    file.write(f"#define HOENN_DEX_COUNT 1\n\n")
+    file.write(f"#define REGIONAL_DEX_COUNT (IS_FRLG ? KANTO_DEX_COUNT : HOENN_DEX_COUNT)\n\n")
+    
+    file.write("#define DECAGRAMS_IN_POUND             4536\n")
+    file.write("#define CM_PER_INCH                    2.54\n")
+    file.write("#define CM_PER_INCH_FACTOR             (CM_PER_INCH * 100)\n")
+    file.write("#define INCHES_IN_FOOT                 12\n")
+    file.write("#define INCHES_IN_ONE_AND_HALF_FOOT    (INCHES_IN_FOOT * 1.5)\n")
+    file.write("#define INCHES_IN_FOOT_FACTOR          (INCHES_IN_FOOT * 10)\n\n")
+    
+    file.write("#define WEIGHT_HEIGHT_STR_LEN          16\n")
+    file.write("#define WEIGHT_HEIGHT_STR_MEM          (WEIGHT_HEIGHT_STR_LEN * sizeof(u8))\n\n")
+    
+    file.write("#define DEX_HEADER_X                   96\n")
+    file.write("#define DEX_Y_TOP                      57\n")
+    file.write("#define DEX_Y_BOTTOM                   73\n")
+    file.write("#define DEX_MEASUREMENT_X              129\n\n")
+    
+    file.write("#define DEX_HGSS_HEADER_X_PADDING      59\n")
+    file.write("#define DEX_HGSS_Y_TOP_PADDING         7\n") 
+    file.write("#define DEX_HGSS_Y_BOTTOM_PADDING      4\n")
+    file.write("#define DEX_HGSS_MEASUREMENT_X_PADDING 51\n\n")
+
+    file.write("enum\n{\n\tDEX_MODE_HOENN,\n")
+    file.write("\tDEX_MODE_NATIONAL\n};\n\n")
+    
+    file.write("enum\n{\n\tFLAG_GET_SEEN,\n")
+    file.write("\tFLAG_GET_CAUGHT,\n")
+    file.write("\tFLAG_SET_SEEN,\n")
+    file.write("\tFLAG_SET_CAUGHT\n};\n\n")
+    file.write("#endif")
     
 #     file.write("\n//" + Region + " to National Dex Start\n")
 #     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):

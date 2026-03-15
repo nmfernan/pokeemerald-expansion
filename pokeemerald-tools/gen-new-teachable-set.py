@@ -29,7 +29,7 @@ if Debug:
     print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
     print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")
 
-with open("test_teachable.h", WriteOrAdd) as file:
+with open("teachable_learnsets.h", WriteOrAdd) as file:
     file.write(Header)
     #Start from second row so you do not grab data headers
     #for row in PkmnDataFile.iter_rows(min_row=2, max_row=20, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
@@ -54,16 +54,16 @@ with open("test_teachable.h", WriteOrAdd) as file:
 #                     file.write(f"}};\n")                
             elif data.value == None: #if reached newspecies column, do not write 1. check if next species is new species and close with #endif
                 if PkmnDataFile.cell(data.row + 1, PkmnDataFile.max_column).value == 1:#if the next mon is a new species
-                    file.write(f"}};\n#endif //P_FAMILY_{CurrentSpecies}\n\n")             
+                    file.write(f"\tMOVE_UNAVAILABLE,\n}};\n#endif //P_FAMILY_{CurrentSpecies}\n\n")             
                 else: #otherwise just close it
-                    file.write(f"}};\n")
+                    file.write(f"\tMOVE_UNAVAILABLE,\n}};\n")
                 break
             
             elif data.value == 1: #check if you have hit newspecies indicator
                 if PkmnDataFile.cell(data.row + 1, PkmnDataFile.max_column).value == 1:#if the next mon is a new species
-                    file.write(f"}};\n#endif //P_FAMILY_{CurrentSpecies}\n\n")             
+                    file.write(f"\tMOVE_UNAVAILABLE,\n}};\n#endif //P_FAMILY_{CurrentSpecies}\n\n")             
                 else: #otherwise just close it
-                    file.write(f"}};\n")
+                    file.write(f"\tMOVE_UNAVAILABLE,\n}};\n")
             
             else:
                 file.write(f"\tMOVE_{data.value},\n")

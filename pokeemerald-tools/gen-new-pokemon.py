@@ -46,8 +46,8 @@ with open("evolved_families.h", WriteOrAdd) as file:
 
     #Begin writing species information to .h file
     #Start from second row so you do not grab data headers
-    for species in PkmnDataFile.iter_rows(min_row=2, max_row=13, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-    #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    #for species in PkmnDataFile.iter_rows(min_row=2, max_row=13, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
         if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
             print("New Species Found!: " + species[PkmnDataFile.min_column-1].value)
             file.write("#endif\n\n#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
@@ -126,10 +126,10 @@ with open("evolved_families.h", WriteOrAdd) as file:
                 fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                 fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
                 file.write("\t\t.teachableLearnSet = s" + fixCase  + "TeachableLearnset,\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggMoveLearnset":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.eggMoveLearnset = s" + fixCase  + "TeachableLearnset,\n")
+#             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggMoveLearnset":
+#                 fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+#                 fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+#                 file.write("\t\t.eggMoveLearnset = s" + fixCase  + "TeachableLearnset,\n")
             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".evolutions" and data.value != None:
                 file.write("\t\t.evolutions = EVOLUTION({EVO_LEVEL, " + data.value  + ", SPECIES_" + PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value + "}),\n")
             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
@@ -146,4 +146,9 @@ with open("evolved_families.h", WriteOrAdd) as file:
     
     end = time.time()
     print(f"Time: {end - start} seconds")
+    
+    file.write("#ifdef __INTELLISENSE__\n")
+    file.write("};\n")
+    file.write("#endif\n")
+    
     file.write("//end of program")
