@@ -27513,4 +27513,15 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Chariathan[] = INCBIN_U32("graphics/pokemon/chariathan/back.4bpp.smol");
     const u16 gMonShinyPalette_Chariathan[] = INCBIN_U16("graphics/pokemon/chariathan/back.gbapal");
     const u8 gMonIcon_Chariathan[] = INCBIN_U8("graphics/pokemon/chariathan/icon.4bpp");
-    //const u8 gMonFootprint_Chariathan[] = INCBIN_U8("graphics/pokemon/chariathan/footprint.1bpp");
+
+    const u32 gMonFrontPic_Ecosaur[] = INCBIN_U32("graphics/pokemon/ecosaur/front.4bpp.smol");
+    const u32 gMonBackPic_Ecosaur[] = INCBIN_U32("graphics/pokemon/ecosaur/back.4bpp.smol");
+    const u16 gMonPalette_Ecosaur[] = INCBIN_U16("graphics/pokemon/ecosaur/front.gbapal");
+    const u16 gMonShinyPalette_Ecosaur[] = INCBIN_U16("graphics/pokemon/ecosaur/back.gbapal");
+    const u8 gMonIcon_Ecosaur[] = INCBIN_U8("graphics/pokemon/ecosaur/icon.4bpp");
+
+    const u32 gMonFrontPic_Terarisaur[] = INCBIN_U32("graphics/pokemon/terarisaur/front.4bpp.smol");
+    const u32 gMonBackPic_Terarisaur[] = INCBIN_U32("graphics/pokemon/terarisaur/back.4bpp.smol");
+    const u16 gMonPalette_Terarisaur[] = INCBIN_U16("graphics/pokemon/terarisaur/front.gbapal");
+    const u16 gMonShinyPalette_Terarisaur[] = INCBIN_U16("graphics/pokemon/terarisaur/back.gbapal");
+    const u8 gMonIcon_Terarisaur[] = INCBIN_U8("graphics/pokemon/terarisaur/icon.4bpp");

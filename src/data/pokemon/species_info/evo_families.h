@@ -2,7 +2,7 @@
 #ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfoEvo[] =
 {
-#endif
+	#endif
 
 	[SPECIES_ECOSAUR] =
 	{
@@ -30,17 +30,22 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.categoryName = _("Overgrown"),
 		.height = 20,
 		.weight = 2700,
-		//.description = COMPOUD_STRING(
-		//	"Its back serves as a good environment\nfor small POKéMON to live on and seek\nshelter from predators."),
 		.pokemonScale = 256,
 		.pokemonOffset = 1,
 		.trainerScale = 375,
 		.trainerOffset = 6,
+		.frontPic = gMonFrontPic_Ecosaur,
+		.frontPicSize = MON_COORDS_SIZE(8,8),
 		//.frontAnimFrames = ANIM_FRAMES(ANIMCMD_FRAME(0, 1)),
 		.frontAnimId = ANIM_V_JUMPS_H_JUMPS,
 		.frontAnimDelay = 15,
+		.backPic = gMonBackPic_Ecosaur,
+		.backPicSize = MON_COORDS_SIZE(6,8),
+		.palette = gMonPalette_Ecosaur,
+		.shinyPalette = gMonShinyPalette_Ecosaur,
+		.iconSprite = gMonIcon_Ecosaur,
 		.iconPalIndex = 2,
-		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_TERARISAUR}),
+		//.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_TERARISAUR}),
 	},
 
 	[SPECIES_TERARISAUR] =
@@ -69,20 +74,25 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.categoryName = _("Jungle"),
 		.height = 20,
 		.weight = 3500,
-		//.description = COMPOUD_STRING(
-		//	"The plant life on its back has mostly\ntaken over. It can barely walk from\nthe weight."),
 		.pokemonScale = 256,
 		.pokemonOffset = 1,
 		.trainerScale = 375,
 		.trainerOffset = 6,
+		.frontPic = gMonFrontPic_Terarisaur,
+		.frontPicSize = MON_COORDS_SIZE(8,8),
 		//.frontAnimFrames = ANIM_FRAMES(ANIMCMD_FRAME(0, 1)),
 		.frontAnimId = ANIM_V_JUMPS_H_JUMPS,
 		.frontAnimDelay = 15,
+		.backPic = gMonBackPic_Terarisaur,
+		.backPicSize = MON_COORDS_SIZE(7,8),
+		.palette = gMonPalette_Terarisaur,
+		.shinyPalette = gMonShinyPalette_Terarisaur,
+		.iconSprite = gMonIcon_Terarisaur,
 		.iconPalIndex = 2,
-		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_SYMBISAUR}),
+		//.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_SYMBISAUR}),
 	},
 
-#ifdef __INTELLISENSE__
+	#ifdef __INTELLISENSE__
 };
 #endif
 //end of program

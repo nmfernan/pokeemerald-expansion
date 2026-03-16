@@ -22,6 +22,7 @@ Header ="""//gen file for """ + GenName + """
 #ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfo""" + GenName + """[] =
 {
+#endif
 """
 
 #Definiton of species information in array format for adding to .h file when iterating through data values
@@ -219,25 +220,25 @@ if OnlyNewSpecies:
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPic":
                         fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                         fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-        #                file.write("\t\t.frontPic = gMonFrontPic_" + fixCase  + ",\n")
+                        file.write("\t\t.frontPic = gMonFrontPic_" + fixCase  + ",\n")
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPicSize":
-        #                file.write("\t\t.frontPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
-                        continue
+                        file.write("\t\t.frontPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+        #                continue
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPic":
                         fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                         fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-        #                file.write("\t\t.backPic = gMonBackPic_" + fixCase  + ",\n")
+                        file.write("\t\t.backPic = gMonBackPic_" + fixCase  + ",\n")
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPicSize":
-        #                file.write("\t\t.backPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
-                        continue
+                        file.write("\t\t.backPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+        #                continue
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".palette":
                         fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                         fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-        #                file.write("\t\t.palette = gMonPalette_" + fixCase  + ",\n")
+                        file.write("\t\t.palette = gMonPalette_" + fixCase  + ",\n")
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".shinyPalette":
                         fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                         fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-        #                file.write("\t\t.shinyPalette = gMonShinyPalette_" + fixCase  + ",\n")
+                        file.write("\t\t.shinyPalette = gMonShinyPalette_" + fixCase  + ",\n")
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "FOOTPRINT":
                         fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                         fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
@@ -245,7 +246,7 @@ if OnlyNewSpecies:
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".iconSprite":
                         fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                         fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-        #                file.write("\t\t.iconSprite = gMonIcon_" + fixCase  + ",\n")
+                        file.write("\t\t.iconSprite = gMonIcon_" + fixCase  + ",\n")
                     elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".levelUpLearnset":
                         fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
                         fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()

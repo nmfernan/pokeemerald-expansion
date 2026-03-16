@@ -41,7 +41,8 @@ os.makedirs(OutputFolderPath, exist_ok = True)
 #Step through source file and see if sprite files have a matching sprite
 #for species in PkmnDataFile.iter_rows(min_row=2, max_row=2, min_col=1, max_col=1):
 if Debug == 0:
-    for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
+    #for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
+    for row in PkmnDataFile.iter_rows(min_row=2, max_row=6, min_col=1, max_col=1):
         for file in os.listdir(f"{InputFolderPath + FrontSpritePath}"):
             fileSplit = re.split(r"[_.]",file)
             for word in fileSplit:

@@ -5,6 +5,7 @@ from openpyxl.workbook import Workbook
 from openpyxl import load_workbook
 
 Debug = 0
+OnlyNewSpecies = 1
 WriteOrAdd = 'w'
 Anim = False
 Footprint = False
@@ -36,7 +37,7 @@ with open("pokemon.h", WriteOrAdd) as file:
 
     #for row in PkmnDataFile.iter_rows(min_row=2, max_row=13, min_col=1, max_col=PkmnDataFile.max_column):
     
-    if Debug == 1:
+    if OnlyNewSpecies == 0:
         for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
             fixCase = row[PkmnDataFile.min_column - 1].value
             fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
@@ -65,7 +66,8 @@ with open("pokemon.h", WriteOrAdd) as file:
                 file.write(f"#endif //P_FAMILY_{CurrentSpecies}\n\n")
     
     else:
-        for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+        #for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+        for row in PkmnDataFile.iter_rows(min_row=2, max_row=6, min_col=1, max_col=PkmnDataFile.max_column):
             fixCase = row[PkmnDataFile.min_column - 1].value
             fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
             
