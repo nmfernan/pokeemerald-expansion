@@ -1,0 +1,2 @@
+ git grep trainerbattle -- data/maps/*_Frlg | grep -o 'TRAINER_[A-Z0-9_]*' | sort -u
+ git grep trainerbattle -- data/maps/*_Frlg | grep 'TRAINER_[A-Z0-9_]*' | sort -u
