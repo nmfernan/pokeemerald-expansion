@@ -8,7 +8,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.workbook import Workbook
 from openpyxl import load_workbook
 
-Debug = 1
+Debug = 0
 WriteOrAdd = 'w'
 GenName = "pkmnevolved"
 PkmnData = load_workbook('pkmndata.xlsx')
@@ -35,30 +35,112 @@ with open("species.h", WriteOrAdd) as file:
     SpeciesIndex += 1
     
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
-        for data in species:
 #             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
 #                 file.write(f"\t#define SPECIES_ {PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value} \t\t {SpeciesIndex} \n")
 #                 SpeciesIndex += 1
-            file.write(f"#define SPECIES_{PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value}\t\t{SpeciesIndex}\n")
-            SpeciesIndex += 1
-    
-    file.write(f"\n#define SPECIES_EGG\t\t{SpeciesIndex}\n")
+        file.write(f"#define SPECIES_{species[0].value}\t\t{SpeciesIndex}\n")
+        SpeciesIndex += 1
+        if species[0].row == PkmnDataFile.max_row:
+            file.write(f"\n#define SPECIES_EGG ({species[0].value} + 1)\n")
+            
     file.write(f"#define NUM_SPECIES SPECIES_EGG\n")
     file.write(f"#define SPECIES_SHINY_TAG 5000\n")
     file.write(f"#endif  // GUARD_CONSTANTS_SPECIES_H\n")
     
+    file.write("//end of program")          
+
+if Debug:
+    with open("species_enabled.h", WriteOrAdd) as file: #species_enabled.h config gen   
+        file.write("#ifndef GUARD_CONFIG_POKEDEX_H\n")
+        file.write("#define GUARD_CONFIG_POKEDEX_H\n\n")
+        file.write("#define P_GEN_1_POKEMON                  FALSE // Generation 1 Pokémon (RGBY)\n")
+        file.write("#define P_GEN_2_POKEMON                  FALSE // Generation 2 Pokémon (GSC)\n")
+        file.write("#define P_GEN_3_POKEMON                  FALSE // Generation 3 Pokémon (RSE, FRLG)\n")
+        file.write("#define P_GEN_4_POKEMON                  FALSE // Generation 4 Pokémon (DPPt, HGSS)\n")
+        file.write("#define P_GEN_5_POKEMON                  FALSE // Generation 5 Pokémon (BW, B2W2)\n")
+        file.write("#define P_GEN_6_POKEMON                  FALSE // Generation 6 Pokémon (XY, ORAS)\n")
+        file.write("#define P_GEN_7_POKEMON                  FALSE // Generation 7 Pokémon (SM, USUM, LGPE)\n")
+        file.write("#define P_GEN_8_POKEMON                  FALSE // Generation 8 Pokémon (SwSh, BDSP, LA)\n")
+        file.write("#define P_GEN_9_POKEMON                  FALSE // Generation 9 Pokémon (SV)\n")
+        file.write("#define P_GEN_EVO_POKEMON                  TRUE // Generation EVO Pokémon (??)\n\n")
+        
+        file.write("// Setting this to TRUE will add the new evolutions to the Regional Dex.\n")
+        file.write("#define P_NEW_EVOS_IN_REGIONAL_DEX       TRUE\n\n")
+        
+        file.write("// Battle gimmick specific Forms.\n")
+        file.write("#define P_MEGA_EVOLUTIONS                TRUE\n")
+        file.write("#define P_PRIMAL_REVERSIONS              TRUE // Groudon and Kyogre only.\n")
+        file.write("#define P_ULTRA_BURST_FORMS              TRUE // Ultra Necrozma only.\n")
+        file.write("#define P_GIGANTAMAX_FORMS               TRUE\n")
+        file.write("#define P_TERA_FORMS                     TRUE\n\n")
+    
+        file.write("#define P_GEN_9_MEGA_EVOLUTIONS          P_MEGA_EVOLUTIONS // Mega Evolutions introduced in Z-A and its DLC\n\n")
+        
+        file.write("// Fusion forms\n")
+        file.write("#define P_FUSION_FORMS                   TRUE\n\n")
+        
+        file.write("// Regional Forms. Includes Regional Form evolutions, like Sirfetch'd.\n")
+        file.write("#define P_REGIONAL_FORMS                 TRUE\n")
+        file.write("#define P_ALOLAN_FORMS                   P_REGIONAL_FORMS\n")
+        file.write("#define P_GALARIAN_FORMS                 P_REGIONAL_FORMS\n")
+        file.write("#define P_HISUIAN_FORMS                  P_REGIONAL_FORMS\n")
+        file.write("#define P_PALDEAN_FORMS                  P_REGIONAL_FORMS\n\n")
+        
+        file.write("// Big groups of forms that aren't always desired when choosing families.\n")
+        file.write("#define P_PIKACHU_EXTRA_FORMS            TRUE\n")
+        file.write("#define P_COSPLAY_PIKACHU_FORMS          P_PIKACHU_EXTRA_FORMS\n")
+        file.write("#define P_CAP_PIKACHU_FORMS              P_PIKACHU_EXTRA_FORMS\n\n")
+
+        file.write("// Cross-generation evolutions. Includes pre-evolutions.\n")
+        file.write("#define P_CROSS_GENERATION_EVOS          TRUE\n")
+        file.write("#define P_GEN_2_CROSS_EVOS               P_CROSS_GENERATION_EVOS\n")
+        file.write("#define P_GEN_3_CROSS_EVOS               P_CROSS_GENERATION_EVOS\n")
+        file.write("#define P_GEN_4_CROSS_EVOS               P_CROSS_GENERATION_EVOS\n")
+        file.write("//#define P_GEN_5_CROSS_EVOS             // Gen 5 didn't introduce any cross-gen evos.\n")
+        file.write("#define P_GEN_6_CROSS_EVOS               P_CROSS_GENERATION_EVOS // Just Sylveon.\n")
+        file.write("//#define P_GEN_7_CROSS_EVOS             // Alolan evolutions handled by P_ALOLAN_FORMS.\n")
+        file.write("#define P_GEN_8_CROSS_EVOS               P_CROSS_GENERATION_EVOS // Regional evolutions handled by P_GALARIAN_FORMS and P_HISUIAN_FORMS.\n")
+        file.write("#define P_GEN_9_CROSS_EVOS               P_CROSS_GENERATION_EVOS // Clodsire handled by P_PALDEAN_FORMS.\n\n")
+
+        file.write("// To disable specific families, replace P_GEN_x_POKEMON with FALSE.\n")
+        for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
+            if PkmnDataFile.cell(row[0].row, PkmnDataFile.max_column).value == 1:
+                file.write(f"#define P_FAMILY_{row[0].value}\t\t\tP_GEN_EVO_POKEMON\n")
+        file.write(f"\n#endif //GUARD_CONFIG_SPECIES_ENABLED_H")
+
+with open("new-mons_species.h", WriteOrAdd) as file: #species_enabled.h config gen   
+    for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        for data in species:
+            if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
+                file.write(f"#define P_FAMILY_{species[0].value} \t\t\tP_GEN_EVO_POKEMON\n")
+                       
+    file.write("//Species File Update\n")
+    file.write("#ifndef GUARD_CONSTANTS_SPECIES_H\n")
+    file.write("#define GUARD_CONSTANTS_SPECIES_H\n\n")
+    file.write(f"#define SPECIES_NONE \t\t {SpeciesIndex} \n")
+    
+    
+    CurrentMaxSpecies = 1572
+    SpeciesIndex = CurrentMaxSpecies
+    SpeciesIndex += 1
+    for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+        for data in species:
+            if PkmnDataFile.cell(row = 1, column = data.column).value == ".natDexNeeded" and data.value == 1:
+                file.write(f"#define SPECIES_{species[0].value}\t\t{SpeciesIndex}\n")
+                SpeciesIndex += 1
+    
     file.write("//end of program")       
 
-with open("pokedex.h", WriteOrAdd) as file:   
-    file.write("//National Dex Start\n")
-    file.write("#ifndef GUARD_CONSTANTS_POKEDEX_H\n")
-    file.write("#define GUARD_CONSTANTS_POKEDEX_H\n\n")
-    file.write("// National Pokédex order\n")
-    file.write("// These constants are NOT disabled by P_GEN_X_POKEMON to keep pokedex_orders.h clean.\n")
-    file.write("enum NationalDexOrder\n{\n")
-    file.write("\tNATIONAL_DEX_NONE\n")
-    file.write("\t//" + National + " Dex Start\n")
-
+with open("pokedex.h", WriteOrAdd) as file: #species_enabled.h config gen   
+    
+    file.write(f"//National Dex Start\n")
+    file.write(f"#ifndef GUARD_CONSTANTS_POKEDEX_H\n")
+    file.write(f"#define GUARD_CONSTANTS_POKEDEX_H\n")
+    file.write(f"// National Pokédex order\n")
+    file.write(f"// These constants are NOT disabled by P_GEN_X_POKEMON to keep pokedex_orders.h clean.\n")
+    file.write(f"enum NationalDexOrder\n{{\n")
+    file.write(f"\tNATIONAL_DEX_NONE,\n")
+    
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
         for data in species:
             #if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
@@ -71,7 +153,7 @@ with open("pokedex.h", WriteOrAdd) as file:
     
     file.write("// Kanto Pokédex order\n\n")
     file.write("enum KantoDexOrder\n{\n")
-    file.write("\tKANTO_DEX_NONE\n")
+    file.write("\tKANTO_DEX_NONE,\n")
     file.write("\t//" + Region + " Dex Start\n")
 
     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
@@ -112,12 +194,5 @@ with open("pokedex.h", WriteOrAdd) as file:
     file.write("\tFLAG_SET_SEEN,\n")
     file.write("\tFLAG_SET_CAUGHT\n};\n\n")
     file.write("#endif")
-    
-#     file.write("\n//" + Region + " to National Dex Start\n")
-#     for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-#         for data in species:
-#             if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
-#                 file.write("\t"+ Region + "_TO_" + National + "(" + PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value + "),\n")
-    
     
     file.write("//end of program")
