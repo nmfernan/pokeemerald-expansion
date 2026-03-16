@@ -2,7 +2,6 @@
 #ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfoEvo[] =
 {
-#endif
 
 	[SPECIES_ECOSAUR] =
 	{
@@ -30,13 +29,11 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.categoryName = _("Overgrown"),
 		.height = 20,
 		.weight = 2700,
-		//.description = COMPOUD_STRING(
-		//	"Its back serves as a good environment\nfor small POKéMON to live on and seek\nshelter from predators."),
 		.pokemonScale = 256,
 		.pokemonOffset = 1,
 		.trainerScale = 375,
 		.trainerOffset = 6,
-		//.frontAnimFrames = ANIM_FRAMES(ANIMCMD_FRAME(0, 1)),
+		.frontAnimFrames = ANIM_FRAMES(ANIMCMD_FRAME(0, 1)),
 		.frontAnimId = ANIM_V_JUMPS_H_JUMPS,
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
@@ -69,13 +66,11 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.categoryName = _("Jungle"),
 		.height = 20,
 		.weight = 3500,
-		//.description = COMPOUD_STRING(
-		//	"The plant life on its back has mostly\ntaken over. It can barely walk from\nthe weight."),
 		.pokemonScale = 256,
 		.pokemonOffset = 1,
 		.trainerScale = 375,
 		.trainerOffset = 6,
-		//.frontAnimFrames = ANIM_FRAMES(ANIMCMD_FRAME(0, 1)),
+		.frontAnimFrames = ANIM_FRAMES(ANIMCMD_FRAME(0, 1)),
 		.frontAnimId = ANIM_V_JUMPS_H_JUMPS,
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,

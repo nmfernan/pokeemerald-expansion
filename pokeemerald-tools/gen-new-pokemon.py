@@ -12,9 +12,10 @@ start = time.time()
 #Globals for making header, opening data, debug prints, etc
 Debug = 1
 WriteOrAdd = 'w'
-GenName = "PkmnEvolved"
+GenName = "Evo"
 PkmnData = load_workbook('pkmndata.xlsx')
 PkmnDataFile = PkmnData['sanity-data']
+OnlyNewSpecies = 1
 
 #Header Description for files, etc
 Header ="""//gen file for """ + GenName + """
@@ -29,126 +30,254 @@ for row in PkmnDataFile.iter_rows(min_row=1, max_row=1, min_col=1, max_col=PkmnD
     for data in row:
         SpeciesStructAttributes.append(str(data.value))
         print(data.value)
-        
-#with open(GenName+".h", WriteOrAdd) as file:
-with open("evolved_families.h", WriteOrAdd) as file:
-    #Print high level information about datafile being accessed
-    if Debug:
-        print(f"First row for species {PkmnDataFile.min_row}")
-        print(f"Last row for species {PkmnDataFile.max_row}")
-        print(f"First column of species-data {PkmnDataFile.min_column}")
-        print(f"Last column of species-data  {PkmnDataFile.max_column}")
-        print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
-        print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")    
-    
-    #Write top level information to species file
-    file.write(Header +  "\n")           
 
-    #Begin writing species information to .h file
-    #Start from second row so you do not grab data headers
-    #for species in PkmnDataFile.iter_rows(min_row=2, max_row=13, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-    for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-        if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
-            print("New Species Found!: " + species[PkmnDataFile.min_column-1].value)
-            file.write("#endif\n\n#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
-        file.write("\t[SPECIES_" + str(species[PkmnDataFile.min_column-1].value) + "] =\n")
-        file.write("\t{\n")
+if OnlyNewSpecies != 1:
+    with open("evolved_families.h", WriteOrAdd) as file:
+        #Print high level information about datafile being accessed
+        if Debug:
+            print(f"First row for species {PkmnDataFile.min_row}")
+            print(f"Last row for species {PkmnDataFile.max_row}")
+            print(f"First column of species-data {PkmnDataFile.min_column}")
+            print(f"Last column of species-data  {PkmnDataFile.max_column}")
+            print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
+            print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")    
         
-        #step through each element of the species
-        for data in species:
-            if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".types":
-                types = data.value.split(',')
-                type1 = types[0]
-                type2 = types[1]
-                if type1 == type2: #Check for single typing
-                    file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + "),\n")
-                else:
-                    file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + ", TYPE_"+ type2 + "),\n")    
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggGroups":
-                types = data.value.split(',')
-                type1 = types[0]
-                type2 = types[1]
-                if type1 == type2: #Check for single egg group
-                    file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + "),\n")
-                else:
-                    file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + ", EGG_GROUP_"+ type2 + "),\n")    
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".abilities":
-                types = data.value.split(',')
-                type1 = "ABILITY_" + types[0]
-                type2 = "ABILITY_" + types[1]
-                type3 = "ABILITY_" + types[2]
-                file.write("\t\t.abilities = { " + type1 + ", " + type2 + " , " + type3 + " },\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".bodyColor":
-                file.write("\t\t.bodyColor = BODY_COLOR_" + data.value + ",\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".speciesName":
-                fixCase = data.value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".categoryName":
-                fixCase = data.value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".description":
-                file.write("\t\t.description = COMPOUD_STRING(\n\t\t\t\"" + data.value + "\"),\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPic":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.frontPic = gMonFrontPic_" + fixCase  + ",\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPicSize":
-                file.write("\t\t.frontPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPic":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.backPic = gMonBackPic_" + fixCase  + ",\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPicSize":
-                file.write("\t\t.backPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".palette":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.palette = gMonPalette_" + fixCase  + ",\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".shinyPalette":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.shinyPalette = gMonShinyPalette_" + fixCase  + ",\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "FOOTPRINT":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\tFOOTPRINT(" + fixCase  + ")\n")    
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".iconSprite":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.iconSprite = gMonIcon_" + fixCase  + ",\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".levelUpLearnset":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.levelUpLearnset = s" + fixCase  + "LevelUpLearnset,\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".teachableLearnset":
-                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-                file.write("\t\t.teachableLearnSet = s" + fixCase  + "TeachableLearnset,\n")
-#             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggMoveLearnset":
-#                 fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-#                 fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-#                 file.write("\t\t.eggMoveLearnset = s" + fixCase  + "TeachableLearnset,\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".evolutions" and data.value != None:
-                file.write("\t\t.evolutions = EVOLUTION({EVO_LEVEL, " + data.value  + ", SPECIES_" + PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value + "}),\n")
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
-                continue
-            elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded":
-                continue
-            elif not data.value:
-                continue
-            else:
-                file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
+        #Write top level information to species file
+        file.write(Header +  "\n")           
+
+        #Begin writing species information to .h file
+        #Start from second row so you do not grab data headers
+        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=13, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+            if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
+                print("New Species Found!: " + species[PkmnDataFile.min_column-1].value)
+                file.write("#endif\n\n#if P_FAMILY_" + species[PkmnDataFile.min_column-1].value + "\n")
+            file.write("\t[SPECIES_" + str(species[PkmnDataFile.min_column-1].value) + "] =\n")
+            file.write("\t{\n")
             
-        #close this species
-        file.write("\t\t},\n\n")
-    
-    end = time.time()
-    print(f"Time: {end - start} seconds")
-    
-    file.write("#ifdef __INTELLISENSE__\n")
-    file.write("};\n")
-    file.write("#endif\n")
-    
-    file.write("//end of program")
+            #step through each element of the species
+            for data in species:
+                if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".types":
+                    types = data.value.split(',')
+                    type1 = types[0]
+                    type2 = types[1]
+                    if type1 == type2: #Check for single typing
+                        file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + "),\n")
+                    else:
+                        file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + ", TYPE_"+ type2 + "),\n")    
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggGroups":
+                    types = data.value.split(',')
+                    type1 = types[0]
+                    type2 = types[1]
+                    if type1 == type2: #Check for single egg group
+                        file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + "),\n")
+                    else:
+                        file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + ", EGG_GROUP_"+ type2 + "),\n")    
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".abilities":
+                    types = data.value.split(',')
+                    type1 = "ABILITY_" + types[0]
+                    type2 = "ABILITY_" + types[1]
+                    type3 = "ABILITY_" + types[2]
+                    file.write("\t\t.abilities = { " + type1 + ", " + type2 + " , " + type3 + " },\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".bodyColor":
+                    file.write("\t\t.bodyColor = BODY_COLOR_" + data.value + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".speciesName":
+                    fixCase = data.value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".categoryName":
+                    fixCase = data.value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".description":
+                    file.write("\t\t.description = COMPOUD_STRING(\n\t\t\t\"" + data.value + "\"),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPic":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.frontPic = gMonFrontPic_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPicSize":
+                    file.write("\t\t.frontPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPic":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.backPic = gMonBackPic_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPicSize":
+                    file.write("\t\t.backPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".palette":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.palette = gMonPalette_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".shinyPalette":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.shinyPalette = gMonShinyPalette_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "FOOTPRINT":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\tFOOTPRINT(" + fixCase  + ")\n")    
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".iconSprite":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.iconSprite = gMonIcon_" + fixCase  + ",\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".levelUpLearnset":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.levelUpLearnset = s" + fixCase  + "LevelUpLearnset,\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".teachableLearnset":
+                    fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                    fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                    file.write("\t\t.teachableLearnSet = s" + fixCase  + "TeachableLearnset,\n")
+    #             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggMoveLearnset":
+    #                 fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+    #                 fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+    #                 file.write("\t\t.eggMoveLearnset = s" + fixCase  + "TeachableLearnset,\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".evolutions" and data.value != None:
+                    file.write("\t\t.evolutions = EVOLUTION({EVO_LEVEL, " + data.value  + ", SPECIES_" + PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value + "}),\n")
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
+                    continue
+                elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded":
+                    continue
+                elif not data.value:
+                    continue
+                else:
+                    file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
+                
+            #close this species
+            file.write("\t\t},\n\n")
+        
+        end = time.time()
+        print(f"Time: {end - start} seconds")
+        
+        file.write("#ifdef __INTELLISENSE__\n")
+        file.write("};\n")
+        file.write("#endif\n")
+        
+        file.write("//end of program")
+
+
+if OnlyNewSpecies:
+    with open("evo_families.h", WriteOrAdd) as file:
+        #Print high level information about datafile being accessed
+        if Debug:
+            print(f"First row for species {PkmnDataFile.min_row}")
+            print(f"Last row for species {PkmnDataFile.max_row}")
+            print(f"First column of species-data {PkmnDataFile.min_column}")
+            print(f"Last column of species-data  {PkmnDataFile.max_column}")
+            print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
+            print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")    
+        
+        #Write top level information to species file
+        file.write(Header +  "\n")           
+
+        #Begin writing species information to .h file
+        #Start from second row so you do not grab data headers
+        for species in PkmnDataFile.iter_rows(min_row=2, max_row=6, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        #for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+            
+            #step through each element of the species
+            if species[PkmnDataFile.max_column-2].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
+                print("New Species Found!: " + species[PkmnDataFile.min_column-1].value)
+                file.write("\t[SPECIES_" + str(species[PkmnDataFile.min_column-1].value) + "] =\n")
+                file.write("\t{\n")
+            
+                for data in species:
+                    if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".types":
+                        types = data.value.split(',')
+                        type1 = types[0]
+                        type2 = types[1]
+                        if type1 == type2: #Check for single typing
+                            file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + "),\n")
+                        else:
+                            file.write("\t\t.types = MON_TYPES(TYPE_" + type1 + ", TYPE_"+ type2 + "),\n")    
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggGroups":
+                        types = data.value.split(',')
+                        type1 = types[0]
+                        type2 = types[1]
+                        if type1 == type2: #Check for single egg group
+                            file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + "),\n")
+                        else:
+                            file.write("\t\t.eggGroups = MON_EGG_GROUPS(EGG_GROUP_" + type1 + ", EGG_GROUP_"+ type2 + "),\n")    
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".abilities":
+                        types = data.value.split(',')
+                        type1 = "ABILITY_" + types[0]
+                        type2 = "ABILITY_" + types[1]
+                        type3 = "ABILITY_" + types[2]
+                        file.write("\t\t.abilities = { " + type1 + ", " + type2 + " , " + type3 + " },\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".bodyColor":
+                        file.write("\t\t.bodyColor = BODY_COLOR_" + data.value + ",\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".speciesName":
+                        fixCase = data.value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                        file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".categoryName":
+                        fixCase = data.value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+                        file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = _(\"" + fixCase + "\"),\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".description":
+        #                file.write("\t\t.description = COMPOUD_STRING(\n\t\t\t\"" + data.value + "\"),\n")
+                        continue
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPic":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\t.frontPic = gMonFrontPic_" + fixCase  + ",\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".frontPicSize":
+        #                file.write("\t\t.frontPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+                        continue
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPic":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\t.backPic = gMonBackPic_" + fixCase  + ",\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".backPicSize":
+        #                file.write("\t\t.backPicSize = MON_COORDS_SIZE(" + data.value + "),\n")
+                        continue
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".palette":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\t.palette = gMonPalette_" + fixCase  + ",\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".shinyPalette":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\t.shinyPalette = gMonShinyPalette_" + fixCase  + ",\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "FOOTPRINT":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\tFOOTPRINT(" + fixCase  + ")\n")    
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".iconSprite":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\t.iconSprite = gMonIcon_" + fixCase  + ",\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".levelUpLearnset":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\t.levelUpLearnset = s" + fixCase  + "LevelUpLearnset,\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".teachableLearnset":
+                        fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+                        fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                file.write("\t\t.teachableLearnSet = s" + fixCase  + "TeachableLearnset,\n")
+        #             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggMoveLearnset":
+        #                 fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+        #                 fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+        #                 file.write("\t\t.eggMoveLearnset = s" + fixCase  + "TeachableLearnset,\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".evolutions" and data.value != None:
+                        file.write("\t\t.evolutions = EVOLUTION({EVO_LEVEL, " + data.value  + ", SPECIES_" + PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value + "}),\n")
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == "newspecies":
+                        continue
+                    elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded":
+                        continue
+                    elif not data.value:
+                        continue
+                    else:
+                        file.write("\t\t" + SpeciesStructAttributes[data.column-1] + " = " + str(data.value) + ",\n")
+                
+            #close this species
+            if species[PkmnDataFile.max_column-2].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
+                file.write("\t},\n\n")
+        
+        end = time.time()
+        print(f"Time: {end - start} seconds")
+        
+        file.write("#ifdef __INTELLISENSE__\n")
+        file.write("};\n")
+        file.write("#endif\n")
+        
+        file.write("//end of program")
