@@ -41,11 +41,12 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.backPic = gMonBackPic_Ecosaur,
 		.backPicSize = MON_COORDS_SIZE(6,8),
+		.backAnimId = BACK_ANIM_H_SHAKE,
 		.palette = gMonPalette_Ecosaur,
 		.shinyPalette = gMonShinyPalette_Ecosaur,
 		.iconSprite = gMonIcon_Ecosaur,
 		.iconPalIndex = 2,
-		//.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_TERARISAUR}),
+		//.evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_TERARISAUR}),
 	},
 
 	[SPECIES_TERARISAUR] =
@@ -85,6 +86,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.backPic = gMonBackPic_Terarisaur,
 		.backPicSize = MON_COORDS_SIZE(7,8),
+		.backAnimId = BACK_ANIM_H_SHAKE,
 		.palette = gMonPalette_Terarisaur,
 		.shinyPalette = gMonShinyPalette_Terarisaur,
 		.iconSprite = gMonIcon_Terarisaur,
