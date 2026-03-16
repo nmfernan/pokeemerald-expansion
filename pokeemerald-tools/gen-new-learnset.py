@@ -32,8 +32,8 @@ static const struct LevelUpMove sNoneLevelUpLearnset[] = {
 with open("gen_9.h", WriteOrAdd) as file:
     file.write(Header)
     #Start from second row so you do not grab data headers
-    for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=3):
-    #for row in PkmnDataFile.iter_rows(min_row=2, max_row=500, min_col=PkmnDataFile.min_column, max_col=3):
+    #for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=3):
+    for row in PkmnDataFile.iter_rows(min_row=2, max_row=500, min_col=PkmnDataFile.min_column, max_col=3):
         if row[PkmnDataFile.min_column-1].value != None:#Checks if species name is in first column
             fixCase = str(row[0].value) #idk why Excel is being stupid, thinks it is not a string
             fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
