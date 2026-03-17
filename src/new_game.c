@@ -50,6 +50,7 @@
 #include "constants/items.h"
 #include "difficulty.h"
 #include "follower_npc.h"
+#include "script_pokemon_util.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 extern const u8 EventScript_ResetAllMapFlagsFrlg[];
@@ -232,12 +233,28 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
-    AddBagItem(ITEM_RARE_CANDY,999);
-    AddBagItem(ITEM_WATER_STONE,999);
-    AddBagItem(ITEM_THUNDER_STONE,999);
-    AddBagItem(ITEM_FIRE_STONE,999);
-    AddBagItem(ITEM_LEAF_STONE,999);
-    AddBagItem(ITEM_MOON_STONE,999);
+    AddBagItem(ITEM_RARE_CANDY,990);
+    AddBagItem(ITEM_RARE_CANDY,990);
+    AddBagItem(ITEM_RARE_CANDY,990);
+    AddBagItem(ITEM_WATER_STONE,900);
+    AddBagItem(ITEM_THUNDER_STONE,900);
+    AddBagItem(ITEM_FIRE_STONE,900);
+    AddBagItem(ITEM_LEAF_STONE,900);
+    AddBagItem(ITEM_MOON_STONE,900);
+    AddBagItem(ITEM_ABILITY_CAPSULE,200);
+    AddBagItem(ITEM_ABILITY_PATCH,200);
+    AddBagItem(ITEM_POKEMON_BOX,1);
+    for (int i = ITEM_CHERI_BERRY; i <= ITEM_MARANGA_BERRY; i++){
+        AddBagItem(i,900);
+    }
+
+    /*
+    ScriptGiveMon(SPECIES_BEEBRUTE,10,ITEM_FIRE_STONE);
+    ScriptGiveMon(SPECIES_BEEBRUTE,10,ITEM_FIRE_STONE);
+    ScriptGiveMon(SPECIES_BEEBRUTE,10,ITEM_FIRE_STONE);
+    ScriptGiveMon(SPECIES_BEEBRUTE,10,ITEM_FIRE_STONE);
+    ScriptGiveMon(SPECIES_BEEBRUTE,10,ITEM_FIRE_STONE);
+    */
 }
 
 static void ResetMiniGamesRecords(void)
