@@ -232,6 +232,12 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+    AddBagItem(ITEM_RARE_CANDY,999);
+    AddBagItem(ITEM_WATER_STONE,999);
+    AddBagItem(ITEM_THUNDER_STONE,999);
+    AddBagItem(ITEM_FIRE_STONE,999);
+    AddBagItem(ITEM_LEAF_STONE,999);
+    AddBagItem(ITEM_MOON_STONE,999);
 }
 
 static void ResetMiniGamesRecords(void)

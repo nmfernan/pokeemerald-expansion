@@ -64,17 +64,23 @@ if OnlyNewSpecies != 1:
         for species in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
             CurrentSpecies = species[0].value
             CurrentSpeciesCptl = CurrentSpecies.capitalize()
+            if CurrentSpecies == "PORYGONZ": #issues with dumb declare in emeraldexpansion
+                CurrentSpecies = "PORYGON_Z"
             
             if species[PkmnDataFile.max_column-1].value == 1:#species tuple is 0 indexed; maxcol is 1 indexed
                 CurrentFamily = species[0].value
                 
                 if CurrentFamily == "NIDORAN_F":
-                    strip = CurrentFamily.rfind("_")
-                    file.write(f"\n#if P_FAMILY_{CurrentFamily[:strip]}\n")
+                    file.write(f"\n#if P_FAMILY_NIDORAN\n") #per emerald expansion declares
+                elif CurrentFamily == "KANGAKID":
+                    file.write(f"\n#if P_FAMILY_KANGASKHAN\n")    #base form is kanga per emerald expansioon declares
+                elif CurrentFamily == "HITMONLEE":
+                    file.write(f"\n#if P_FAMILY_HITMONS\n") #dumb decalre thing in emerald expansion    
                 else:
                     file.write(f"\n#if P_FAMILY_{CurrentFamily}\n")
                 
                 if Debug: print(f"New Species Found!: {CurrentFamily}")    
+            
             file.write(f"\t[SPECIES_{CurrentSpecies}] =\n")
             file.write("\t{\n")
             
@@ -82,14 +88,27 @@ if OnlyNewSpecies != 1:
             for data in species:
                 Attribute = PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value
                 
+                #skip certain datasets/types. >25 stops at .bodyColor (perfect for debugging)
+                #if data.column > 25:
+                #    continue
+                
                 if Attribute == ".types":
                     types = data.value.split(',')
                     type1 = types[0]
                     type2 = types[1]
                     if type1 == type2: #Check for mono typing
-                        file.write(f"\t\t.types = MON_TYPES(TYPE_{type1}),\n")
+                        file.write(f"\t\t{Attribute} = MON_TYPES(TYPE_{type1}),\n")
                     else:
-                        file.write(f"\t\t.types = MON_TYPES(TYPE_{type1}, TYPE_{type2}),\n")    
+                        file.write(f"\t\t{Attribute} = MON_TYPES(TYPE_{type1}, TYPE_{type2}),\n")    
+                
+                elif Attribute == ".frontAnimFrames":
+                    continue
+                
+                elif Attribute == ".itemCommon" and data.value != None:
+                    file.write(f"\t\t{Attribute} = ITEM_{data.value},\n")
+
+                elif Attribute == ".itemRare" and data.value != None:
+                    file.write(f"\t\t{Attribute} = ITEM_{data.value},\n")
                 
                 elif Attribute == ".eggGroups":
                     types = data.value.split(',')
@@ -111,7 +130,8 @@ if OnlyNewSpecies != 1:
                     file.write(f"\t\t.bodyColor = BODY_COLOR_{data.value},\n")
                 
                 elif Attribute == ".natDexNum":
-                    file.write(f"\t\t.natDexNumber = NATIONAL_DEX_{CurrentSpecies}\n")
+                    #file.write(f"\t\t.natDexNumber = NATIONAL_DEX_{CurrentSpecies}\n")
+                    continue
                 
                 elif Attribute == ".speciesName":
                     file.write(f"\t\t{Attribute} = _(\"{CurrentSpeciesCptl}\"),\n")
@@ -121,35 +141,44 @@ if OnlyNewSpecies != 1:
                     file.write(f"\t\t{Attribute} = _(\"{Category}\"),\n")
                 
                 elif Attribute == ".description":
-                    file.write(f"\t\t{Attribute} = COMPOUD_STRING(\"{data.value}\"),\n")
+                    #file.write(f"\t\t{Attribute} = COMPOUD_STRING(\n\t\t\t\t\"{data.value}\"),\n")
+                    continue
                 
                 elif Attribute == ".frontPic":
-                    file.write(f"\t\t{Attribute} = gMonFrontPic_{CurrentSpeciesCptl},\n")
-                
+                    #file.write(f"\t\t{Attribute} = gMonFrontPic_{CurrentSpeciesCptl},\n")
+                    continue
                 elif Attribute == ".frontPicSize":
-                    file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
+                    #file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
+                    continue
                 
                 elif Attribute == ".backPic":
-                    file.write(f"\t\t{Attribute} = gMonBackPic_{CurrentSpeciesCptl},\n")
+#                    file.write(f"\t\t{Attribute} = gMonBackPic_{CurrentSpeciesCptl},\n")
+                    continue
                 
                 elif Attribute == ".backPicSize":
-                    file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
+#                    file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
+                    continue
                 
                 elif Attribute == ".palette":
-                    file.write(f"\t\t{Attribute} = gMonPalette_{CurrentSpeciesCptl},\n")
+#                    file.write(f"\t\t{Attribute} = gMonPalette_{CurrentSpeciesCptl},\n")
+                    continue
                 
                 elif Attribute == ".shinyPalette":
-                    file.write(f"\t\t{Attribute} = gMonShinyPalette_{CurrentSpeciesCptl},\n")
+#                    file.write(f"\t\t{Attribute} = gMonShinyPalette_{CurrentSpeciesCptl},\n")
+                    continue
                 
                 elif Attribute == "FOOTPRINT":
-                    file.write(f"\t\t{Attribute}({CurrentSpeciesCptl})\n")    
+#                    file.write(f"\t\t{Attribute}({CurrentSpeciesCptl})\n")    
+                    continue
 
                 elif Attribute == ".iconSprite":
-                    file.write(f"\t\t{Attribute} = gMonIcon_{CurrentSpeciesCptl},\n")
+#                    file.write(f"\t\t{Attribute} = gMonIcon_{CurrentSpeciesCptl},\n")
+                    continue
                 
                 elif Attribute == ".levelUpLearnset":
                     #file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}LevelUpLearnset,\n")
                     continue
+                
                 elif Attribute == ".teachableLearnset":
                     #file.write("\t\t{Attribute} = s" + CurrentSpeciesCptl  + "TeachableLearnset,\n")
                     continue
@@ -162,9 +191,11 @@ if OnlyNewSpecies != 1:
                 elif Attribute == ".evolutions" and data.value != None:
                     if data.value.find("STONE") > 0:
                         file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_ITEM, {data.value}, SPECIES_{PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value}}}),\n")
+                    elif CurrentSpecies == "PORYGON2": #brute force the porygon-z interaction for now
+                        file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_LEVEL, {data.value}, SPECIES_PORYGON_Z}}),\n")    
                     elif CurrentSpecies == "BEEBRUTE": #brute force the beebrute interaction for now
-                        file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_LEVEL, {data.value}, SPECIES_SEPISTRIKE}},\n\t\t\t\t{{EVO_LEVEL, {data.value}, SPECIES_DRONARCH, CONDITIONS({{IF_GENDER, MON_MALE}})}}),\n")
-                    elif CurrentSpecies == "EEVEE":
+                        file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_LEVEL, {data.value}, SPECIES_SEPISTRIKE,CONDITIONS({{IF_GENDER, MON_MALE}})}},\n\t\t\t\t{{EVO_LEVEL, {data.value}, SPECIES_DRONARCH, CONDITIONS({{IF_GENDER, MON_MALE}})}}),\n")
+                    elif CurrentSpecies == "EEVEE": #brute force the eevee interactino for now
                         file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON}},{{EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON}},{{EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON}}),\n")
                     else:
                         file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_LEVEL, {data.value}, SPECIES_{PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value}}}),\n")
