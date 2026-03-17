@@ -1,0 +1,11 @@
+src/new_game.c: In function 'NewGameInitData':
+src/new_game.c:241:5: error: 'givemon' undeclared (first use in this function)
+  241 |     givemon 0, 0, SPECIES_EEVEE, 10
+      |     ^~~~~~~
+src/new_game.c:241:5: note: each undeclared identifier is reported only once for each function it appears in
+src/new_game.c:241:12: error: expected ';' before numeric constant
+  241 |     givemon 0, 0, SPECIES_EEVEE, 10
+      |            ^~
+      |            ;
+make: *** [Makefile:481: build/leafgreen/src/new_game.o] Error 1
+make: *** Deleting file 'build/leafgreen/src/new_game.o'
