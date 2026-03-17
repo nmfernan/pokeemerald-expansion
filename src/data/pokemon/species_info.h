@@ -151,7 +151,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
 
     #include "species_info/evo_families.h"
-    #include "species_info/gen_1_families.h"
+    //#include "species_info/gen_1_families.h"
     //#include "species_info/gen_2_families.h"
     //#include "species_info/gen_3_families.h"
     //#include "species_info/gen_4_families.h"
