@@ -1,0 +1,430 @@
+This is the list of all map groups (or IDs, or indexes, or whatever you want to call them) on Pokémon FireRed and LeafGreen. This list is designed to be used for the "teleport anywhere" code for FireRed/LeafGreen ACE, which you can find here: https://pastebin.com/mcd1pDn9
+Use the find function to search for the name of the map you want to teleport to, names are pretty self explanatory so you should have no problem finding the correct index.
+All unused maps are also listed here.
+Note that while you can use illegal indexes, a warp will only result in a game freeze
+
+Battle Colosseum 2P:                             0x0000
+Trade Center:                                    0x0100
+Record Corner:                                   0x0200
+Battle Colosseum 4P:                             0x0300
+Union Room:                                      0x0400
+Viridian Forest:                                 0x0001
+Mt Moon 1F:                                      0x0101
+Mt Moon B1F:                                     0x0201
+Mt Moon B2F:                                     0x0301
+S.S. Anne Exterior:                              0x0401
+S.S. Anne 1F Corridor:                           0x0501
+S.S. Anne 2F Corridor:                           0x0601
+S.S. Anne 3F Corridor:                           0x0701
+S.S. Anne B1F Corridor:                          0x0801
+S.S. Anne Deck:                                  0x0901
+S.S. Anne Kitchen:                               0x0A01
+S.S. Anne Captain's Office:                      0x0B01
+S.S. Anne 1F Room 1:                             0x0C01
+S.S. Anne 1F Room 2:                             0x0D01
+S.S. Anne 1F Room 3:                             0x0E01
+S.S. Anne 1F Room 4:                             0x0F01
+S.S. Anne 1F Room 5:                             0x1001
+S.S. Anne 1F Room 7:                             0x1101
+S.S. Anne 2F Room 1:                             0x1201
+S.S. Anne 2F Room 2:                             0x1301
+S.S. Anne 2F Room 3:                             0x1401
+S.S. Anne 2F Room 4:                             0x1501
+S.S. Anne 2F Room 5:                             0x1601
+S.S. Anne 2F Room 6:                             0x1701
+S.S. Anne B1F Room 1:                            0x1801
+S.S. Anne B1F Room 2:                            0x1901
+S.S. Anne B1F Room 3:                            0x1A01
+S.S. Anne B1F Room 4:                            0x1B01
+S.S. Anne B1F Room 5:                            0x1C01
+S.S. Anne 1F Room 6:                             0x1D01
+Underground Path North Entrance:                 0x1E01
+Underground Path North-South Tunnel:             0x1F01
+Underground Path South Entrance:                 0x2001
+Underground Path West Entrance:                  0x2101
+Underground Path West-East Tunnel:               0x2201
+Underground Path East Entrance:                  0x2301
+Diglett's Cave North Entrance:                   0x2401
+Diglett's Cave B1F:                              0x2501
+Diglett's Cave South Entrance:                   0x2601
+Victory Road 1F:                                 0x2701
+Victory Road 2F:                                 0x2801
+Victory Road 3F:                                 0x2901
+Rocket Hideout B1F:                              0x2A01
+Rocket Hideout B2F:                              0x2B01
+Rocket Hideout B3F:                              0x2C01
+Rocket Hideout B4F:                              0x2D01
+Rocket Hideout Elevator:                         0x2E01
+Silph Co. 1F:                                    0x2F01
+Silph Co. 2F:                                    0x3001
+Silph Co. 3F:                                    0x3101
+Silph Co. 4F:                                    0x3201
+Silph Co. 5F:                                    0x3301
+Silph Co. 6F:                                    0x3401
+Silph Co. 7F:                                    0x3501
+Silph Co. 8F:                                    0x3601
+Silph Co. 9F:                                    0x3701
+Silph Co. 10F:                                   0x3801
+Silph Co. 11F:                                   0x3901
+Silph Co. Elevator:                              0x3A01
+Pokémon Mansion 1F:                              0x3B01
+Pokémon Mansion 2F:                              0x3C01
+Pokémon Mansion 3F:                              0x3D01
+Pokémon Mansion B1F:                             0x3E01
+Safari Zone Center:                              0x3F01
+Safari Zone East:                                0x4001
+Safari Zone North:                               0x4101
+Safari Zone West:                                0x4201
+Safari Zone Center Rest House:                   0x4301
+Safari Zone East Rest House:                     0x4401
+Safari Zone North Rest House:                    0x4501
+Safari Zone West Rest House:                     0x4601
+Safari Zone Secret House:                        0x4701
+Cerulean Cave 1F:                                0x4801
+Cerulean Cave 2F:                                0x4901
+Cerulean Cave B1F:                               0x4A01
+Pokémon League Lorelei's Room:                   0x4B01
+Pokémon League Bruno's Room:                     0x4C01
+Pokémon League Agatha's Room:                    0x4D01
+Pokémon League Lance's Room:                     0x4E01
+Pokémon League Champion's Room:                  0x4F01
+Pokémon League Hall Of Fame:                     0x5001
+Rock Tunnel 1F:                                  0x5101
+Rock Tunnel B1F:                                 0x5201
+Seafoam Islands 1F:                              0x5301
+Seafoam Islands B1F:                             0x5401
+Seafoam Islands B2F:                             0x5501
+Seafoam Islands B3F:                             0x5601
+Seafoam Islands B4F:                             0x5701
+Pokémon Tower 1F:                                0x5801
+Pokémon Tower 2F:                                0x5901
+Pokémon Tower 3F:                                0x5A01
+Pokémon Tower 4F:                                0x5B01
+Pokémon Tower 5F:                                0x5C01
+Pokémon Tower 6F:                                0x5D01
+Pokémon Tower 7F:                                0x5E01
+Power Plant:                                     0x5F01
+Mt. Ember Ruby Path B4F:                         0x6001
+Mt. Ember Exterior:                              0x6101
+Mt. Ember Summit Path 1F:                        0x6201
+Mt. Ember Summit Path 2F:                        0x6301
+Mt. Ember Summit Path 3F:                        0x6401
+Mt. Ember Summit:                                0x6501
+Mt. Ember Ruby Path B5F:                         0x6601
+Mt. Ember Ruby Path 1F:                          0x6701
+Mt. Ember Ruby Path B1F:                         0x6801
+Mt. Ember Ruby Path B2F:                         0x6901
+Mt. Ember Ruby Path B3F:                         0x6A01
+Mt. Ember Ruby Path B1F Stairs:                  0x6B01
+Mt. Ember Ruby Path B2F Stairs:                  0x6C01
+Three Island Berry Forest:                       0x6D01
+Four Island Icefall Cave Entrance:               0x6E01
+Four Island Icefall Cave 1F:                     0x6F01
+Four Island Icefall Cave B1F:                    0x7001
+Four Island Icefall Cave Back:                   0x7101
+Five Island Rocket Warehouse:                    0x7201
+Six Island Dotted Hole 1F:                       0x7301
+Six Island Dotted Hole B1F:                      0x7401
+Six Island Dotted Hole B2F:                      0x7501
+Six Island Dotted Hole B3F:                      0x7601
+Six Island Dotted Hole B4F:                      0x7701
+Six Island Dotted Hole Sapphire Room:            0x7801
+Six Island Pattern Bush:                         0x7901
+Six Island Altering Cave:                        0x7A01
+Navel Rock Exterior:                             0x0002
+Trainer Tower 1F:                                0x0102
+Trainer Tower 2F:                                0x0202
+Trainer Tower 3F:                                0x0302
+Trainer Tower 4F:                                0x0402
+Trainer Tower 5F:                                0x0502
+Trainer Tower 6F:                                0x0602
+Trainer Tower 7F:                                0x0702
+Trainer Tower 8F:                                0x0802
+Trainer Tower Roof:                              0x0902
+Trainer Tower Lobby:                             0x0A02
+Trainer Tower Elevator:                          0x0B02
+Five Island Lost Cave Entrance:                  0x0C02
+Five Island Lost Cave Room 1:                    0x0D02
+Five Island Lost Cave Room 2:                    0x0E02
+Five Island Lost Cave Room 3:                    0x0F02
+Five Island Lost Cave Room 4:                    0x1002
+Five Island Lost Cave Room 5:                    0x1102
+Five Island Lost Cave Room 6:                    0x1202
+Five Island Lost Cave Room 7:                    0x1302
+Five Island Lost Cave Room 8:                    0x1402
+Five Island Lost Cave Room 9:                    0x1502
+Five Island Lost Cave Room 10:                   0x1602
+Five Island Lost Cave Room 11:                   0x1702
+Five Island Lost Cave Room 12:                   0x1802
+Five Island Lost Cave Room 13:                   0x1902
+Five Island Lost Cave Room 14:                   0x1A02
+Seven Island Tanoby Runis Monean Chamber:        0x1B02
+Seven Island Tanoby Runis Liptoo Chamber:        0x1C02
+Seven Island Tanoby Runis Weepth Chamber:        0x1D02
+Seven Island Tanoby Runis Dilford Chamber:       0x1E02
+Seven Island Tanoby Runis Sufib Chamber:         0x1F02
+Seven Island Tanoby Runis Rixy Chamber:          0x2002
+Seven Island Tanoby Runis Viapois Chamber:       0x2102
+Three Island Dunsparce Tunnel:                   0x2202
+Seven Island Sevault Canyon Tanoby Key:          0x2302
+Navel Rock 1F:                                   0x2402
+Navel Rock Summit:                               0x2502
+Navel Rock Base:                                 0x2602
+Navel Rock Summit Path 2F:                       0x2702
+Navel Rock Summit Path 3F:                       0x2802
+Navel Rock Summit Path 4F:                       0x2902
+Navel Rock Summit Path 5F:                       0x2A02
+Navel Rock Base Path B1F:                        0x2B02
+Navel Rock Base Path B2F:                        0x2C02
+Navel Rock Base Path B3F:                        0x2D02
+Navel Rock Base Path B4F:                        0x2E02
+Navel Rock Base Path B5F:                        0x2F02
+Navel Rock Base Path B6F:                        0x3002
+Navel Rock Base Path B7F:                        0x3102
+Navel Rock Base Path B8F:                        0x3202
+Navel Rock Base Path B9F:                        0x3302
+Navel Rock Base Path B10F:                       0x3402
+Navel Rock Base Path B11F:                       0x3502
+Navel Rock B1F:                                  0x3602
+Navel Rock Fork:                                 0x3702
+Birth Island Exterior:                           0x3802
+One Island Kindle Road Ember Spa:                0x3902
+Birth Island Harbor:                             0x3A02
+Navel Rock Harbor:                               0x3B02
+Pallet Town:                                     0x0003
+Viridian City:                                   0x0103
+Pewter City:                                     0x0203
+Celurean City:                                   0x0303
+Lavender Town:                                   0x0403
+Vermilion City:                                  0x0503
+Celadon City:                                    0x0603
+Fuchsia City:                                    0x0703
+Cinnabar Island:                                 0x0803
+Indigo Plateau Exterior:                         0x0903
+Saffron City:                                    0x0A03
+Saffron City Connection:                         0x0B03
+One Island:                                      0x0C03
+Two Island:                                      0x0D03
+Three Island:                                    0x0E03
+Four Island:                                     0x0F03
+Five Island:                                     0x1003
+Seven Island:                                    0x1103
+Six Island:                                      0x1203
+Route 1:                                         0x1303
+Route 2:                                         0x1403
+Route 3:                                         0x1503
+Route 4:                                         0x1603
+Route 5:                                         0x1703
+Route 6:                                         0x1803
+Route 7:                                         0x1903
+Route 8:                                         0x1A03
+Route 9:                                         0x1B03
+Route 10:                                        0x1C03
+Route 11:                                        0x1D03
+Route 12:                                        0x1E03
+Route 13:                                        0x1F03
+Route 14:                                        0x2003
+Route 15:                                        0x2103
+Route 16:                                        0x2203
+Route 17:                                        0x2303
+Route 18:                                        0x2403
+Route 19:                                        0x2503
+Route 20:                                        0x2603
+Route 21 North:                                  0x2703
+Route 21 South:                                  0x2803
+Route 22:                                        0x2903
+Route 23:                                        0x2A03
+Route 24:                                        0x2B03
+Route 25:                                        0x2C03
+One Island Kindle Road:                          0x2D03
+One Island Treasure Beach:                       0x2E03
+Two Island Cape Brink:                           0x2F03
+Three Island Bond Bridge:                        0x3003
+Three Island Port:                               0x3103
+Prototype Sevii Isle 6:                          0x3203
+Prototype Sevii Isle 7:                          0x3303
+Prototype Sevii Isle 8:                          0x3403
+Prototype Sevii Isle 9:                          0x3503
+Five Island Resort Gorgeous:                     0x3603
+Five Island Water Labyrinth:                     0x3703
+Five Island Meadow:                              0x3803
+Five Island Memorial Pillar:                     0x3903
+Six Island Outcast Island:                       0x3A03
+Six Island Green Path:                           0x3B03
+Six Island Water Path:                           0x3C03
+Six Island Ruin Valley:                          0x3D03
+Seven Island Trainer Tower:                      0x3E03
+Seven Island Sevault Canyon Entrance:            0x3F03
+Seven Island Sevault Canyon:                     0x4003
+Seven Island Tanoby Ruins:                       0x4103
+Pallet Town Player's House 1F:                   0x0004
+Pallet Town Player's House 2F:                   0x0104
+Pallet Town Rival's House:                       0x0204
+Pallet Town Professor Oak's Lab:                 0x0304
+Viridian City House 1:                           0x0005
+Viridian City Gym:                               0x0105
+Viridian City House 2:                           0x0205
+Viridian City Mart:                              0x0305
+Viridian City Pokémon Center 1F:                 0x0405
+Viridian City Pokémon Center 2F:                 0x0505
+Pewter City Museum 1F:                           0x0006
+Pewter City Museum 2F:                           0x0106
+Pewter City Gym:                                 0x0206
+Pewter City Mart:                                0x0306
+Pewter City House 1:                             0x0406
+Pewter City Pokémon Center 1F:                   0x0506
+Pewter City Pokémon Center 2F:                   0x0606
+Pewter City House 2:                             0x0706
+Cerulean City House 1:                           0x0007
+Cerulean City House 2:                           0x0107
+Cerulean City House 3:                           0x0207
+Cerulean City Pokémon Center 1F:                 0x0307
+Cerulean City Pokémon Center 2F:                 0x0407
+Cerulean City Gym:                               0x0507
+Cerulean City Bike Shop:                         0x0607
+Cerulean City Mart:                              0x0707
+Cerulean City House 4:                           0x0807
+Cerulean City House 5:                           0x0907
+Lavender Town Pokémon Center 1F:                 0x0008
+Lavender Town Pokémon Center 2F:                 0x0108
+Lavender Town Volunteer Pokémon House:           0x0208
+Lavender Town House 1:                           0x0308
+Lavender Town House 2:                           0x0408
+Lavender Town Art:                               0x0508
+Vermilion City House 1:                          0x0009
+Vermilion City Pokémon Center 1F:                0x0109
+Vermilion City Pokémon Center 2F:                0x0209
+Vermilion City Pokémon Fan Club:                 0x0309
+Vermilion City House 2:                          0x0409
+Vermilion City Mart:                             0x0509
+Vermilion City Gym:                              0x0609
+Vermilion City House 3:                          0x0709
+Celadon City Department Store 1F:                0x000A
+Celadon City Department Store 2F:                0x010A
+Celadon City Department Store 3F:                0x020A
+Celadon City Department Store 4F:                0x030A
+Celadon City Department Store 5F:                0x040A
+Celadon City Department Store Roof:              0x050A
+Celadon City Department Store Elevator:          0x060A
+Celadon City Condominiums 1F:                    0x070A
+Celadon City Condominiums 2F:                    0x080A
+Celadon City Condominiums 3F:                    0x090A
+Celadon City Condominiums Roof:                  0x0A0A
+Celadon City Condominiums Roof Room:             0x0B0A
+Celadon City Pokémon Center 1F:                  0x0C0A
+Celadon City Pokémon Center 2F:                  0x0D0A
+Celadon City Game Corner:                        0x0E0A
+Celadon City Game Corner Prize Room:             0x0F0A
+Celadon City Gym:                                0x100A
+Celadon City Restaurant:                         0x110A
+Celadon City House 1:                            0x120A
+Celadon City Hotel:                              0x130A
+Fuchsia City Safari Zone Entrance:               0x000B
+Fuchsia City Mart:                               0x010B
+Fuchsia City Safari Zone Office:                 0x020B
+Fuchsia City Gym:                                0x030B
+Fuchsia City House 1:                            0x040B
+Fuchsia City Pokémon Center 1F:                  0x050B
+Fuchsia City Pokémon Center 2F:                  0x060B
+Fuchsia City Wardens House:                      0x070B
+Fuchsia City House 2:                            0x080B
+Fuchsia City House 3:                            0x090B
+Cinnabar Island Gym:                             0x000C
+Cinnabar Island Pokémon Lab Entrance:            0x010C
+Cinnabar Island Pokémon Lab Lounge:              0x020C
+Cinnabar Island Pokémon Lab Research Room:       0x030C
+Cinnabar Island Pokémon Lab Experiment Room:     0x040C
+Cinnabar Island Pokémon Center 1F:               0x050C
+Cinnabar Island Pokémon Center 2F:               0x060C
+Cinnabar Island Mart:                            0x070C
+Indigo Plateau Pokémon Center 1F:                0x000D
+Indigo Plateau Pokémon Center 2F:                0x010D
+Saffron City Copycats House 1F:                  0x000E
+Saffron City Copycats House 2F:                  0x010E
+Saffron City Dojo:                               0x020E
+Saffron City Gym:                                0x030E
+Saffron City House:                              0x040E
+Saffron City Mart:                               0x050E
+Saffron City Pokémon Center 1F:                  0x060E
+Saffron City Pokémon Center 2F:                  0x070E
+Saffron City Mr. Psychics House:                 0x080E
+Saffron City Pokémon Trainer Fan Club:           0x090E
+Rouse 2 Viridian Forest South Entrance:          0x000F
+Rouse 2 House:                                   0x010F
+Rouse 2 East Building:                           0x020F
+Rouse 2 Viridian Forest North Entrance:          0x030F
+Route 4 Pokémon Center 1F:                       0x0010
+Route 4 Pokémon Center 2F:                       0x0110
+Route 5 Pokémon Day Care:                        0x0011
+Route 5 South Entrance:                          0x0111
+Route 6 North Entrance:                          0x0012
+Route 6 Unused House:                            0x0112
+Route 7 East Entrance:                           0x0013
+Route 8 West Entrance:                           0x0014
+Route 10 Pokémon Center 1F:                      0x0015
+Route 10 Pokémon Center 2F:                      0x0115
+Route 11 East Entrance 1F:                       0x0016
+Route 11 East Entrance 2F:                       0x0116
+Route 12 North Entrance 1F:                      0x0017
+Route 12 North Entrance 2F:                      0x0117
+Route 12 Fishing House:                          0x0217
+Route 15 West Entrance 1F:                       0x0018
+Route 15 West Entrance 2F:                       0x0118
+Route 16 House:                                  0x0019
+Route 16 North Entrance 1F:                      0x0119
+Route 16 North Entrance 2F:                      0x0219
+Route 18 East Entrance 1F:                       0x001A
+Route 18 East Entrance 2F:                       0x011A
+Route 19 Unused House:                           0x001B
+Route 22 North Entrance:                         0x001C
+Route 23 Unused House:                           0x001D
+Route 25 Sea Cottage:                            0x001E
+Seven Island House Room 1:                       0x001F
+Seven Island House Room 2:                       0x011F
+Seven Island Mart:                               0x021F
+Seven Island Pokémon Center 1F:                  0x031F
+Seven Island Pokémon Center 2F:                  0x041F
+Seven Island Unused House:                       0x051F
+Seven Island Harbor:                             0x061F
+One Island Pokémon Center 1F:                    0x0020
+One Island Pokémon Center 2F:                    0x0120
+One Island House 1:                              0x0220
+One Island House 1:                              0x0320
+One Island Harbor:                               0x0420
+Two Island Joyful Game Corner:                   0x0021
+Two Island House:                                0x0121
+Two Island Pokémon Center 1F:                    0x0221
+Two Island Pokémon Center 2F:                    0x0321
+Two Island Harbor:                               0x0421
+Three Islands House 1:                           0x0022
+Three Islands Pokémon Center 1F:                 0x0122
+Three Islands Pokémon Center 1F:                 0x0222
+Three Islands Mart:                              0x0322
+Three Islands House 2:                           0x0422
+Three Islands House 3:                           0x0522
+Three Islands House 4:                           0x0622
+Three Islands House 5:                           0x0722
+Four Island Pokémon Day Care:                    0x0023
+Four Island Pokémon Center 1F:                   0x0123
+Four Island Pokémon Center 1F:                   0x0223
+Four Island House 1:                             0x0323
+Four Island Loreleis House:                      0x0423
+Four Island Harbor:                              0x0523
+Four Island House 2:                             0x0623
+Four Island Mart:                                0x0723
+Five Island Pokémon Center 1F:                   0x0024
+Five Island Pokémon Center 2F:                   0x0124
+Five Island Harbor:                              0x0224
+Five Island House 1:                             0x0324
+Five Island House 2:                             0x0424
+Six Island Pokémon Center 1F:                    0x0025
+Six Island Pokémon Center 2F:                    0x0125
+Six Island Harbor:                               0x0225
+Six Island House:                                0x0325
+Six Island Mart:                                 0x0425
+Three Islands Harbor:                            0x0026
+Five Island Resort Gorgeous House:               0x0027
+Two Island Cape Brink House:                     0x0028
+Six Island Water Path House 1:                   0x0029
+Six Island Water Path House 2:                   0x0129
+Seven Island Sevault Canyon House:               0x002A
