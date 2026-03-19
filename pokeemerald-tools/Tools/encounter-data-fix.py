@@ -14,8 +14,8 @@ FileName = "encounter-data-fix.xlsx"
 GenName = "PkmnEvolved"
 
 PkmnData = load_workbook('encounter-data-evolved.xlsx')
-#SheetName = "encounter-data-low-level-parse"
-SheetName = "next-data"
+SheetName = "encounter-data-low-level-parse"
+#SheetName = "next-data"
 
 
 if SheetName in PkmnData.sheetnames:
