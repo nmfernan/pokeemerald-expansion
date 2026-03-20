@@ -54,7 +54,9 @@ with open("gen_EVO.h", WriteOrAdd) as file:
                 file.write(f"static const struct LevelUpMove s{CurrentSpeciesCptl}LevelUpLearnset[] = {{\n")
             else:
                 file.write(f"static const struct LevelUpMove s{CurrentSpeciesCptl}LevelUpLearnset[] = {{\n")
-        
+            
+            file.write(f"\tLEVEL_UP_MOVE{row[1].value},\n")
+            
         elif row[PkmnDataFile.min_column-1].value == None and row[PkmnDataFile.min_column].value == None:
             file.write("\tLEVEL_UP_END\n};\n\n")
             if PkmnDataFile.cell(row[0].row + 1, 3).value == 1:
@@ -64,6 +66,6 @@ with open("gen_EVO.h", WriteOrAdd) as file:
             file.write(f"\tLEVEL_UP_MOVE{row[1].value},\n")
             file.write("\tLEVEL_UP_END\n};\n")
             file.write("#endif\n\n")
-
+            
         else:
             file.write(f"\tLEVEL_UP_MOVE{row[1].value},\n")
