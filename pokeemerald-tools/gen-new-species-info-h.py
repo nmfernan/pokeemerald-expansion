@@ -130,7 +130,7 @@ if OnlyNewSpecies != 1:
                     file.write(f"\t\t.bodyColor = BODY_COLOR_{data.value},\n")
                 
                 elif Attribute == ".natDexNum":
-                    #file.write(f"\t\t.natDexNumber = NATIONAL_DEX_{CurrentSpecies}\n")
+                    file.write(f"\t\t.natDexNum = NATIONAL_DEX_{CurrentSpecies},\n")
                     continue
                 
                 elif Attribute == ".speciesName":
@@ -141,7 +141,7 @@ if OnlyNewSpecies != 1:
                     file.write(f"\t\t{Attribute} = _(\"{Category}\"),\n")
                 
                 elif Attribute == ".description":
-                    #file.write(f"\t\t{Attribute} = COMPOUD_STRING(\n\t\t\t\t\"{data.value}\"),\n")
+                    file.write(f"\t\t{Attribute} = COMPOUND_STRING(\"{data.value}\"),\n")
                     continue
                 
                 elif Attribute == ".frontPic":

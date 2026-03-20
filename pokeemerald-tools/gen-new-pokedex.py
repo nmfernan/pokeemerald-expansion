@@ -17,7 +17,8 @@ Region = "KANTO"
 National = "NATIONAL"
 #SpeciesIndex = 1573 #based on mega_glimmora being 1572
 SpeciesIndex = 0 #based on making new species.h
-IncludeConstantsSpecies = 1
+IncludeConstantsSpecies = 0
+DexUpdate = 1
 
 #Print high level information about datafile being accessed
 if Debug:
@@ -27,6 +28,21 @@ if Debug:
     print(f"Last column of species-data  ")
     print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
     print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")
+
+if DexUpdate:
+    with open("dex-update.h", WriteOrAdd) as file:
+        for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+        #for row in PkmnDataFile.iter_rows(min_row=2, max_row=20, min_col=1, max_col=PkmnDataFile.max_column):
+            if PkmnDataFile.cell(row[0].row, PkmnDataFile.max_column - 1).value == 1:
+                file.write(f"\tNATIONAL_DEX_{row[0].value},\n")
+    
+        for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+        #for row in PkmnDataFile.iter_rows(min_row=2, max_row=20, min_col=1, max_col=PkmnDataFile.max_column):
+            file.write(f"\tKANTO_DEX_{row[0].value},\n")    
+
+        for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
+        #for row in PkmnDataFile.iter_rows(min_row=2, max_row=20, min_col=1, max_col=PkmnDataFile.max_column):
+            file.write(f"\tKANTO_TO_NATIONAL({row[0].value}),\n")
 
 if Debug:
     with open("species.h", WriteOrAdd) as file:
