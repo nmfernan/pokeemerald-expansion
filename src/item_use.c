@@ -48,6 +48,10 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 
+//Should allow for PokeVial item to call HealPlayerParty() from debug.c
+//#include "debug.h"
+static void ItemUseCB_PokeVial(u8);
+
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
 static void Task_CallItemUseOnFieldCallback(u8);
@@ -784,6 +788,29 @@ void ItemUseOutOfBattle_PowderJar(u8 taskId)
         DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
     }
 }
+
+extern u8 PokeVialHealScript[];
+
+void ItemUseOutOfBattle_PokeVial(u8 taskId){
+    if (!gTasks[taskId].tUsingRegisteredKeyItem){
+        sItemUseOnFieldCB = ItemUseCB_PokeVial;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else{
+        sItemUseOnFieldCB = ItemUseCB_PokeVial;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+}
+
+void ItemUseCB_PokeVial(u8 taskId){
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(PokeVialHealScript);
+    DestroyTask(taskId);
+}
+
+
 
 void ItemUseOutOfBattle_Berry(u8 taskId)
 {
