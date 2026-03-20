@@ -45,6 +45,7 @@ def enabled() -> bool:
     with open("./include/config/pokemon.h", "r") as cfg_pokemon_fp:
         cfg_pokemon = cfg_pokemon_fp.read()
         cfg_defined = CONFIG_ENABLED_PAT.search(cfg_pokemon)
+        print(cfg_defined)
         return cfg_defined is not None and cfg_defined.group("cfg_val") in ("TRUE", "1")
 
 def extract_repo_tms() -> typing.Generator[str, None, None]:
@@ -185,7 +186,10 @@ def make_move_tutors(build_dir, special_movesets):
 
 def main():
     if not enabled():
+        print("disabled")
         quit()
+    else:
+        print("enabled")
 
     tutor_mode = False
     if len(sys.argv) < 2 or len(sys.argv) > 3:

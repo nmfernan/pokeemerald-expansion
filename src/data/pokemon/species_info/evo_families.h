@@ -43,6 +43,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBulbasaurLevelUpLearnset,
+		.teachableLearnset = sBulbasaurTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_IVYSAUR}),
 		},
 
@@ -84,6 +85,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sIvysaurLevelUpLearnset,
+		.teachableLearnset = sIvysaurTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_VENUSAUR}),
 		},
 
@@ -125,6 +127,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVenusaurLevelUpLearnset,
+		.teachableLearnset = sVenusaurTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_ECOSAUR}),
 		},
 
@@ -164,6 +167,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sEcosaurLevelUpLearnset,
+		.teachableLearnset = sEcosaurTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_TERARISAUR}),
 		},
 
@@ -203,6 +207,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTerarisaurLevelUpLearnset,
+		.teachableLearnset = sTerarisaurTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_SYMBISAUR}),
 		},
 
@@ -242,6 +247,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSymbisaurLevelUpLearnset,
+		.teachableLearnset = sSymbisaurTeachableLearnset,
 		},
 
 #endif//P_FAMILY_BULBASAUR
@@ -284,6 +290,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCharmanderLevelUpLearnset,
+		.teachableLearnset = sCharmanderTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CHARMELEON}),
 		},
 
@@ -325,6 +332,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCharmeleonLevelUpLearnset,
+		.teachableLearnset = sCharmeleonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CHARIZARD}),
 		},
 
@@ -364,6 +372,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCharizardLevelUpLearnset,
+		.teachableLearnset = sCharizardTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_CHARIGUANA}),
 		},
 
@@ -402,6 +411,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sChariguanaLevelUpLearnset,
+		.teachableLearnset = sChariguanaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_CHARIANA}),
 		},
 
@@ -440,6 +450,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCharianaLevelUpLearnset,
+		.teachableLearnset = sCharianaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_CHARIATHAN}),
 		},
 
@@ -478,6 +489,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sChariathanLevelUpLearnset,
+		.teachableLearnset = sChariathanTeachableLearnset,
 		},
 
 #endif//P_FAMILY_CHARMANDER
@@ -520,6 +532,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSquirtleLevelUpLearnset,
+		.teachableLearnset = sSquirtleTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_WARTORTLE}),
 		},
 
@@ -561,6 +574,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sWartortleLevelUpLearnset,
+		.teachableLearnset = sWartortleTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BLASTOISE}),
 		},
 
@@ -601,6 +615,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBlastoiseLevelUpLearnset,
+		.teachableLearnset = sBlastoiseTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_FERRAPIN}),
 		},
 
@@ -641,6 +656,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFerrapinLevelUpLearnset,
+		.teachableLearnset = sFerrapinTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_FORTOISE}),
 		},
 
@@ -680,6 +696,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFortoiseLevelUpLearnset,
+		.teachableLearnset = sFortoiseTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_TURTILLERY}),
 		},
 
@@ -720,6 +737,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTurtilleryLevelUpLearnset,
+		.teachableLearnset = sTurtilleryTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SQUIRTLE
@@ -762,6 +780,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCaterpieLevelUpLearnset,
+		.teachableLearnset = sCaterpieTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_METAPOD}),
 		},
 
@@ -802,6 +821,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMetapodLevelUpLearnset,
+		.teachableLearnset = sMetapodTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BUTTERFREE}),
 		},
 
@@ -845,6 +865,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sButterfreeLevelUpLearnset,
+		.teachableLearnset = sButterfreeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_BUTTEFLARE}),
 		},
 
@@ -887,6 +908,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sButteflareLevelUpLearnset,
+		.teachableLearnset = sButteflareTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_PYREFREE}),
 		},
 
@@ -928,6 +950,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPyrefreeLevelUpLearnset,
+		.teachableLearnset = sPyrefreeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_IMPSECT}),
 		},
 
@@ -969,6 +992,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sImpsectLevelUpLearnset,
+		.teachableLearnset = sImpsectTeachableLearnset,
 		},
 
 #endif//P_FAMILY_CATERPIE
@@ -1011,6 +1035,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sWeedleLevelUpLearnset,
+		.teachableLearnset = sWeedleTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_KAKUNA}),
 		},
 
@@ -1051,6 +1076,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKakunaLevelUpLearnset,
+		.teachableLearnset = sKakunaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEEDRILL}),
 		},
 
@@ -1094,6 +1120,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBeedrillLevelUpLearnset,
+		.teachableLearnset = sBeedrillTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BEEBRUTE}),
 		},
 
@@ -1137,6 +1164,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBeebruteLevelUpLearnset,
+		.teachableLearnset = sBeebruteTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SEPISTRIKE,CONDITIONS({IF_GENDER, MON_MALE})},
 				{EVO_LEVEL, 36, SPECIES_DRONARCH, CONDITIONS({IF_GENDER, MON_MALE})}),
 		},
@@ -1179,6 +1207,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDronarchLevelUpLearnset,
+		.teachableLearnset = sDronarchTeachableLearnset,
 		},
 
 	[SPECIES_SEPISTRIKE] =
@@ -1220,6 +1249,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSepistrikeLevelUpLearnset,
+		.teachableLearnset = sSepistrikeTeachableLearnset,
 		},
 
 #endif//P_FAMILY_WEEDLE
@@ -1262,6 +1292,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPidgeyLevelUpLearnset,
+		.teachableLearnset = sPidgeyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_PIDGEOTTO}),
 		},
 
@@ -1302,6 +1333,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPidgeottoLevelUpLearnset,
+		.teachableLearnset = sPidgeottoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PIDGEOT}),
 		},
 
@@ -1343,6 +1375,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPidgeotLevelUpLearnset,
+		.teachableLearnset = sPidgeotTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PIDGAERO}),
 		},
 
@@ -1381,6 +1414,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPidgaeroLevelUpLearnset,
+		.teachableLearnset = sPidgaeroTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_PIDGEOZONE}),
 		},
 
@@ -1419,6 +1453,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPidgeozoneLevelUpLearnset,
+		.teachableLearnset = sPidgeozoneTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_PIDGEPHYR}),
 		},
 
@@ -1458,6 +1493,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPidgephyrLevelUpLearnset,
+		.teachableLearnset = sPidgephyrTeachableLearnset,
 		},
 
 #endif//P_FAMILY_PIDGEY
@@ -1500,6 +1536,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRattataLevelUpLearnset,
+		.teachableLearnset = sRattataTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_RATICATE}),
 		},
 
@@ -1542,6 +1579,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRaticateLevelUpLearnset,
+		.teachableLearnset = sRaticateTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_RATTCHET}),
 		},
 
@@ -1584,6 +1622,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRattchetLevelUpLearnset,
+		.teachableLearnset = sRattchetTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RATTARULE}),
 		},
 
@@ -1626,6 +1665,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRattaruleLevelUpLearnset,
+		.teachableLearnset = sRattaruleTeachableLearnset,
 		},
 
 #endif//P_FAMILY_RATTATA
@@ -1668,6 +1708,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSpearowLevelUpLearnset,
+		.teachableLearnset = sSpearowTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_FEAROW}),
 		},
 
@@ -1709,6 +1750,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFearowLevelUpLearnset,
+		.teachableLearnset = sFearowTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SNEEROW}),
 		},
 
@@ -1749,6 +1791,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSneerowLevelUpLearnset,
+		.teachableLearnset = sSneerowTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_ORNITHOW}),
 		},
 
@@ -1789,6 +1832,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOrnithowLevelUpLearnset,
+		.teachableLearnset = sOrnithowTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SPEAROW
@@ -1831,6 +1875,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sEkansLevelUpLearnset,
+		.teachableLearnset = sEkansTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_ARBOK}),
 		},
 
@@ -1871,6 +1916,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sArbokLevelUpLearnset,
+		.teachableLearnset = sArbokTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_NOHTYP}),
 		},
 
@@ -1911,6 +1957,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNohtypLevelUpLearnset,
+		.teachableLearnset = sNohtypTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_ADNOKANA}),
 		},
 
@@ -1951,6 +1998,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAdnokanaLevelUpLearnset,
+		.teachableLearnset = sAdnokanaTeachableLearnset,
 		},
 
 #endif//P_FAMILY_EKANS
@@ -1993,6 +2041,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPikachuLevelUpLearnset,
+		.teachableLearnset = sPikachuTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU}),
 		},
 
@@ -2032,6 +2081,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRaichuLevelUpLearnset,
+		.teachableLearnset = sRaichuTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GOROCHU}),
 		},
 
@@ -2072,6 +2122,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGorochuLevelUpLearnset,
+		.teachableLearnset = sGorochuTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_STROMACHU}),
 		},
 
@@ -2111,6 +2162,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sStromachuLevelUpLearnset,
+		.teachableLearnset = sStromachuTeachableLearnset,
 		},
 
 #endif//P_FAMILY_PIKACHU
@@ -2153,6 +2205,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSandshrewLevelUpLearnset,
+		.teachableLearnset = sSandshrewTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH}),
 		},
 
@@ -2194,6 +2247,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSandslashLevelUpLearnset,
+		.teachableLearnset = sSandslashTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_SANDSLAM}),
 		},
 
@@ -2235,6 +2289,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSandslamLevelUpLearnset,
+		.teachableLearnset = sSandslamTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_FERODILLO}),
 		},
 
@@ -2276,6 +2331,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFerodilloLevelUpLearnset,
+		.teachableLearnset = sFerodilloTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SANDSHREW
@@ -2318,6 +2374,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidoran_fLevelUpLearnset,
+		.teachableLearnset = sNidoran_fTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NIDORINA}),
 		},
 
@@ -2358,6 +2415,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidorinaLevelUpLearnset,
+		.teachableLearnset = sNidorinaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOQUEEN}),
 		},
 
@@ -2398,6 +2456,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidoqueenLevelUpLearnset,
+		.teachableLearnset = sNidoqueenTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_NIDOREGAL}),
 		},
 
@@ -2438,6 +2497,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidoregalLevelUpLearnset,
+		.teachableLearnset = sNidoregalTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_NIDOARCHY}),
 		},
 
@@ -2478,6 +2538,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidoarchyLevelUpLearnset,
+		.teachableLearnset = sNidoarchyTeachableLearnset,
 		},
 
 	[SPECIES_NIDORAN_M] =
@@ -2517,6 +2578,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidoran_mLevelUpLearnset,
+		.teachableLearnset = sNidoran_mTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NIDORINO}),
 		},
 
@@ -2557,6 +2619,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidorinoLevelUpLearnset,
+		.teachableLearnset = sNidorinoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOKING}),
 		},
 
@@ -2597,6 +2660,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidokingLevelUpLearnset,
+		.teachableLearnset = sNidokingTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_NIDORULY}),
 		},
 
@@ -2636,6 +2700,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidorulyLevelUpLearnset,
+		.teachableLearnset = sNidorulyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_NIDOMINATE}),
 		},
 
@@ -2676,6 +2741,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNidominateLevelUpLearnset,
+		.teachableLearnset = sNidominateTeachableLearnset,
 		},
 
 #endif//P_FAMILY_NIDORAN_F
@@ -2719,6 +2785,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sClefairyLevelUpLearnset,
+		.teachableLearnset = sClefairyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_CLEFABLE}),
 		},
 
@@ -2760,6 +2827,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sClefableLevelUpLearnset,
+		.teachableLearnset = sClefableTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CLEFAEFAE}),
 		},
 
@@ -2801,6 +2869,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sClefaefaeLevelUpLearnset,
+		.teachableLearnset = sClefaefaeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_CLEFANAUT}),
 		},
 
@@ -2842,6 +2911,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sClefanautLevelUpLearnset,
+		.teachableLearnset = sClefanautTeachableLearnset,
 		},
 
 #endif//P_FAMILY_CLEFAIRY
@@ -2885,6 +2955,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVulpixLevelUpLearnset,
+		.teachableLearnset = sVulpixTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES}),
 		},
 
@@ -2927,6 +2998,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNinetalesLevelUpLearnset,
+		.teachableLearnset = sNinetalesTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SPIRITALES}),
 		},
 
@@ -2969,6 +3041,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSpiritalesLevelUpLearnset,
+		.teachableLearnset = sSpiritalesTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_YOKAYUBI}),
 		},
 
@@ -3011,6 +3084,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sYokayubiLevelUpLearnset,
+		.teachableLearnset = sYokayubiTeachableLearnset,
 		},
 
 #endif//P_FAMILY_VULPIX
@@ -3054,6 +3128,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sJigglypuffLevelUpLearnset,
+		.teachableLearnset = sJigglypuffTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}),
 		},
 
@@ -3095,6 +3170,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sWigglytuffLevelUpLearnset,
+		.teachableLearnset = sWigglytuffTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GIGGLYHUFF}),
 		},
 
@@ -3136,6 +3212,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGigglyhuffLevelUpLearnset,
+		.teachableLearnset = sGigglyhuffTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_BOGGLYFUFF}),
 		},
 
@@ -3176,6 +3253,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBogglyfuffLevelUpLearnset,
+		.teachableLearnset = sBogglyfuffTeachableLearnset,
 		},
 
 #endif//P_FAMILY_JIGGLYPUFF
@@ -3219,6 +3297,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sZubatLevelUpLearnset,
+		.teachableLearnset = sZubatTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_GOLBAT}),
 		},
 
@@ -3259,6 +3338,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGolbatLevelUpLearnset,
+		.teachableLearnset = sGolbatTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CROBAT}),
 		},
 
@@ -3299,6 +3379,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCrobatLevelUpLearnset,
+		.teachableLearnset = sCrobatTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_POLABAT}),
 		},
 
@@ -3338,6 +3419,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPolabatLevelUpLearnset,
+		.teachableLearnset = sPolabatTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_VISIBAT}),
 		},
 
@@ -3378,6 +3460,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVisibatLevelUpLearnset,
+		.teachableLearnset = sVisibatTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_HORRIBAT}),
 		},
 
@@ -3417,6 +3500,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHorribatLevelUpLearnset,
+		.teachableLearnset = sHorribatTeachableLearnset,
 		},
 
 #endif//P_FAMILY_ZUBAT
@@ -3459,6 +3543,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOddishLevelUpLearnset,
+		.teachableLearnset = sOddishTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_GLOOM}),
 		},
 
@@ -3499,6 +3584,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGloomLevelUpLearnset,
+		.teachableLearnset = sGloomTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VILEPLUME}),
 		},
 
@@ -3539,6 +3625,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVileplumeLevelUpLearnset,
+		.teachableLearnset = sVileplumeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAFFLURK}),
 		},
 
@@ -3577,6 +3664,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRafflurkLevelUpLearnset,
+		.teachableLearnset = sRafflurkTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_CONCORPSIA}),
 		},
 
@@ -3615,6 +3703,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sConcorpsiaLevelUpLearnset,
+		.teachableLearnset = sConcorpsiaTeachableLearnset,
 		},
 
 #endif//P_FAMILY_ODDISH
@@ -3659,6 +3748,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 20,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sParasLevelUpLearnset,
+		.teachableLearnset = sParasTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PARASECT}),
 		},
 
@@ -3702,6 +3792,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sParasectLevelUpLearnset,
+		.teachableLearnset = sParasectTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SECTASITE}),
 		},
 
@@ -3745,6 +3836,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSectasiteLevelUpLearnset,
+		.teachableLearnset = sSectasiteTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_FUNGALITH}),
 		},
 
@@ -3786,6 +3878,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFungalithLevelUpLearnset,
+		.teachableLearnset = sFungalithTeachableLearnset,
 		},
 
 #endif//P_FAMILY_PARAS
@@ -3828,6 +3921,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVenonatLevelUpLearnset,
+		.teachableLearnset = sVenonatTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_VENOMOTH}),
 		},
 
@@ -3871,6 +3965,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVenomothLevelUpLearnset,
+		.teachableLearnset = sVenomothTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_VENOMENA}),
 		},
 
@@ -3912,6 +4007,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVenomenaLevelUpLearnset,
+		.teachableLearnset = sVenomenaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_VENOMENON}),
 		},
 
@@ -3954,6 +4050,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVenomenonLevelUpLearnset,
+		.teachableLearnset = sVenomenonTeachableLearnset,
 		},
 
 #endif//P_FAMILY_VENONAT
@@ -3996,6 +4093,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 16,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDiglettLevelUpLearnset,
+		.teachableLearnset = sDiglettTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO}),
 		},
 
@@ -4036,6 +4134,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDugtrioLevelUpLearnset,
+		.teachableLearnset = sDugtrioTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_DUGROUPLE}),
 		},
 
@@ -4074,6 +4173,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDugroupleLevelUpLearnset,
+		.teachableLearnset = sDugroupleTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_UNEARTHLET}),
 		},
 
@@ -4113,6 +4213,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sUnearthletLevelUpLearnset,
+		.teachableLearnset = sUnearthletTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_DIGLENOID}),
 		},
 
@@ -4151,6 +4252,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDiglenoidLevelUpLearnset,
+		.teachableLearnset = sDiglenoidTeachableLearnset,
 		},
 
 #endif//P_FAMILY_DIGLETT
@@ -4194,6 +4296,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMeowthLevelUpLearnset,
+		.teachableLearnset = sMeowthTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERSIAN}),
 		},
 
@@ -4234,6 +4337,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPersianLevelUpLearnset,
+		.teachableLearnset = sPersianTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_FELANKH}),
 		},
 
@@ -4274,6 +4378,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFelankhLevelUpLearnset,
+		.teachableLearnset = sFelankhTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_PATRAPHINX}),
 		},
 
@@ -4313,6 +4418,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPatraphinxLevelUpLearnset,
+		.teachableLearnset = sPatraphinxTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MEOWTH
@@ -4355,6 +4461,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPsyduckLevelUpLearnset,
+		.teachableLearnset = sPsyduckTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOLDUCK}),
 		},
 
@@ -4395,6 +4502,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGolduckLevelUpLearnset,
+		.teachableLearnset = sGolduckTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GILDUCK}),
 		},
 
@@ -4435,6 +4543,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGilduckLevelUpLearnset,
+		.teachableLearnset = sGilduckTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 56, SPECIES_PLATINUPUS}),
 		},
 
@@ -4475,6 +4584,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPlatinupusLevelUpLearnset,
+		.teachableLearnset = sPlatinupusTeachableLearnset,
 		},
 
 #endif//P_FAMILY_PSYDUCK
@@ -4517,6 +4627,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMankeyLevelUpLearnset,
+		.teachableLearnset = sMankeyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PRIMEAPE}),
 		},
 
@@ -4557,6 +4668,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPrimeapeLevelUpLearnset,
+		.teachableLearnset = sPrimeapeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GORILLASH}),
 		},
 
@@ -4595,6 +4707,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGorillashLevelUpLearnset,
+		.teachableLearnset = sGorillashTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_BONUMBELL}),
 		},
 
@@ -4633,6 +4746,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBonumbellLevelUpLearnset,
+		.teachableLearnset = sBonumbellTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MANKEY
@@ -4676,6 +4790,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGrowlitheLevelUpLearnset,
+		.teachableLearnset = sGrowlitheTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE}),
 		},
 
@@ -4717,6 +4832,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sArcanineLevelUpLearnset,
+		.teachableLearnset = sArcanineTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SINGESHA}),
 		},
 
@@ -4758,6 +4874,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSingeshaLevelUpLearnset,
+		.teachableLearnset = sSingeshaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_GUARDIANCE}),
 		},
 
@@ -4799,6 +4916,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGuardianceLevelUpLearnset,
+		.teachableLearnset = sGuardianceTeachableLearnset,
 		},
 
 #endif//P_FAMILY_GROWLITHE
@@ -4841,6 +4959,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 16,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPoliwagLevelUpLearnset,
+		.teachableLearnset = sPoliwagTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_POLIWHIRL}),
 		},
 
@@ -4881,6 +5000,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPoliwhirlLevelUpLearnset,
+		.teachableLearnset = sPoliwhirlTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_POLIWRATH}),
 		},
 
@@ -4921,6 +5041,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPoliwrathLevelUpLearnset,
+		.teachableLearnset = sPoliwrathTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_POLITOES}),
 		},
 
@@ -4961,6 +5082,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPolitoesLevelUpLearnset,
+		.teachableLearnset = sPolitoesTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 53, SPECIES_POLIWISE}),
 		},
 
@@ -5000,6 +5122,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPoliwiseLevelUpLearnset,
+		.teachableLearnset = sPoliwiseTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_POLIATH}),
 		},
 
@@ -5040,6 +5163,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPoliathLevelUpLearnset,
+		.teachableLearnset = sPoliathTeachableLearnset,
 		},
 
 #endif//P_FAMILY_POLIWAG
@@ -5083,6 +5207,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAbraLevelUpLearnset,
+		.teachableLearnset = sAbraTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_KADABRA}),
 		},
 
@@ -5124,6 +5249,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKadabraLevelUpLearnset,
+		.teachableLearnset = sKadabraTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ALAKAZAM}),
 		},
 
@@ -5165,6 +5291,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAlakazamLevelUpLearnset,
+		.teachableLearnset = sAlakazamTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_SIMSALABIM}),
 		},
 
@@ -5206,6 +5333,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSimsalabimLevelUpLearnset,
+		.teachableLearnset = sSimsalabimTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 53, SPECIES_VOHOODU}),
 		},
 
@@ -5246,6 +5374,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVohooduLevelUpLearnset,
+		.teachableLearnset = sVohooduTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_TZARKARTZ}),
 		},
 
@@ -5286,6 +5415,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTzarkartzLevelUpLearnset,
+		.teachableLearnset = sTzarkartzTeachableLearnset,
 		},
 
 #endif//P_FAMILY_ABRA
@@ -5328,6 +5458,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMachopLevelUpLearnset,
+		.teachableLearnset = sMachopTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_MACHOKE}),
 		},
 
@@ -5369,6 +5500,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMachokeLevelUpLearnset,
+		.teachableLearnset = sMachokeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MACHAMP}),
 		},
 
@@ -5409,6 +5541,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMachampLevelUpLearnset,
+		.teachableLearnset = sMachampTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_MACHULK}),
 		},
 
@@ -5448,6 +5581,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMachulkLevelUpLearnset,
+		.teachableLearnset = sMachulkTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 56, SPECIES_ABOMACHULK}),
 		},
 
@@ -5487,6 +5621,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAbomachulkLevelUpLearnset,
+		.teachableLearnset = sAbomachulkTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 68, SPECIES_MACHITAN}),
 		},
 
@@ -5526,6 +5661,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMachitanLevelUpLearnset,
+		.teachableLearnset = sMachitanTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MACHOP
@@ -5568,6 +5704,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBellsproutLevelUpLearnset,
+		.teachableLearnset = sBellsproutTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_WEEPINBELL}),
 		},
 
@@ -5608,6 +5745,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sWeepinbellLevelUpLearnset,
+		.teachableLearnset = sWeepinbellTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VICTREEBEL}),
 		},
 
@@ -5648,6 +5786,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVictreebelLevelUpLearnset,
+		.teachableLearnset = sVictreebelTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MUCKTRIBEL}),
 		},
 
@@ -5688,6 +5827,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMucktribelLevelUpLearnset,
+		.teachableLearnset = sMucktribelTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 53, SPECIES_CARNABELL}),
 		},
 
@@ -5727,6 +5867,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCarnabellLevelUpLearnset,
+		.teachableLearnset = sCarnabellTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_DEVLORA}),
 		},
 
@@ -5766,6 +5907,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDevloraLevelUpLearnset,
+		.teachableLearnset = sDevloraTeachableLearnset,
 		},
 
 #endif//P_FAMILY_BELLSPROUT
@@ -5807,6 +5949,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTentacoolLevelUpLearnset,
+		.teachableLearnset = sTentacoolTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TENTACRUEL}),
 		},
 
@@ -5846,6 +5989,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTentacruelLevelUpLearnset,
+		.teachableLearnset = sTentacruelTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_TENTACATE}),
 		},
 
@@ -5884,6 +6028,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTentacateLevelUpLearnset,
+		.teachableLearnset = sTentacateTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_TENTABOMA}),
 		},
 
@@ -5921,6 +6066,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTentabomaLevelUpLearnset,
+		.teachableLearnset = sTentabomaTeachableLearnset,
 		},
 
 #endif//P_FAMILY_TENTACOOL
@@ -5964,6 +6110,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGeodudeLevelUpLearnset,
+		.teachableLearnset = sGeodudeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GRAVELER}),
 		},
 
@@ -6005,6 +6152,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGravelerLevelUpLearnset,
+		.teachableLearnset = sGravelerTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GOLEM}),
 		},
 
@@ -6046,6 +6194,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 16,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGolemLevelUpLearnset,
+		.teachableLearnset = sGolemTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_SLAGOLEM}),
 		},
 
@@ -6086,6 +6235,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSlagolemLevelUpLearnset,
+		.teachableLearnset = sSlagolemTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 56, SPECIES_MOLTREM}),
 		},
 
@@ -6127,6 +6277,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMoltremLevelUpLearnset,
+		.teachableLearnset = sMoltremTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_VOLCANICOL}),
 		},
 
@@ -6166,6 +6317,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVolcanicolLevelUpLearnset,
+		.teachableLearnset = sVolcanicolTeachableLearnset,
 		},
 
 #endif//P_FAMILY_GEODUDE
@@ -6208,6 +6360,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPonytaLevelUpLearnset,
+		.teachableLearnset = sPonytaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RAPIDASH}),
 		},
 
@@ -6247,6 +6400,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRapidashLevelUpLearnset,
+		.teachableLearnset = sRapidashTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_COMBUSTANG}),
 		},
 
@@ -6286,6 +6440,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCombustangLevelUpLearnset,
+		.teachableLearnset = sCombustangTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_KNIGHTMARE}),
 		},
 
@@ -6325,6 +6480,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKnightmareLevelUpLearnset,
+		.teachableLearnset = sKnightmareTeachableLearnset,
 		},
 
 #endif//P_FAMILY_PONYTA
@@ -6367,6 +6523,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 14,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSlowpokeLevelUpLearnset,
+		.teachableLearnset = sSlowpokeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SLOWBRO}),
 		},
 
@@ -6406,6 +6563,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSlowbroLevelUpLearnset,
+		.teachableLearnset = sSlowbroTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_SLOWMATE}),
 		},
 
@@ -6443,6 +6601,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSlowmateLevelUpLearnset,
+		.teachableLearnset = sSlowmateTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_SLOWCHUM}),
 		},
 
@@ -6480,6 +6639,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSlowchumLevelUpLearnset,
+		.teachableLearnset = sSlowchumTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SLOWPOKE
@@ -6523,6 +6683,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 20,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagnemiteLevelUpLearnset,
+		.teachableLearnset = sMagnemiteTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_MAGNETON}),
 		},
 
@@ -6565,6 +6726,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagnetonLevelUpLearnset,
+		.teachableLearnset = sMagnetonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_MAGNEZONE}),
 		},
 
@@ -6607,6 +6769,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagnezoneLevelUpLearnset,
+		.teachableLearnset = sMagnezoneTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_MAGNEMELD}),
 		},
 
@@ -6648,6 +6811,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagnemeldLevelUpLearnset,
+		.teachableLearnset = sMagnemeldTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_MAGNEMASTR}),
 		},
 
@@ -6688,6 +6852,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagnemastrLevelUpLearnset,
+		.teachableLearnset = sMagnemastrTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MAGNEMITE
@@ -6731,6 +6896,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFarfetchdLevelUpLearnset,
+		.teachableLearnset = sFarfetchdTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_FORFOWLD}),
 		},
 
@@ -6772,6 +6938,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sForfowldLevelUpLearnset,
+		.teachableLearnset = sForfowldTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_FOWLNTOM}),
 		},
 
@@ -6814,6 +6981,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFowlntomLevelUpLearnset,
+		.teachableLearnset = sFowlntomTeachableLearnset,
 		},
 
 #endif//P_FAMILY_FARFETCHD
@@ -6855,6 +7023,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDoduoLevelUpLearnset,
+		.teachableLearnset = sDoduoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_DODRIO}),
 		},
 
@@ -6896,6 +7065,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDodrioLevelUpLearnset,
+		.teachableLearnset = sDodrioTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_QUADODO}),
 		},
 
@@ -6935,6 +7105,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sQuadodoLevelUpLearnset,
+		.teachableLearnset = sQuadodoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_DODOZEN}),
 		},
 
@@ -6975,6 +7146,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDodozenLevelUpLearnset,
+		.teachableLearnset = sDodozenTeachableLearnset,
 		},
 
 #endif//P_FAMILY_DODUO
@@ -7018,6 +7190,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSeelLevelUpLearnset,
+		.teachableLearnset = sSeelTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DEWGONG}),
 		},
 
@@ -7060,6 +7233,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDewgongLevelUpLearnset,
+		.teachableLearnset = sDewgongTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_PRECIPED}),
 		},
 
@@ -7102,6 +7276,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPrecipedLevelUpLearnset,
+		.teachableLearnset = sPrecipedTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 56, SPECIES_MANATII}),
 		},
 
@@ -7144,6 +7319,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sManatiiLevelUpLearnset,
+		.teachableLearnset = sManatiiTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SEEL
@@ -7186,6 +7362,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGrimerLevelUpLearnset,
+		.teachableLearnset = sGrimerTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MUK}),
 		},
 
@@ -7227,6 +7404,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMukLevelUpLearnset,
+		.teachableLearnset = sMukTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_GUNK}),
 		},
 
@@ -7268,6 +7446,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGunkLevelUpLearnset,
+		.teachableLearnset = sGunkTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_SKUM}),
 		},
 
@@ -7309,6 +7488,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSkumLevelUpLearnset,
+		.teachableLearnset = sSkumTeachableLearnset,
 		},
 
 #endif//P_FAMILY_GRIMER
@@ -7353,6 +7533,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sShellderLevelUpLearnset,
+		.teachableLearnset = sShellderTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER}),
 		},
 
@@ -7394,6 +7575,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCloysterLevelUpLearnset,
+		.teachableLearnset = sCloysterTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ANENEMY}),
 		},
 
@@ -7434,6 +7616,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAnenemyLevelUpLearnset,
+		.teachableLearnset = sAnenemyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_GLAISHELL}),
 		},
 
@@ -7473,6 +7656,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGlaishellLevelUpLearnset,
+		.teachableLearnset = sGlaishellTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SHELLDER
@@ -7515,6 +7699,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 14,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGastlyLevelUpLearnset,
+		.teachableLearnset = sGastlyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_HAUNTER}),
 		},
 
@@ -7557,6 +7742,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHaunterLevelUpLearnset,
+		.teachableLearnset = sHaunterTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GENGAR}),
 		},
 
@@ -7598,6 +7784,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGengarLevelUpLearnset,
+		.teachableLearnset = sGengarTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_GENGONE}),
 		},
 
@@ -7638,6 +7825,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGengoneLevelUpLearnset,
+		.teachableLearnset = sGengoneTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_POLTERGAST}),
 		},
 
@@ -7678,6 +7866,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPoltergastLevelUpLearnset,
+		.teachableLearnset = sPoltergastTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 67, SPECIES_GRIMM}),
 		},
 
@@ -7718,6 +7907,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGrimmLevelUpLearnset,
+		.teachableLearnset = sGrimmTeachableLearnset,
 		},
 
 #endif//P_FAMILY_GASTLY
@@ -7759,6 +7949,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOnixLevelUpLearnset,
+		.teachableLearnset = sOnixTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_STEELIX}),
 		},
 
@@ -7798,6 +7989,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSteelixLevelUpLearnset,
+		.teachableLearnset = sSteelixTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_PLATNIX}),
 		},
 
@@ -7837,6 +8029,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPlatnixLevelUpLearnset,
+		.teachableLearnset = sPlatnixTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_OBSIDIANIX}),
 		},
 
@@ -7876,6 +8069,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sObsidianixLevelUpLearnset,
+		.teachableLearnset = sObsidianixTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 67, SPECIES_STALAGMIX}),
 		},
 
@@ -7915,6 +8109,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sStalagmixLevelUpLearnset,
+		.teachableLearnset = sStalagmixTeachableLearnset,
 		},
 
 #endif//P_FAMILY_ONIX
@@ -7957,6 +8152,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDrowzeeLevelUpLearnset,
+		.teachableLearnset = sDrowzeeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_HYPNO}),
 		},
 
@@ -7997,6 +8193,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHypnoLevelUpLearnset,
+		.teachableLearnset = sHypnoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_LULLOO}),
 		},
 
@@ -8037,6 +8234,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLullooLevelUpLearnset,
+		.teachableLearnset = sLullooTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_SOMNISOOTH}),
 		},
 
@@ -8076,6 +8274,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSomnisoothLevelUpLearnset,
+		.teachableLearnset = sSomnisoothTeachableLearnset,
 		},
 
 #endif//P_FAMILY_DROWZEE
@@ -8118,6 +8317,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKrabbyLevelUpLearnset,
+		.teachableLearnset = sKrabbyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_KINGLER}),
 		},
 
@@ -8158,6 +8358,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKinglerLevelUpLearnset,
+		.teachableLearnset = sKinglerTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_KRAKLAW}),
 		},
 
@@ -8198,6 +8399,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKraklawLevelUpLearnset,
+		.teachableLearnset = sKraklawTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_TEKLAWNO}),
 		},
 
@@ -8238,6 +8440,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTeklawnoLevelUpLearnset,
+		.teachableLearnset = sTeklawnoTeachableLearnset,
 		},
 
 #endif//P_FAMILY_KRABBY
@@ -8281,6 +8484,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 14,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVoltorbLevelUpLearnset,
+		.teachableLearnset = sVoltorbTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_ELECTRODE}),
 		},
 
@@ -8321,6 +8525,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectrodeLevelUpLearnset,
+		.teachableLearnset = sElectrodeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_ELECTRODES}),
 		},
 
@@ -8360,6 +8565,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectrodesLevelUpLearnset,
+		.teachableLearnset = sElectrodesTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_ELECTRODEX}),
 		},
 
@@ -8399,6 +8605,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectrodexLevelUpLearnset,
+		.teachableLearnset = sElectrodexTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_ELECTRODEM}),
 		},
 
@@ -8437,6 +8644,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectrodemLevelUpLearnset,
+		.teachableLearnset = sElectrodemTeachableLearnset,
 		},
 
 #endif//P_FAMILY_VOLTORB
@@ -8479,6 +8687,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sExeggcuteLevelUpLearnset,
+		.teachableLearnset = sExeggcuteTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR}),
 		},
 
@@ -8518,6 +8727,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sExeggutorLevelUpLearnset,
+		.teachableLearnset = sExeggutorTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EXEGGITY}),
 		},
 
@@ -8556,6 +8766,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sExeggityLevelUpLearnset,
+		.teachableLearnset = sExeggityTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_EXEGGTRIC}),
 		},
 
@@ -8595,6 +8806,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sExeggtricLevelUpLearnset,
+		.teachableLearnset = sExeggtricTeachableLearnset,
 		},
 
 #endif//P_FAMILY_EXEGGCUTE
@@ -8638,6 +8850,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCuboneLevelUpLearnset,
+		.teachableLearnset = sCuboneTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_MAROWAK}),
 		},
 
@@ -8679,6 +8892,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMarowakLevelUpLearnset,
+		.teachableLearnset = sMarowakTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_OSSELOBBER}),
 		},
 
@@ -8720,6 +8934,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOsselobberLevelUpLearnset,
+		.teachableLearnset = sOsselobberTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_WRAIWRATH}),
 		},
 
@@ -8761,6 +8976,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sWraiwrathLevelUpLearnset,
+		.teachableLearnset = sWraiwrathTeachableLearnset,
 		},
 
 #endif//P_FAMILY_CUBONE
@@ -8802,6 +9018,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHitmonleeLevelUpLearnset,
+		.teachableLearnset = sHitmonleeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_CLEEVOYANT}),
 		},
 
@@ -8840,6 +9057,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCleevoyantLevelUpLearnset,
+		.teachableLearnset = sCleevoyantTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_SPIRITULEE}),
 		},
 
@@ -8878,6 +9096,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSpirituleeLevelUpLearnset,
+		.teachableLearnset = sSpirituleeTeachableLearnset,
 		},
 
 	[SPECIES_HITMONCHAN] =
@@ -8917,6 +9136,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHitmonchanLevelUpLearnset,
+		.teachableLearnset = sHitmonchanTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_ENCHANCED}),
 		},
 
@@ -8955,6 +9175,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sEnchancedLevelUpLearnset,
+		.teachableLearnset = sEnchancedTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_RADIACHAN}),
 		},
 
@@ -8993,6 +9214,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRadiachanLevelUpLearnset,
+		.teachableLearnset = sRadiachanTeachableLearnset,
 		},
 
 #endif//P_FAMILY_HITMONLEE
@@ -9035,6 +9257,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 14,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLickitungLevelUpLearnset,
+		.teachableLearnset = sLickitungTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_LICKILICKY}),
 		},
 
@@ -9075,6 +9298,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLickilickyLevelUpLearnset,
+		.teachableLearnset = sLickilickyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 46, SPECIES_LICKILOLLY}),
 		},
 
@@ -9115,6 +9339,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLickilollyLevelUpLearnset,
+		.teachableLearnset = sLickilollyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_LICKILATO}),
 		},
 
@@ -9154,6 +9379,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLickilatoLevelUpLearnset,
+		.teachableLearnset = sLickilatoTeachableLearnset,
 		},
 
 #endif//P_FAMILY_LICKITUNG
@@ -9197,6 +9423,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKoffingLevelUpLearnset,
+		.teachableLearnset = sKoffingTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_WEEZING}),
 		},
 
@@ -9238,6 +9465,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sWeezingLevelUpLearnset,
+		.teachableLearnset = sWeezingTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 46, SPECIES_HEEVING}),
 		},
 
@@ -9277,6 +9505,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHeevingLevelUpLearnset,
+		.teachableLearnset = sHeevingTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_CHOHKING}),
 		},
 
@@ -9316,6 +9545,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sChohkingLevelUpLearnset,
+		.teachableLearnset = sChohkingTeachableLearnset,
 		},
 
 #endif//P_FAMILY_KOFFING
@@ -9358,6 +9588,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRhyhornLevelUpLearnset,
+		.teachableLearnset = sRhyhornTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_RHYDON}),
 		},
 
@@ -9398,6 +9629,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRhydonLevelUpLearnset,
+		.teachableLearnset = sRhydonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_RHYPERIOR}),
 		},
 
@@ -9437,6 +9669,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRhyperiorLevelUpLearnset,
+		.teachableLearnset = sRhyperiorTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_RHYMARKABL}),
 		},
 
@@ -9476,6 +9709,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRhymarkablLevelUpLearnset,
+		.teachableLearnset = sRhymarkablTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_RHYLIC}),
 		},
 
@@ -9515,6 +9749,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRhylicLevelUpLearnset,
+		.teachableLearnset = sRhylicTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 70, SPECIES_RHYBORN}),
 		},
 
@@ -9554,6 +9789,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRhybornLevelUpLearnset,
+		.teachableLearnset = sRhybornTeachableLearnset,
 		},
 
 #endif//P_FAMILY_RHYHORN
@@ -9597,6 +9833,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 14,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sChanseyLevelUpLearnset,
+		.teachableLearnset = sChanseyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BLISSEY}),
 		},
 
@@ -9638,6 +9875,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBlisseyLevelUpLearnset,
+		.teachableLearnset = sBlisseyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GOGETTEY}),
 		},
 
@@ -9679,6 +9917,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGogetteyLevelUpLearnset,
+		.teachableLearnset = sGogetteyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_LUKKEY}),
 		},
 
@@ -9720,6 +9959,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLukkeyLevelUpLearnset,
+		.teachableLearnset = sLukkeyTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 68, SPECIES_FORTUNITEY}),
 		},
 
@@ -9762,6 +10002,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFortuniteyLevelUpLearnset,
+		.teachableLearnset = sFortuniteyTeachableLearnset,
 		},
 
 #endif//P_FAMILY_CHANSEY
@@ -9804,6 +10045,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 14,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTangelaLevelUpLearnset,
+		.teachableLearnset = sTangelaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_TANGROWTH}),
 		},
 
@@ -9844,6 +10086,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTangrowthLevelUpLearnset,
+		.teachableLearnset = sTangrowthTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_TANGATHER}),
 		},
 
@@ -9884,6 +10127,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTangatherLevelUpLearnset,
+		.teachableLearnset = sTangatherTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_TANGOLIATH}),
 		},
 
@@ -9924,6 +10168,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTangoliathLevelUpLearnset,
+		.teachableLearnset = sTangoliathTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_TANGRAPPLE}),
 		},
 
@@ -9964,6 +10209,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTangrappleLevelUpLearnset,
+		.teachableLearnset = sTangrappleTeachableLearnset,
 		},
 
 #endif//P_FAMILY_TANGELA
@@ -10006,6 +10252,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKangakidLevelUpLearnset,
+		.teachableLearnset = sKangakidTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_KANGASKHAN}),
 		},
 
@@ -10045,6 +10292,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKangaskhanLevelUpLearnset,
+		.teachableLearnset = sKangaskhanTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KANGALLOUS}),
 		},
 
@@ -10085,6 +10333,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKangallousLevelUpLearnset,
+		.teachableLearnset = sKangallousTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_KANGARUTAL}),
 		},
 
@@ -10124,6 +10373,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKangarutalLevelUpLearnset,
+		.teachableLearnset = sKangarutalTeachableLearnset,
 		},
 
 #endif//P_FAMILY_KANGAKID
@@ -10166,6 +10416,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHorseaLevelUpLearnset,
+		.teachableLearnset = sHorseaTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_SEADRA}),
 		},
 
@@ -10207,6 +10458,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSeadraLevelUpLearnset,
+		.teachableLearnset = sSeadraTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_KINGDRA}),
 		},
 
@@ -10250,6 +10502,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKingdraLevelUpLearnset,
+		.teachableLearnset = sKingdraTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_LORDRA}),
 		},
 
@@ -10293,6 +10546,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLordraLevelUpLearnset,
+		.teachableLearnset = sLordraTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_PINNADRA}),
 		},
 
@@ -10336,6 +10590,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPinnadraLevelUpLearnset,
+		.teachableLearnset = sPinnadraTeachableLearnset,
 		},
 
 #endif//P_FAMILY_HORSEA
@@ -10378,6 +10633,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGoldeenLevelUpLearnset,
+		.teachableLearnset = sGoldeenTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_SEAKING}),
 		},
 
@@ -10418,6 +10674,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSeakingLevelUpLearnset,
+		.teachableLearnset = sSeakingTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_SEAREX}),
 		},
 
@@ -10457,6 +10714,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSearexLevelUpLearnset,
+		.teachableLearnset = sSearexTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_CAPRISEA}),
 		},
 
@@ -10496,6 +10754,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sCapriseaLevelUpLearnset,
+		.teachableLearnset = sCapriseaTeachableLearnset,
 		},
 
 #endif//P_FAMILY_GOLDEEN
@@ -10540,6 +10799,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sStaryuLevelUpLearnset,
+		.teachableLearnset = sStaryuTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_STARMIE}),
 		},
 
@@ -10582,6 +10842,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 14,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sStarmieLevelUpLearnset,
+		.teachableLearnset = sStarmieTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_STARUS}),
 		},
 
@@ -10624,6 +10885,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sStarusLevelUpLearnset,
+		.teachableLearnset = sStarusTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_STARWE}),
 		},
 
@@ -10664,6 +10926,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sStarweLevelUpLearnset,
+		.teachableLearnset = sStarweTeachableLearnset,
 		},
 
 #endif//P_FAMILY_STARYU
@@ -10706,6 +10969,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMr_mimeLevelUpLearnset,
+		.teachableLearnset = sMr_mimeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MR_JEST}),
 		},
 
@@ -10746,6 +11010,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMr_jestLevelUpLearnset,
+		.teachableLearnset = sMr_jestTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_MR_FOOL}),
 		},
 
@@ -10785,6 +11050,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMr_foolLevelUpLearnset,
+		.teachableLearnset = sMr_foolTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MR_MIME
@@ -10826,6 +11092,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sScytherLevelUpLearnset,
+		.teachableLearnset = sScytherTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SCIZOR}),
 		},
 
@@ -10863,6 +11130,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sScizorLevelUpLearnset,
+		.teachableLearnset = sScizorTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_RAZER}),
 		},
 
@@ -10899,6 +11167,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRazerLevelUpLearnset,
+		.teachableLearnset = sRazerTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_CLAYMOR}),
 		},
 
@@ -10935,6 +11204,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sClaymorLevelUpLearnset,
+		.teachableLearnset = sClaymorTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SCYTHER
@@ -10977,6 +11247,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sJynxLevelUpLearnset,
+		.teachableLearnset = sJynxTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_JYNKIES}),
 		},
 
@@ -11017,6 +11288,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sJynkiesLevelUpLearnset,
+		.teachableLearnset = sJynkiesTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_JEEPERS}),
 		},
 
@@ -11057,6 +11329,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sJeepersLevelUpLearnset,
+		.teachableLearnset = sJeepersTeachableLearnset,
 		},
 
 #endif//P_FAMILY_JYNX
@@ -11099,6 +11372,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectabuzzLevelUpLearnset,
+		.teachableLearnset = sElectabuzzTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ELECTIVIRE}),
 		},
 
@@ -11138,6 +11412,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectivireLevelUpLearnset,
+		.teachableLearnset = sElectivireTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_ELECTIVINE}),
 		},
 
@@ -11177,6 +11452,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectivineLevelUpLearnset,
+		.teachableLearnset = sElectivineTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_ELECTIWIZZ}),
 		},
 
@@ -11216,6 +11492,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sElectiwizzLevelUpLearnset,
+		.teachableLearnset = sElectiwizzTeachableLearnset,
 		},
 
 #endif//P_FAMILY_ELECTABUZZ
@@ -11258,6 +11535,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 7,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagmarLevelUpLearnset,
+		.teachableLearnset = sMagmarTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MAGMORTAR}),
 		},
 
@@ -11297,6 +11575,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagmortarLevelUpLearnset,
+		.teachableLearnset = sMagmortarTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_MAGMORE}),
 		},
 
@@ -11336,6 +11615,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagmoreLevelUpLearnset,
+		.teachableLearnset = sMagmoreTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_MAGMOLTEN}),
 		},
 
@@ -11376,6 +11656,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagmoltenLevelUpLearnset,
+		.teachableLearnset = sMagmoltenTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MAGMAR
@@ -11418,6 +11699,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPinsirLevelUpLearnset,
+		.teachableLearnset = sPinsirTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_PINSIRIOR}),
 		},
 
@@ -11456,6 +11738,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPinsiriorLevelUpLearnset,
+		.teachableLearnset = sPinsiriorTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_ABYSSIR}),
 		},
 
@@ -11494,6 +11777,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAbyssirLevelUpLearnset,
+		.teachableLearnset = sAbyssirTeachableLearnset,
 		},
 
 #endif//P_FAMILY_PINSIR
@@ -11537,6 +11821,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTaurosLevelUpLearnset,
+		.teachableLearnset = sTaurosTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_TAUROX}),
 		},
 
@@ -11577,6 +11862,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sTauroxLevelUpLearnset,
+		.teachableLearnset = sTauroxTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_OXENFREE}),
 		},
 
@@ -11617,6 +11903,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOxenfreeLevelUpLearnset,
+		.teachableLearnset = sOxenfreeTeachableLearnset,
 		},
 
 #endif//P_FAMILY_TAUROS
@@ -11659,6 +11946,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMagikarpLevelUpLearnset,
+		.teachableLearnset = sMagikarpTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GYARADOS}),
 		},
 
@@ -11697,6 +11985,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGyaradosLevelUpLearnset,
+		.teachableLearnset = sGyaradosTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_HYDRADOS}),
 		},
 
@@ -11735,6 +12024,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sHydradosLevelUpLearnset,
+		.teachableLearnset = sHydradosTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_DRACOSMIC}),
 		},
 
@@ -11773,6 +12063,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDracosmicLevelUpLearnset,
+		.teachableLearnset = sDracosmicTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_QUAZAR}),
 		},
 
@@ -11811,6 +12102,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sQuazarLevelUpLearnset,
+		.teachableLearnset = sQuazarTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MAGIKARP
@@ -11852,6 +12144,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLaprasLevelUpLearnset,
+		.teachableLearnset = sLaprasTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_LOCHLASS}),
 		},
 
@@ -11891,6 +12184,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sLochlassLevelUpLearnset,
+		.teachableLearnset = sLochlassTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 58, SPECIES_NESSEA}),
 		},
 
@@ -11929,6 +12223,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNesseaLevelUpLearnset,
+		.teachableLearnset = sNesseaTeachableLearnset,
 		},
 
 #endif//P_FAMILY_LAPRAS
@@ -11972,6 +12267,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 17,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDittoLevelUpLearnset,
+		.teachableLearnset = sDittoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MORPHO}),
 		},
 
@@ -12012,6 +12308,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMorphoLevelUpLearnset,
+		.teachableLearnset = sMorphoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_METAMORPHO}),
 		},
 
@@ -12052,6 +12349,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMetamorphoLevelUpLearnset,
+		.teachableLearnset = sMetamorphoTeachableLearnset,
 		},
 
 #endif//P_FAMILY_DITTO
@@ -12094,6 +12392,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sEeveeLevelUpLearnset,
+		.teachableLearnset = sEeveeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},{EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},{EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON}),
 		},
 
@@ -12134,6 +12433,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVaporeonLevelUpLearnset,
+		.teachableLearnset = sVaporeonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_RIVEON}),
 		},
 
@@ -12174,6 +12474,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sRiveonLevelUpLearnset,
+		.teachableLearnset = sRiveonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_BRINEON}),
 		},
 
@@ -12214,6 +12515,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sBrineonLevelUpLearnset,
+		.teachableLearnset = sBrineonTeachableLearnset,
 		},
 
 	[SPECIES_JOLTEON] =
@@ -12253,6 +12555,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sJolteonLevelUpLearnset,
+		.teachableLearnset = sJolteonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_PLASMEON}),
 		},
 
@@ -12293,6 +12596,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPlasmeonLevelUpLearnset,
+		.teachableLearnset = sPlasmeonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_GALVEON}),
 		},
 
@@ -12333,6 +12637,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGalveonLevelUpLearnset,
+		.teachableLearnset = sGalveonTeachableLearnset,
 		},
 
 	[SPECIES_FLAREON] =
@@ -12372,6 +12677,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFlareonLevelUpLearnset,
+		.teachableLearnset = sFlareonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_SMOLDEON}),
 		},
 
@@ -12412,6 +12718,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSmoldeonLevelUpLearnset,
+		.teachableLearnset = sSmoldeonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_INFERNEON}),
 		},
 
@@ -12452,6 +12759,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sInferneonLevelUpLearnset,
+		.teachableLearnset = sInferneonTeachableLearnset,
 		},
 
 #endif//P_FAMILY_EEVEE
@@ -12494,6 +12802,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPorygonLevelUpLearnset,
+		.teachableLearnset = sPorygonTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PORYGON2}),
 		},
 
@@ -12534,6 +12843,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPorygon2LevelUpLearnset,
+		.teachableLearnset = sPorygon2TeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_PORYGON_Z}),
 		},
 
@@ -12574,6 +12884,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPorygonzLevelUpLearnset,
+		.teachableLearnset = sPorygonzTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_PORYGONX}),
 		},
 
@@ -12613,6 +12924,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPorygonxLevelUpLearnset,
+		.teachableLearnset = sPorygonxTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_PORYGONQ}),
 		},
 
@@ -12653,6 +12965,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.enemyMonElevation = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPorygonqLevelUpLearnset,
+		.teachableLearnset = sPorygonqTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_PORYGON2A4}),
 		},
 
@@ -12692,6 +13005,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sPorygon2a4LevelUpLearnset,
+		.teachableLearnset = sPorygon2a4TeachableLearnset,
 		},
 
 #endif//P_FAMILY_PORYGON
@@ -12734,6 +13048,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 10,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOmanyteLevelUpLearnset,
+		.teachableLearnset = sOmanyteTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_OMASTAR}),
 		},
 
@@ -12774,6 +13089,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOmastarLevelUpLearnset,
+		.teachableLearnset = sOmastarTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_OMAPAL}),
 		},
 
@@ -12814,6 +13130,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOmapalLevelUpLearnset,
+		.teachableLearnset = sOmapalTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_OMAGUS}),
 		},
 
@@ -12853,6 +13170,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sOmagusLevelUpLearnset,
+		.teachableLearnset = sOmagusTeachableLearnset,
 		},
 
 #endif//P_FAMILY_OMANYTE
@@ -12895,6 +13213,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKabutoLevelUpLearnset,
+		.teachableLearnset = sKabutoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_KABUTOPS}),
 		},
 
@@ -12935,6 +13254,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKabutopsLevelUpLearnset,
+		.teachableLearnset = sKabutopsTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_KABUTAK}),
 		},
 
@@ -12974,6 +13294,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKabutakLevelUpLearnset,
+		.teachableLearnset = sKabutakTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_KABUSTION}),
 		},
 
@@ -13012,6 +13333,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sKabustionLevelUpLearnset,
+		.teachableLearnset = sKabustionTeachableLearnset,
 		},
 
 #endif//P_FAMILY_KABUTO
@@ -13055,6 +13377,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAerodactylLevelUpLearnset,
+		.teachableLearnset = sAerodactylTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MANDILUFT}),
 		},
 
@@ -13096,6 +13419,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMandiluftLevelUpLearnset,
+		.teachableLearnset = sMandiluftTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_AMBALITHIC}),
 		},
 
@@ -13135,6 +13459,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sAmbalithicLevelUpLearnset,
+		.teachableLearnset = sAmbalithicTeachableLearnset,
 		},
 
 #endif//P_FAMILY_AERODACTYL
@@ -13179,6 +13504,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSnorlaxLevelUpLearnset,
+		.teachableLearnset = sSnorlaxTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ACTLAX}),
 		},
 
@@ -13221,6 +13547,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sActlaxLevelUpLearnset,
+		.teachableLearnset = sActlaxTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_GRIZZLAX}),
 		},
 
@@ -13263,6 +13590,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sGrizzlaxLevelUpLearnset,
+		.teachableLearnset = sGrizzlaxTeachableLearnset,
 		},
 
 #endif//P_FAMILY_SNORLAX
@@ -13304,6 +13632,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 12,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sArticunoLevelUpLearnset,
+		.teachableLearnset = sArticunoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_SNOWONE}),
 		},
 
@@ -13343,6 +13672,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sSnowoneLevelUpLearnset,
+		.teachableLearnset = sSnowoneTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 75, SPECIES_FROSTUNUS}),
 		},
 
@@ -13382,6 +13712,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sFrostunusLevelUpLearnset,
+		.teachableLearnset = sFrostunusTeachableLearnset,
 		},
 
 #endif//P_FAMILY_ARTICUNO
@@ -13425,6 +13756,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 11,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sZapdosLevelUpLearnset,
+		.teachableLearnset = sZapdosTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_SHOCKATOO}),
 		},
 
@@ -13466,6 +13798,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sShockatooLevelUpLearnset,
+		.teachableLearnset = sShockatooTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 75, SPECIES_VOLTDUO}),
 		},
 
@@ -13506,6 +13839,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sVoltduoLevelUpLearnset,
+		.teachableLearnset = sVoltduoTeachableLearnset,
 		},
 
 #endif//P_FAMILY_ZAPDOS
@@ -13549,6 +13883,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMoltresLevelUpLearnset,
+		.teachableLearnset = sMoltresTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_IGNITHREE}),
 		},
 
@@ -13589,6 +13924,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sIgnithreeLevelUpLearnset,
+		.teachableLearnset = sIgnithreeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 75, SPECIES_INFERNTRI}),
 		},
 
@@ -13629,6 +13965,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 2,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sInferntriLevelUpLearnset,
+		.teachableLearnset = sInferntriTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MOLTRES
@@ -13671,6 +14008,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 9,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDratiniLevelUpLearnset,
+		.teachableLearnset = sDratiniTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_DRAGONAIR}),
 		},
 
@@ -13710,6 +14048,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDragonairLevelUpLearnset,
+		.teachableLearnset = sDragonairTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_DRAGONITE}),
 		},
 
@@ -13751,6 +14090,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDragoniteLevelUpLearnset,
+		.teachableLearnset = sDragoniteTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_DRAGONIER}),
 		},
 
@@ -13792,6 +14132,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDragonierLevelUpLearnset,
+		.teachableLearnset = sDragonierTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_DRAGONACE}),
 		},
 
@@ -13833,6 +14174,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 5,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDragonaceLevelUpLearnset,
+		.teachableLearnset = sDragonaceTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_DRAGONTALE}),
 		},
 
@@ -13874,6 +14216,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 6,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sDragontaleLevelUpLearnset,
+		.teachableLearnset = sDragontaleTeachableLearnset,
 		},
 
 #endif//P_FAMILY_DRATINI
@@ -13915,6 +14258,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMewtwoLevelUpLearnset,
+		.teachableLearnset = sMewtwoTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_MEWTHREE}),
 		},
 
@@ -13953,6 +14297,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMewthreeLevelUpLearnset,
+		.teachableLearnset = sMewthreeTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 75, SPECIES_MEWFOUR}),
 		},
 
@@ -13991,6 +14336,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMewfourLevelUpLearnset,
+		.teachableLearnset = sMewfourTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MEWTWO
@@ -14034,6 +14380,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMewLevelUpLearnset,
+		.teachableLearnset = sMewTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_NYU}),
 		},
 
@@ -14075,6 +14422,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sNyuLevelUpLearnset,
+		.teachableLearnset = sNyuTeachableLearnset,
 		.evolutions = EVOLUTION({EVO_LEVEL, 75, SPECIES_IOTA}),
 		},
 
@@ -14116,6 +14464,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 1,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sIotaLevelUpLearnset,
+		.teachableLearnset = sIotaTeachableLearnset,
 		},
 
 #endif//P_FAMILY_MEW
@@ -14159,6 +14508,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 4,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMissingno1LevelUpLearnset,
+		.teachableLearnset = sMissingno1TeachableLearnset,
 		},
 
 #endif//P_FAMILY_MISSINGNO1
@@ -14198,6 +14548,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.frontAnimDelay = 15,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMissingno2LevelUpLearnset,
+		.teachableLearnset = sMissingno2TeachableLearnset,
 		},
 
 #endif//P_FAMILY_MISSINGNO2
@@ -14239,6 +14590,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 8,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMissingno3LevelUpLearnset,
+		.teachableLearnset = sMissingno3TeachableLearnset,
 		},
 
 #endif//P_FAMILY_MISSINGNO3
@@ -14280,6 +14632,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 3,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMissingno4LevelUpLearnset,
+		.teachableLearnset = sMissingno4TeachableLearnset,
 		},
 
 #endif//P_FAMILY_MISSINGNO4
@@ -14322,6 +14675,7 @@ const struct SpeciesInfo gSpeciesInfoEvo[] =
 		.backPicYOffset = 13,
 		.iconPalIndex = 2,
 		.levelUpLearnset = sMissingno5LevelUpLearnset,
+		.teachableLearnset = sMissingno5TeachableLearnset,
 		},
 
 #endif//P_FAMILY_MISSINGNO5

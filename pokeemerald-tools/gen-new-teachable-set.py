@@ -42,11 +42,23 @@ with open("teachable_learnsets.h", WriteOrAdd) as file:
             if data.column == 1: #Check if this is a new mon
                 CurrentSpecies = data.value
                 CurrentSpeciesCptl = CurrentSpecies.capitalize()
+                
                 if row[PkmnDataFile.max_column-1].value == 1:#check for new species flag
                     CurrentFamily = data.value
-                    file.write(f"#if P_FAMILY_{data.value}\nstatic const u16 s{CurrentSpeciesCptl}TeachableLearnset[] = {{\n")
+                    
+                    if CurrentFamily == "NIDORAN_F":
+                        file.write(f"#if P_FAMILY_NIDORAN\nstatic const u16 s{CurrentSpeciesCptl}TeachableLearnset[] = {{\n")
+                    elif CurrentFamily == "KANGAKID":
+                        file.write(f"#if P_FAMILY_KANGASKHAN\nstatic const u16 s{CurrentSpeciesCptl}TeachableLearnset[] = {{\n")
+                    elif CurrentFamily == "HITMONLEE":
+                        file.write(f"#if P_FAMILY_HITMONS\nstatic const u16 s{CurrentSpeciesCptl}TeachableLearnset[] = {{\n")
+                    else:
+                        file.write(f"#if P_FAMILY_{data.value}\nstatic const u16 s{CurrentSpeciesCptl}TeachableLearnset[] = {{\n")                                    
+
                 else: #if no new species flag, just make new learnset because it belongs to that family evolution line
                     file.write(f"static const u16 s{CurrentSpeciesCptl}TeachableLearnset[] = {{\n")
+                
+                if Debug: print(f"New Species Found!: {CurrentFamily}")                
            
             elif data.value == None: #if reached newspecies column, do not write 1. check if next species is new species and close with #endif
                 if PkmnDataFile.cell(data.row + 1, PkmnDataFile.max_column).value == 1:#if the next mon is a new species
