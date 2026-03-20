@@ -176,18 +176,16 @@ if OnlyNewSpecies != 1:
                     continue
                 
                 elif Attribute == ".levelUpLearnset":
-                    #file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}LevelUpLearnset,\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}LevelUpLearnset,\n")
+#                    continue
                 
                 elif Attribute == ".teachableLearnset":
-                    #file.write("\t\t{Attribute} = s" + CurrentSpeciesCptl  + "TeachableLearnset,\n")
+#                    file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}TeachableLearnset,\n")
                     continue
     #             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggMoveLearnset":
     #                 CurrentSpeciesCptl = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
     #                 CurrentSpeciesCptl = CurrentSpeciesCptl[0] + CurrentSpeciesCptl[1:len(CurrentSpeciesCptl)].lower()
     #                 file.write("\t\t.eggMoveLearnset = s" + CurrentSpeciesCptl  + "TeachableLearnset,\n")
-#                elif Attribute == ".evolutions" and data.value != None:
-#                    file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_LEVEL, {data.value}, SPECIES_{PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value}}}),\n")
                 elif Attribute == ".evolutions" and data.value != None:
                     if data.value.find("STONE") > 0:
                         file.write(f"\t\t{Attribute} = EVOLUTION({{EVO_ITEM, {data.value}, SPECIES_{PkmnDataFile.cell(data.row + 1, PkmnDataFile.min_column).value}}}),\n")

@@ -10,93 +10,13 @@ from openpyxl import load_workbook
 start = time.time()
 
 #Globals for execution
-
-Header = """{
-  "wild_encounter_groups": [
-    {
-      "label": "gWildMonHeaders",
-      "for_maps": true,
-      "fields": [
-        {
-          "type": "land_mons",
-          "encounter_rates": [
-            20,
-            20,
-            10,
-            10,
-            10,
-            10,
-            5,
-            5,
-            4,
-            4,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "water_mons",
-          "encounter_rates": [
-            60,
-            30,
-            5,
-            4,
-            1
-          ]
-        },
-        {
-          "type": "rock_smash_mons",
-          "encounter_rates": [
-            60,
-            30,
-            5,
-            4,
-            1
-          ]
-        },
-        {
-          "type": "fishing_mons",
-          "encounter_rates": [
-            70,
-            30,
-            60,
-            20,
-            20,
-            40,
-            40,
-            15,
-            4,
-            1
-          ],
-          "groups": {
-            "old_rod": [
-              0,
-              1
-            ],
-            "good_rod": [
-              2,
-              3,
-              4
-            ],
-            "super_rod": [
-              5,
-              6,
-              7,
-              8,
-              9
-            ]
-          }
-        }
-      ],
-      "encounters": [
-"""
 Debug = 1
 WriteOrAdd = 'w'
 GenName = "Evo"
 FileName = "wild_encounters.json"
 
 PkmnData = load_workbook('encounter-data-evolved.xlsx')
-SheetName = "final-encounter-data-2"
+SheetName = "final-encounter-data"
 if SheetName in PkmnData.sheetnames:
     PkmnDataFile = PkmnData[SheetName]
 else:
@@ -112,7 +32,6 @@ print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_colum
 print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")    
 
 with open(FileName, WriteOrAdd) as file:
-    #file.write(Header)
     for row in PkmnDataFile.iter_rows(min_row=1, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
     #for row in PkmnDataFile.iter_rows(min_row=1, max_row=915, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
         if row[0].value != None:        
