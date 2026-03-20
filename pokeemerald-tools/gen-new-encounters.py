@@ -112,10 +112,13 @@ print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_colum
 print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")    
 
 with open(FileName, WriteOrAdd) as file:
-    file.write(Header)
-    #for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-    for row in PkmnDataFile.iter_rows(min_row=1, max_row=915, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
-        data = row[0].value.split(",")
+    #file.write(Header)
+    for row in PkmnDataFile.iter_rows(min_row=1, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    #for row in PkmnDataFile.iter_rows(min_row=1, max_row=915, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        if row[0].value != None:        
+            data = row[0].value.split(",")
+        else:
+            continue
         #if Debug: print(row[0].value)
         #if Debug: print(data)
         if "NEW_ROUTE" in data:
@@ -126,30 +129,85 @@ with open(FileName, WriteOrAdd) as file:
             file.write(f"\t\t\"{data[0]}\": {{\n")
             file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
             file.write(f"\t\t\t\"mons\": [\n")
-#            continue
         elif "water_mons" in data:
             file.write(f"\t\t\"{data[0]}\": {{\n")
             file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
             file.write(f"\t\t\t\"mons\": [\n")
-#            continue
         elif "rock_smash_mons" in data:
             file.write(f"\t\t\"{data[0]}\": {{\n")
             file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
             file.write(f"\t\t\t\"mons\": [\n")
-#            continue
         elif "fishing_mons" in data:
             file.write(f"\t\t\"{data[0]}\": {{\n")
             file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
             file.write(f"\t\t\t\"mons\": [\n")
-#            continue
         else:
             file.write(f"\t\t\t\t{{\n")
             file.write(f"\t\t\t\t\t\"min_level\": {data[0]},\n")
             file.write(f"\t\t\t\t\t\"max_level\": {data[1]},\n")
             file.write(f"\t\t\t\t\t\"species\": \"SPECIES_{data[2]}\"\n")
-            #if "NEW_ROUTE" in newRouteCheck or "mons" in newRouteCheck
             closing = PkmnDataFile.cell(row[0].row + 1,row[0].column).value
-            if "mons" in closing:
+            if closing == None:
+                file.write(f"\t\t\t\t}}\n")
+                file.write(f"\t\t\t\t]\n")
+                file.write(f"\t\t\t}}\n")
+                file.write(f"\t\t}},\n")
+                #file.write(f"\t]\n")
+                #file.write(f"}},\n")
+            elif "mons" in closing:
+                file.write(f"\t\t\t\t}}\n")
+                file.write(f"\t\t\t]\n")
+                file.write(f"\t\t}},\n")
+            elif "NEW_ROUTE" in closing:
+                file.write(f"\t\t\t\t}}\n")
+                file.write(f"\t\t\t\t]\n")
+                file.write(f"\t\t\t}}\n")
+                file.write(f"\t\t}},\n")
+            else:
+                file.write(f"\t\t\t\t}},\n")
+
+    for row in PkmnDataFile.iter_rows(min_row=1, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+    #for row in PkmnDataFile.iter_rows(min_row=1, max_row=915, min_col=PkmnDataFile.min_column, max_col=PkmnDataFile.max_column):
+        if row[0].value != None:        
+            data = row[0].value.split(",")
+        else:
+            continue
+        #if Debug: print(row[0].value)
+        #if Debug: print(data)
+        if "NEW_ROUTE" in data:
+            file.write(f"\t\t{{\n")
+            file.write(f"\t\t\"map\": \"MAP_{data[1]}\",\n")
+            file.write(f"\t\t\"base_label\": \"{data[3]}\",\n") #LeafGreen Encounter Gen
+        elif "land_mons" in data:
+            file.write(f"\t\t\"{data[0]}\": {{\n")
+            file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
+            file.write(f"\t\t\t\"mons\": [\n")
+        elif "water_mons" in data:
+            file.write(f"\t\t\"{data[0]}\": {{\n")
+            file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
+            file.write(f"\t\t\t\"mons\": [\n")
+        elif "rock_smash_mons" in data:
+            file.write(f"\t\t\"{data[0]}\": {{\n")
+            file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
+            file.write(f"\t\t\t\"mons\": [\n")
+        elif "fishing_mons" in data:
+            file.write(f"\t\t\"{data[0]}\": {{\n")
+            file.write(f"\t\t\t\"encounter_rate\": {data[1]},\n")
+            file.write(f"\t\t\t\"mons\": [\n")
+        else:
+            file.write(f"\t\t\t\t{{\n")
+            file.write(f"\t\t\t\t\t\"min_level\": {data[0]},\n")
+            file.write(f"\t\t\t\t\t\"max_level\": {data[1]},\n")
+            file.write(f"\t\t\t\t\t\"species\": \"SPECIES_{data[2]}\"\n")
+            closing = PkmnDataFile.cell(row[0].row + 1,row[0].column).value
+            if closing == None:
+                file.write(f"\t\t\t\t}}\n")
+                file.write(f"\t\t\t\t]\n")
+                file.write(f"\t\t\t}}\n")
+                file.write(f"\t\t}}\n")
+                file.write(f"\t]\n")
+                file.write(f"}},\n")
+            elif "mons" in closing:
                 file.write(f"\t\t\t\t}}\n")
                 file.write(f"\t\t\t]\n")
                 file.write(f"\t\t}},\n")
