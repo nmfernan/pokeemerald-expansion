@@ -15828,6 +15828,20 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    //Custom PokeVial item!
+    [ITEM_POKEVIAL] =
+    {
+        .name = ITEM_NAME("{PKMN} Vial"),
+        .price = 0,
+        .description = COMPOUND_STRING("Mobile {PKMN} Center!"),
+        .pocket = POCKET_KEY_ITEMS,
+        //.sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeVial,
+        .iconPic = gItemIcon_SwapSnack,
+        .iconPalette = gItemIconPalette_SwapSnack,
+    },
 };
 
 #undef ITEM_NAME

@@ -244,6 +244,7 @@ void NewGameInitData(void)
     AddBagItem(ITEM_ABILITY_CAPSULE,200);
     AddBagItem(ITEM_ABILITY_PATCH,200);
     AddBagItem(ITEM_POKEMON_BOX,1);
+    AddBagItem(ITEM_POKEVIAL,1);
     for (int i = ITEM_CHERI_BERRY; i <= ITEM_MARANGA_BERRY; i++){
         AddBagItem(i,900);
     }
