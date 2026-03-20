@@ -1,1 +1,12 @@
-arm-none-eabi-ld: warning: ../../pokeleafgreen.elf has a LOAD segment with RWX permissions
+src/move_relearner.c: In function 'GetRelearnerTutorMoves':
+src/move_relearner.c:1289:21: error: 'gTutorMoves' undeclared (first use in this function)
+ 1289 |     for (u32 i = 0; gTutorMoves[i] != MOVE_UNAVAILABLE; i++)
+      |                     ^~~~~~~~~~~
+src/move_relearner.c:1289:21: note: each undeclared identifier is reported only once for each function it appears in
+src/move_relearner.c: In function 'HasRelearnerTutorMoves':
+src/move_relearner.c:1427:21: error: 'gTutorMoves' undeclared (first use in this function)
+ 1427 |     for (u32 i = 0; gTutorMoves[i] != MOVE_UNAVAILABLE; i++)
+      |                     ^~~~~~~~~~~
+make: *** [Makefile:481: build/leafgreen/src/move_relearner.o] Error 1
+make: *** Deleting file 'build/leafgreen/src/move_relearner.o'
+make: *** Waiting for unfinished jobs....

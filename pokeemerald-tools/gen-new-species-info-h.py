@@ -180,7 +180,7 @@ if OnlyNewSpecies != 1:
 #                    continue
                 
                 elif Attribute == ".teachableLearnset":
-#                    file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}TeachableLearnset,\n")
+                    file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}TeachableLearnset,\n")
                     continue
     #             elif PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".eggMoveLearnset":
     #                 CurrentSpeciesCptl = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
