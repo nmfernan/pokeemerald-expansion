@@ -92,18 +92,23 @@ with open(FileName, WriteOrAdd) as file:
             file.write(f"Pic: {data[Trainer.TYPE.value].title()} Frlg\n")
             file.write(f"Gender: {data[Trainer.GENDER.value].capitalize()}\n")
             file.write(f"Music: {data[Trainer.MUSIC.value].capitalize()}\n")
+            
             if data[Trainer.ITEM1.value] != "":
                 file.write(f"Items: ")
-                for item in data[Trainer.ITEM1.value:Trainer.BATTLE_TYPE.value]:#have to run to BATTLE_TYPE due to not counting ITEM4 case
-                    if "_" in item:#I goofed during parsing and have to have this handler now
-                        item = item.replace("_"," ")
-                    if item != None:
-                        file.write(f"{item.capitalize()} / ")
+                for i in range(Trainer.ITEM1.value,Trainer.ITEM4.value + 1):
+                    print(i)
+                    if "_" in data[i]:#I goofed during parsing and have to have this handler now
+                        data[i] = data[i].replace("_"," ")
+                    if data[i] != "":
+                        if data[i+1] != "" and i != 10:                        
+                            file.write(f"{data[i].title()} / ")
+                        else:
+                            file.write(f"{data[i].title()}\n")   
 #                        if Debug: print("item1")
                     else:
 #                        if Debug: print("no more items")
-                        break
-            
+                        break          
+                                        
             file.write(f"Double Battle: {data[Trainer.BATTLE_TYPE.value].capitalize()}\n")
             file.write(f"AI: {data[Trainer.AI.value]}\n")
             

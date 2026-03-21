@@ -4389,7 +4389,7 @@ Machitan
 Level: 66
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_TERRY ===
+=== TRAINER_RIVAL_OAKS_LAB_SQUIRTLE ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4402,7 +4402,7 @@ Squirtle
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_TERRY_2 ===
+=== TRAINER_RIVAL_OAKS_LAB_BULBASAUR ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4415,7 +4415,7 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_TERRY_3 ===
+=== TRAINER_RIVAL_OAKS_LAB_CHARMANDER  ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4428,7 +4428,7 @@ Charmander
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_TERRY_4 ===
+=== TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4449,7 +4449,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Tackle
 - Tail Whip
 
-=== TRAINER_RIVAL_TERRY_5 ===
+=== TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4470,7 +4470,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Tackle
 - Growl
 
-=== TRAINER_RIVAL_TERRY_6 ===
+=== TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4491,7 +4491,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Scratch
 - Growl
 
-=== TRAINER_RIVAL_TERRY_7 ===
+=== TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4530,7 +4530,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Withdraw
 - Rapid Spin
 
-=== TRAINER_RIVAL_TERRY_8 ===
+=== TRAINER_RIVAL_CERULEAN_BULBASAUR ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4569,7 +4569,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Razor Leaf
 - Leech Seed
 
-=== TRAINER_RIVAL_TERRY_9 ===
+=== TRAINER_RIVAL_CERULEAN_CHARMANDER ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -4945,7 +4945,8 @@ Class: Leader Frlg
 Pic: Leader Frlg
 Gender: Male
 Music: Aqua
-Items: Hyper potion / Hyper potion / Full heal /  / Double Battle: No
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Patraphinx
@@ -5827,7 +5828,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Super potion /  /  /  / Double Battle: No
+Items: Super Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Abomachulk
@@ -5876,7 +5878,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Kabustion
@@ -5905,7 +5908,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Teklawno
@@ -5934,7 +5938,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Slowpoke
@@ -5983,7 +5988,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Rattarule
@@ -6012,7 +6018,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
@@ -6061,7 +6068,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Nidorino
@@ -6110,7 +6118,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Seel
@@ -6159,7 +6168,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Ferodillo
@@ -6208,7 +6218,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Abyssir
@@ -6257,7 +6268,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Super potion /  /  /  / Double Battle: No
+Items: Super Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Victreebel
@@ -6282,7 +6294,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Ambalithic
@@ -6311,7 +6324,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Clefanaut
@@ -6340,7 +6354,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Beedrill
@@ -6389,7 +6404,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Patraphinx
@@ -6418,7 +6434,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Tangela
@@ -6467,7 +6484,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Rhyhorn
@@ -6516,7 +6534,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Persian
@@ -6565,7 +6584,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Female
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Lickilato
@@ -6622,7 +6642,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Male
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Radiachan
@@ -6679,7 +6700,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Female
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Fowln'tom
@@ -6736,7 +6758,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Male
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pinnadra
@@ -6823,7 +6846,8 @@ Class: Leader Frlg
 Pic: Leader Frlg
 Gender: Female
 Music: Female
-Items: Super potion /  /  /  / Double Battle: No
+Items: Super Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Gyarados
@@ -6856,7 +6880,8 @@ Class: Leader Frlg
 Pic: Leader Frlg
 Gender: Male
 Music: Male
-Items: Super potion / Full heal /  /  / Double Battle: No
+Items: Super Potion / Full Heal
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Electrode
@@ -6897,7 +6922,8 @@ Class: Leader Frlg
 Pic: Leader Frlg
 Gender: Female
 Music: Female
-Items: Hyper potion / Full heal /  /  / Double Battle: No
+Items: Hyper Potion / Full Heal
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Mucktribel
@@ -6938,7 +6964,8 @@ Class: Leader Frlg
 Pic: Leader Frlg
 Gender: Male
 Music: Male
-Items: Hyper potion / Hyper potion / Full heal /  / Double Battle: No
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Adnokana
@@ -6984,7 +7011,8 @@ Class: Leader Frlg
 Pic: Leader Frlg
 Gender: Male
 Music: Male
-Items: Hyper potion / Hyper potion / Full heal /  / Double Battle: No
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Impsect
@@ -7041,7 +7069,8 @@ Class: Leader Frlg
 Pic: Leader Frlg
 Gender: Female
 Music: Female
-Items: Hyper potion / Hyper potion / Full heal /  / Double Battle: No
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Platinupus
@@ -7161,7 +7190,7 @@ Ponyta
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_TERRY_10 ===
+=== TRAINER_RIVAL_SS_ANNE_SQUIRTLE ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7186,10 +7215,10 @@ Wartortle
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_TERRY_11 ===
+=== TRAINER_v_SS_ANNE_BULBASAUR ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: V Frlg
+Pic: V Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7211,7 +7240,7 @@ Ivysaur
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_TERRY_12 ===
+=== TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7236,7 +7265,7 @@ Charmeleon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_TERRY_13 ===
+=== TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7265,7 +7294,7 @@ Ferrapin
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_TERRY_14 ===
+=== TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7294,7 +7323,7 @@ Ecosaur
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_TERRY_15 ===
+=== TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7323,7 +7352,7 @@ Chariguana
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_TERRY_16 ===
+=== TRAINER_RIVAL_SILPH_SQUIRTLE ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7352,7 +7381,7 @@ Fortoise
 Level: 56
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_RIVAL_TERRY_17 ===
+=== TRAINER_RIVAL_SILPH_BULBASAUR ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7381,7 +7410,7 @@ Terarisaur
 Level: 56
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_RIVAL_TERRY_18 ===
+=== TRAINER_RIVAL_SILPH_CHARMANDER ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7410,7 +7439,7 @@ Chariana
 Level: 56
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_RIVAL_TERRY_19 ===
+=== TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7466,7 +7495,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Flash Cannon
 - Protect
 
-=== TRAINER_RIVAL_TERRY_20 ===
+=== TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7522,7 +7551,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Growth
 - Synthesis
 
-=== TRAINER_RIVAL_TERRY_21 ===
+=== TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
 Name: TERRY
 Class: Rival Frlg
 Pic: Rival Frlg
@@ -7578,13 +7607,14 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Slash
 - Waterfall
 
-=== TRAINER_CHAMPION_TERRY_22 ===
+=== TRAINER_CHAMPION_FIRST_SQUIRTLE ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Frlg
 Gender: Male
 Music: Male
-Items: Full restore / Full restore / Full restore / Full restore / Double Battle: No
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Frostunus
@@ -7635,13 +7665,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flash Cannon
 - Ice Beam
 
-=== TRAINER_CHAMPION_TERRY_23 ===
+=== TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Frlg
 Gender: Male
 Music: Male
-Items: Full restore / Full restore / Full restore / Full restore / Double Battle: No
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Inferntri
@@ -7692,13 +7723,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Growth
 - Toxic
 
-=== TRAINER_CHAMPION_TERRY_24 ===
+=== TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Frlg
 Gender: Male
 Music: Male
-Items: Full restore / Full restore / Full restore / Full restore / Double Battle: No
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Voltduo
@@ -8925,7 +8957,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Weepinbell
@@ -8950,7 +8983,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Gloom
@@ -9013,7 +9047,8 @@ Class: Lady Frlg
 Pic: Lady Frlg
 Gender: Male
 Music: Female
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move
 
 Hoppip @ STARDUST
@@ -9350,7 +9385,8 @@ Class: Team Rocket Frlg
 Pic: Team Rocket Frlg
 Gender: Male
 Music: Aqua
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Muk
@@ -9383,7 +9419,8 @@ Class: Team Rocket Frlg
 Pic: Team Rocket Frlg
 Gender: Male
 Music: Aqua
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Golbat
@@ -9811,7 +9848,8 @@ Class: Lady Frlg
 Pic: Lady Frlg
 Gender: Male
 Music: Female
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move
 
 Mareep @ STARDUST
@@ -10394,7 +10432,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Exeggcute
@@ -10419,7 +10458,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Tangela
@@ -10452,7 +10492,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Bellsprout
@@ -10473,7 +10514,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Chansey
@@ -10490,7 +10532,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Rhydon
@@ -10539,7 +10582,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Persian
@@ -10588,7 +10632,8 @@ Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
-Items: Full restore / Full restore /  /  / Double Battle: Yes
+Items: Full Restore / Full Restore
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Miltank
@@ -10693,7 +10738,8 @@ Class: Lady Frlg
 Pic: Lady Frlg
 Gender: Male
 Music: Female
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move
 
 Persian @ NUGGET
@@ -12855,7 +12901,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Victreebel
@@ -12880,7 +12927,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Vileplume
@@ -12947,7 +12995,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Tangela
@@ -12980,7 +13029,8 @@ Class: Pkmn Ranger Frlg
 Pic: Pkmn Ranger Frlg
 Gender: Female
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Chansey
@@ -12997,7 +13047,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Male
 Music: Cool
-Items: Full restore /  /  /  / Double Battle: No
+Items: Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Rhydon
@@ -13046,7 +13097,8 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer Frlg
 Gender: Female
 Music: Cool
-Items: Hyper potion /  /  /  / Double Battle: No
+Items: Hyper Potion
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Persian
@@ -13095,7 +13147,8 @@ Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
-Items: Full restore / Full restore /  /  / Double Battle: Yes
+Items: Full Restore / Full Restore
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Miltank
@@ -13234,7 +13287,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Male
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Dewgong
@@ -13283,7 +13337,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Male
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Steelix
@@ -13332,7 +13387,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Male
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Gengar
@@ -13381,7 +13437,8 @@ Class: Elite Four Frlg
 Pic: Elite Four Frlg
 Gender: Male
 Music: Elite four
-Items: Full restore / Full restore /  /  / Double Battle: No
+Items: Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Gyarados
@@ -13424,13 +13481,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunderbolt
 - Ice Beam
 
-=== TRAINER_CHAMPION_TERRY_25 ===
+=== TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Frlg
 Gender: Male
 Music: Male
-Items: Full restore / Full restore / Full restore / Full restore / Double Battle: No
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Heracross
@@ -13481,13 +13539,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Rain Dance
 
-=== TRAINER_CHAMPION_TERRY_26 ===
+=== TRAINER_CHAMPION_REMATCH_BULBASAUR ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Frlg
 Gender: Male
 Music: Male
-Items: Full restore / Full restore / Full restore / Full restore / Double Battle: No
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Heracross
@@ -13538,13 +13597,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Sunny Day
 
-=== TRAINER_CHAMPION_TERRY_27 ===
+=== TRAINER_CHAMPION_REMATCH_CHARMANDER ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Frlg
 Gender: Male
 Music: Male
-Items: Full restore / Full restore / Full restore / Full restore / Double Battle: No
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Heracross
