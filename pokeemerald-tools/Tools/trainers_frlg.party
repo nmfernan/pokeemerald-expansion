@@ -1464,7 +1464,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Transform
 
-Porygon-z
+Porygon_z
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -1602,7 +1602,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Missingno
+Missingno2
 Level: 65
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2338,7 +2338,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Porygon-q
+Porygonq
 Level: 58
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2654,10 +2654,10 @@ Hydrados
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_LUIS ===
+=== TRAINER_SWIMMER_MALE_LUIS ===
 Name: LUIS
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2671,10 +2671,10 @@ Shellder
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_RICHARD ===
+=== TRAINER_SWIMMER_MALE_RICHARD ===
 Name: RICHARD
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2688,10 +2688,10 @@ An'enemy
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_REECE ===
+=== TRAINER_SWIMMER_MALE_REECE ===
 Name: REECE
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2709,10 +2709,10 @@ Starus
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_MATTHEW ===
+=== TRAINER_SWIMMER_MALE_MATTHEW ===
 Name: MATTHEW
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2726,10 +2726,10 @@ Ferrapin
 Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_DOUGLAS ===
+=== TRAINER_SWIMMER_MALE_DOUGLAS ===
 Name: DOUGLAS
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2747,10 +2747,10 @@ Kingler
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_DAVID ===
+=== TRAINER_SWIMMER_MALE_DAVID ===
 Name: DAVID
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2768,10 +2768,10 @@ Gilduck
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_TONY ===
+=== TRAINER_SWIMMER_MALE_TONY ===
 Name: TONY
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2785,10 +2785,10 @@ Lochlass
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_AXLE ===
+=== TRAINER_SWIMMER_MALE_AXLE ===
 Name: AXLE
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2814,10 +2814,10 @@ Preciped
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_BARRY ===
+=== TRAINER_SWIMMER_MALE_BARRY ===
 Name: BARRY
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2831,10 +2831,10 @@ Kraklaw
 Level: 53
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_DEAN ===
+=== TRAINER_SWIMMER_MALE_DEAN ===
 Name: DEAN
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2844,10 +2844,10 @@ Starwe
 Level: 58
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_DARRIN ===
+=== TRAINER_SWIMMER_MALE_DARRIN ===
 Name: DARRIN
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2869,10 +2869,10 @@ Slowmate
 Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_SPENCER ===
+=== TRAINER_SWIMMER_MALE_SPENCER ===
 Name: SPENCER
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2886,10 +2886,10 @@ Tentacate
 Level: 53
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_JACK ===
+=== TRAINER_SWIMMER_MALE_JACK ===
 Name: JACK
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2899,10 +2899,10 @@ Starwe
 Level: 60
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_JEROME ===
+=== TRAINER_SWIMMER_MALE_JEROME ===
 Name: JEROME
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2916,10 +2916,10 @@ Fortoise
 Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_ROLAND ===
+=== TRAINER_SWIMMER_MALE_ROLAND ===
 Name: ROLAND
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -3301,10 +3301,10 @@ Gigglyhuff
 Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_TIFFANY ===
+=== TRAINER_SWIMMER_FEMALE_TIFFANY ===
 Name: TIFFANY
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -3314,10 +3314,10 @@ Caprisea
 Level: 58
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_NORA ===
+=== TRAINER_SWIMMER_FEMALE_NORA ===
 Name: NORA
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -3331,10 +3331,10 @@ Kraklaw
 Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_MELISSA ===
+=== TRAINER_SWIMMER_FEMALE_MELISSA ===
 Name: MELISSA
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -3403,10 +3403,10 @@ Weepinbell
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_ANYA ===
+=== TRAINER_SWIMMER_FEMALE_ANYA ===
 Name: ANYA
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -3432,10 +3432,10 @@ Politoes
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_ALICE ===
+=== TRAINER_SWIMMER_FEMALE_ALICE ===
 Name: ALICE
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -3449,10 +3449,10 @@ Kabutops
 Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_CONNIE ===
+=== TRAINER_SWIMMER_FEMALE_CONNIE ===
 Name: CONNIE
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -3470,10 +3470,10 @@ Gilduck
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_SHIRLEY ===
+=== TRAINER_SWIMMER_FEMALE_SHIRLEY ===
 Name: SHIRLEY
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -3494,7 +3494,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_PSYCHIC_JOHAN ===
 Name: JOHAN
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -3519,7 +3519,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_PSYCHIC_TYRON ===
 Name: TYRON
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -3529,14 +3529,14 @@ Mr_jest
 Level: 52
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Vohoo-du
+Vohoodu
 Level: 52
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_PSYCHIC_CAMERON ===
 Name: CAMERON
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -3557,7 +3557,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_PSYCHIC_PRESTON ===
 Name: PRESTON
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -3639,7 +3639,7 @@ Spiritulee
 Level: 66
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Vohoo-du
+Vohoodu
 Level: 65
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4391,8 +4391,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_OAKS_LAB_SQUIRTLE ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4404,8 +4404,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVAL_OAKS_LAB_BULBASAUR ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4415,10 +4415,10 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_OAKS_LAB_CHARMANDER  ===
+=== TRAINER_RIVAL_OAKS_LAB_CHARMANDER ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4430,8 +4430,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4451,8 +4451,8 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4472,8 +4472,8 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4493,8 +4493,8 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4532,8 +4532,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_CERULEAN_BULBASAUR ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4571,8 +4571,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_CERULEAN_CHARMANDER ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -4634,7 +4634,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Porygon-z
+Porygon_z
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4729,7 +4729,7 @@ Dugrouple
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Porygon-z
+Porygon_z
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4766,7 +4766,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Shock Wave
 - Flash Cannon
 
-Porygon-z
+Porygon_z
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tri Attack
@@ -4860,7 +4860,7 @@ Magnemeld
 Level: 54
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Porygon-x
+Porygonx
 Level: 54
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4888,7 +4888,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BOSS_GIOVANNI ===
 Name: GIOVANNI
 Class: Boss Frlg
-Pic: Boss Frlg
+Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -4913,7 +4913,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_BOSS_GIOVANNI_2 ===
 Name: GIOVANNI
 Class: Boss Frlg
-Pic: Boss Frlg
+Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -4939,10 +4939,10 @@ Nidoarchy
 Level: 58
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
-=== TRAINER_LEADER_GIOVANNI_3 ===
+=== TRAINER_LEADER_GIOVANNI ===
 Name: GIOVANNI
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Items: Hyper Potion / Hyper Potion / Full Heal
@@ -5000,7 +5000,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5017,7 +5017,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_2 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5038,7 +5038,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_3 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5055,7 +5055,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_4 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5072,7 +5072,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_5 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5089,7 +5089,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_6 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5106,7 +5106,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_7 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5123,7 +5123,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_8 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5140,7 +5140,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_9 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5157,7 +5157,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_10 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5190,7 +5190,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_11 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5215,7 +5215,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_12 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5240,7 +5240,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_13 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5281,7 +5281,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_14 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5302,7 +5302,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_15 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5319,7 +5319,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_16 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5340,7 +5340,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_17 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5361,7 +5361,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_18 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5378,7 +5378,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_19 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5399,7 +5399,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_20 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5416,7 +5416,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_21 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5441,7 +5441,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_22 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5458,7 +5458,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_23 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5475,7 +5475,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_24 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5496,7 +5496,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_25 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5517,7 +5517,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5534,7 +5534,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_27 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5555,7 +5555,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_28 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5568,7 +5568,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_29 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5581,7 +5581,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_30 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5598,7 +5598,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5619,7 +5619,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_32 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5640,7 +5640,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_33 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5657,7 +5657,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_34 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5674,7 +5674,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_35 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5699,7 +5699,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_36 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5720,7 +5720,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5741,7 +5741,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_38 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5762,7 +5762,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_39 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5775,7 +5775,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_40 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5804,7 +5804,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5825,7 +5825,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_COOLTRAINER_SAMUEL ===
 Name: SAMUEL
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Super Potion
@@ -5875,7 +5875,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_GEORGE ===
 Name: GEORGE
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Items: Hyper Potion
@@ -5905,7 +5905,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_COLBY ===
 Name: COLBY
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Hyper Potion
@@ -5935,7 +5935,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_PAUL ===
 Name: PAUL
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -5985,7 +5985,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_ROLANDO ===
 Name: ROLANDO
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Items: Hyper Potion
@@ -6015,7 +6015,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_GILBERT ===
 Name: GILBERT
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Hyper Potion
@@ -6065,7 +6065,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_OWEN ===
 Name: OWEN
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Hyper Potion
@@ -6115,7 +6115,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_BERKE ===
 Name: BERKE
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -6165,7 +6165,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_YUJI ===
 Name: YUJI
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Hyper Potion
@@ -6215,7 +6215,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_WARREN ===
 Name: WARREN
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Hyper Potion
@@ -6265,7 +6265,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_MARY ===
 Name: MARY
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Female
 Music: Cool
 Items: Super Potion
@@ -6291,7 +6291,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_CAROLINE ===
 Name: CAROLINE
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Cool
 Items: Hyper Potion
@@ -6321,7 +6321,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_ALEXA ===
 Name: ALEXA
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -6351,7 +6351,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_SHANNON ===
 Name: SHANNON
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -6401,7 +6401,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_NAOMI ===
 Name: NAOMI
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Female
 Music: Cool
 Items: Hyper Potion
@@ -6431,7 +6431,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_BROOKE ===
 Name: BROOKE
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -6481,7 +6481,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_AUSTINA ===
 Name: AUSTINA
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -6531,7 +6531,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_JULIE ===
 Name: JULIE
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Cool
 Items: Hyper Potion
@@ -6581,7 +6581,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_ELITE_FOUR_LORELEI ===
 Name: LORELEI
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Lorelei Frlg
 Gender: Female
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -6620,7 +6620,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Ball
 - Attract
 
-Missingno~5
+Missingno5
 Level: 77
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Mirror Coat
@@ -6639,7 +6639,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: BRUNO
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -6678,7 +6678,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Needle Arm
 - Bulk Up
 
-Missingno~4
+Missingno4
 Level: 78
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Ancientpower
@@ -6697,7 +6697,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: AGATHA
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Agatha Frlg
 Gender: Female
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -6725,7 +6725,7 @@ Level: 78
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Megahorn
 - Skull Bash
-- Phantomforce
+- Phantom Force
 - Zen Headbutt
 
 Yokayubi
@@ -6736,7 +6736,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Flamethrower
 - Morning Sun
 
-Missingno
+Missingno1
 Level: 79
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Ball
@@ -6755,7 +6755,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: LANCE
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -6794,7 +6794,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Air Slash
 - Surf
 
-Missingno~3
+Missingno3
 Level: 80
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Air Slash
@@ -6813,7 +6813,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_LEADER_BROCK ===
 Name: BROCK
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Brock Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -6843,7 +6843,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LEADER_MISTY ===
 Name: MISTY
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Misty Frlg
 Gender: Female
 Music: Female
 Items: Super Potion
@@ -6877,7 +6877,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LEADER_LT_SURGE ===
 Name: LT_SURGE
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Lt_Surge Frlg
 Gender: Male
 Music: Male
 Items: Super Potion / Full Heal
@@ -6919,7 +6919,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LEADER_ERIKA ===
 Name: ERIKA
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Erika Frlg
 Gender: Female
 Music: Female
 Items: Hyper Potion / Full Heal
@@ -6961,7 +6961,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LEADER_KOGA ===
 Name: KOGA
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Koga Frlg
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion / Full Heal
@@ -7008,7 +7008,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LEADER_BLAINE ===
 Name: BLAINE
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Blaine Frlg
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion / Full Heal
@@ -7066,7 +7066,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LEADER_SABRINA ===
 Name: SABRINA
 Class: Leader Frlg
-Pic: Leader Frlg
+Pic: Leader Sabrina Frlg
 Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion / Full Heal
@@ -7192,8 +7192,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVAL_SS_ANNE_SQUIRTLE ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7215,10 +7215,10 @@ Wartortle
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_v_SS_ANNE_BULBASAUR ===
+=== TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
 Name: TERRY
-Class: V Frlg
-Pic: V Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7242,8 +7242,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7267,8 +7267,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7296,8 +7296,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7325,8 +7325,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7354,8 +7354,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_SILPH_SQUIRTLE ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7373,7 +7373,7 @@ Exeggity
 Level: 53
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Vohoo-du
+Vohoodu
 Level: 54
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7383,8 +7383,8 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7402,7 +7402,7 @@ Singesha
 Level: 53
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Vohoo-du
+Vohoodu
 Level: 54
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7412,8 +7412,8 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7431,7 +7431,7 @@ Exeggity
 Level: 53
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Vohoo-du
+Vohoodu
 Level: 54
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7441,8 +7441,8 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7497,8 +7497,8 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7553,8 +7553,8 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
 Name: TERRY
-Class: Rival Frlg
-Pic: Rival Frlg
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -7610,7 +7610,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_CHAMPION_FIRST_SQUIRTLE ===
 Name: TERRY
 Class: Champion Frlg
-Pic: Champion Frlg
+Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
@@ -7668,7 +7668,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: TERRY
 Class: Champion Frlg
-Pic: Champion Frlg
+Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
@@ -7726,7 +7726,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: TERRY
 Class: Champion Frlg
-Pic: Champion Frlg
+Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
@@ -8386,8 +8386,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_ELI_ANNE ===
 Name: ELI_ANNE
-Class: Twins Frlg
-Pic: Twins Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -8778,63 +8778,11 @@ Level: 25
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_PKMN_PROF_PROF_OAK ===
-Name: PROF_OAK
+Name: PROF. OAK
 Class: Pkmn Prof Frlg
-Pic: Pkmn Prof Frlg
+Pic: Professor Oak Frlg
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Ekans
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_PLAYER_BRENDAN ===
-Name: BRENDAN
-Class: Player Frlg
-Pic: Player Frlg
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Ekans
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_PLAYER_MAY ===
-Name: MAY
-Class: Player Frlg
-Pic: Player Frlg
-Gender: Male
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Ekans
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_PLAYER_RED ===
-Name: RED
-Class: Player Frlg
-Pic: Player Frlg
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Ekans
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_PLAYER_LEAF ===
-Name: LEAF
-Class: Player Frlg
-Pic: Player Frlg
-Gender: Male
-Music: Female
 Double Battle: No
 AI: Check Bad Move
 
@@ -8845,7 +8793,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_42 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -8862,7 +8810,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_PSYCHIC_JACLYN ===
 Name: JACLYN
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -8909,10 +8857,10 @@ Primeape @ BLACK BELT
 Level: 37
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_TUBER~3_AMIRA ===
+=== TRAINER_TUBER_AMIRA ===
 Name: AMIRA
-Class: Tuber~3 Frlg
-Pic: Tuber~3 Frlg
+Class: Tuber Frlg
+Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
@@ -8933,7 +8881,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_PKMN_BREEDER_ALIZE ===
 Name: ALIZE
 Class: Pkmn Breeder Frlg
-Pic: Pkmn Breeder Frlg
+Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
@@ -8954,7 +8902,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_PKMN_RANGER_NICOLAS ===
 Name: NICOLAS
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -8980,7 +8928,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PKMN_RANGER_MADELINE ===
 Name: MADELINE
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -9171,8 +9119,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_ELI_ANNE_2 ===
 Name: ELI_ANNE
-Class: Twins Frlg
-Pic: Twins Frlg
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -9260,7 +9208,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_43 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9277,7 +9225,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_44 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9302,7 +9250,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_45 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9323,7 +9271,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_46 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9344,7 +9292,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_47 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9365,7 +9313,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_48 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9382,7 +9330,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_ADMIN ===
 Name: ADMIN
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Items: Hyper Potion
@@ -9416,7 +9364,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 === TRAINER_TEAM_ROCKET_ADMIN_2 ===
 Name: ADMIN
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Items: Hyper Potion
@@ -9496,10 +9444,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Recover
 - Psybeam
 
-=== TRAINER_SWIMMER\sf_AMARA ===
+=== TRAINER_SWIMMER_FEMALE_AMARA ===
 Name: AMARA
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -9517,10 +9465,10 @@ Dewgong
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_MARIA ===
+=== TRAINER_SWIMMER_FEMALE_MARIA ===
 Name: MARIA
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -9534,10 +9482,10 @@ Seadra
 Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_ABIGAIL ===
+=== TRAINER_SWIMMER_FEMALE_ABIGAIL ===
 Name: ABIGAIL
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -9555,10 +9503,10 @@ Golduck
 Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_FINN ===
+=== TRAINER_SWIMMER_MALE_FINN ===
 Name: FINN
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -9568,10 +9516,10 @@ Starmie
 Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_GARRETT ===
+=== TRAINER_SWIMMER_MALE_GARRETT ===
 Name: GARRETT
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -9753,10 +9701,10 @@ Ivysaur
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TUBER~3_ALEXIS ===
+=== TRAINER_TUBER_ALEXIS ===
 Name: ALEXIS
-Class: Tuber~3 Frlg
-Pic: Tuber~3 Frlg
+Class: Tuber Frlg
+Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
@@ -9795,10 +9743,10 @@ Clefairy
 Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_TISHA ===
+=== TRAINER_SWIMMER_FEMALE_TISHA ===
 Name: TISHA
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -9881,10 +9829,10 @@ Pidgeotto
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_TOBY ===
+=== TRAINER_SWIMMER_MALE_TOBY ===
 Name: TOBY
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -9905,7 +9853,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_49 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9926,7 +9874,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_50 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -9951,7 +9899,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TEAM_ROCKET_GRUNT_51 ===
 Name: GRUNT
 Class: Team Rocket Frlg
-Pic: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -10037,10 +9985,10 @@ Qwilfish
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_MYMO ===
+=== TRAINER_SWIMMER_MALE_MYMO ===
 Name: MYMO
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -10054,10 +10002,10 @@ Wartortle
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_NICOLE ===
+=== TRAINER_SWIMMER_FEMALE_NICOLE ===
 Name: NICOLE
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -10101,10 +10049,10 @@ Sunflora
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sm_SAMIR ===
+=== TRAINER_SWIMMER_MALE_SAMIR ===
 Name: SAMIR
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -10114,10 +10062,10 @@ Gyarados
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SWIMMER\sf_DENISE ===
+=== TRAINER_SWIMMER_FEMALE_DENISE ===
 Name: DENISE
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -10228,7 +10176,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_PSYCHIC_DARIO ===
 Name: DARIO
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -10245,7 +10193,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PSYCHIC_RODETTE ===
 Name: RODETTE
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -10429,7 +10377,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_PKMN_RANGER_LOGAN ===
 Name: LOGAN
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -10455,7 +10403,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PKMN_RANGER_JACKSON ===
 Name: JACKSON
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -10489,7 +10437,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PKMN_RANGER_BETH ===
 Name: BETH
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -10511,7 +10459,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PKMN_RANGER_KATELYN ===
 Name: KATELYN
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -10529,7 +10477,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_LEROY ===
 Name: LEROY
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -10579,7 +10527,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_COOLTRAINER_MICHELLE ===
 Name: MICHELLE
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Female
 Music: Cool
 Items: Hyper Potion
@@ -10782,7 +10730,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_PSYCHIC_LAURA ===
 Name: LAURA
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -10803,7 +10751,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PKMN_BREEDER_BETHANY ===
 Name: BETHANY
 Class: Pkmn Breeder Frlg
-Pic: Pkmn Breeder Frlg
+Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
@@ -10816,7 +10764,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_PKMN_BREEDER_ALLISON ===
 Name: ALLISON
 Class: Pkmn Breeder Frlg
-Pic: Pkmn Breeder Frlg
+Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
@@ -12193,10 +12141,10 @@ Fearow
 Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-=== TRAINER_SWIMMER\sf_ALICE_2 ===
+=== TRAINER_SWIMMER_FEMALE_ALICE_2 ===
 Name: ALICE
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -12210,10 +12158,10 @@ Seaking
 Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-=== TRAINER_SWIMMER\sm_DARRIN_2 ===
+=== TRAINER_SWIMMER_MALE_DARRIN_2 ===
 Name: DARRIN
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -12302,10 +12250,10 @@ Magikarp
 Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-=== TRAINER_SWIMMER\sm_JACK_2 ===
+=== TRAINER_SWIMMER_MALE_JACK_2 ===
 Name: JACK
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -12349,10 +12297,10 @@ Starmie
 Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_SWIMMER\sm_FINN_2 ===
+=== TRAINER_SWIMMER_MALE_FINN_2 ===
 Name: FINN
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -12532,10 +12480,10 @@ Primeape @ BLACK BELT
 Level: 56
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-=== TRAINER_TUBER~3_AMIRA_2 ===
+=== TRAINER_TUBER_AMIRA_2 ===
 Name: AMIRA
-Class: Tuber~3 Frlg
-Pic: Tuber~3 Frlg
+Class: Tuber Frlg
+Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
@@ -12607,7 +12555,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 === TRAINER_PKMN_BREEDER_ALIZE_2 ===
 Name: ALIZE
 Class: Pkmn Breeder Frlg
-Pic: Pkmn Breeder Frlg
+Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
@@ -12710,10 +12658,10 @@ Noctowl
 Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_SWIMMER\sf_NICOLE_2 ===
+=== TRAINER_SWIMMER_FEMALE_NICOLE_2 ===
 Name: NICOLE
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -12726,7 +12674,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 === TRAINER_PSYCHIC_JACLYN_2 ===
 Name: JACLYN
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -12756,10 +12704,10 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Recover
 - Reflect
 
-=== TRAINER_SWIMMER\sm_SAMIR_2 ===
+=== TRAINER_SWIMMER_MALE_SAMIR_2 ===
 Name: SAMIR
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -12823,7 +12771,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 === TRAINER_PSYCHIC_DARIO_2 ===
 Name: DARIO
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -12840,7 +12788,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 === TRAINER_PSYCHIC_RODETTE_2 ===
 Name: RODETTE
 Class: Psychic Frlg
-Pic: Psychic Frlg
+Pic: Psychic F Frlg
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -12898,7 +12846,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 === TRAINER_PKMN_RANGER_NICOLAS_2 ===
 Name: NICOLAS
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -12924,7 +12872,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 === TRAINER_PKMN_RANGER_MADELINE_2 ===
 Name: MADELINE
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -12992,7 +12940,7 @@ IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 === TRAINER_PKMN_RANGER_JACKSON_2 ===
 Name: JACKSON
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -13026,7 +12974,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 === TRAINER_PKMN_RANGER_KATELYN_2 ===
 Name: KATELYN
 Class: Pkmn Ranger Frlg
-Pic: Pkmn Ranger Frlg
+Pic: Pokemon Ranger M Frlg
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -13044,7 +12992,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 === TRAINER_COOLTRAINER_LEROY_2 ===
 Name: LEROY
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Items: Full Restore
@@ -13094,7 +13042,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 === TRAINER_COOLTRAINER_MICHELLE_2 ===
 Name: MICHELLE
 Class: Cooltrainer Frlg
-Pic: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Female
 Music: Cool
 Items: Hyper Potion
@@ -13230,10 +13178,10 @@ Butterfree
 Level: 51
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_SWIMMER\sm_MATTHEW_2 ===
+=== TRAINER_SWIMMER_MALE_MATTHEW_2 ===
 Name: MATTHEW
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -13247,10 +13195,10 @@ Poliwrath
 Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-=== TRAINER_SWIMMER\sm_TONY_2 ===
+=== TRAINER_SWIMMER_MALE_TONY_2 ===
 Name: TONY
-Class: Swimmer\Sm Frlg
-Pic: Swimmer\Sm Frlg
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -13264,10 +13212,10 @@ Seadra
 Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-=== TRAINER_SWIMMER\sf_MELISSA_2 ===
+=== TRAINER_SWIMMER_FEMALE_MELISSA_2 ===
 Name: MELISSA
-Class: Swimmer\Sf Frlg
-Pic: Swimmer\Sf Frlg
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
@@ -13284,7 +13232,7 @@ IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 === TRAINER_ELITE_FOUR_LORELEI_2 ===
 Name: LORELEI
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -13334,7 +13282,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
 Name: BRUNO
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -13384,7 +13332,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_ELITE_FOUR_AGATHA_2 ===
 Name: AGATHA
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Agatha Frlg
 Gender: Male
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -13434,7 +13382,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_ELITE_FOUR_LANCE_2 ===
 Name: LANCE
 Class: Elite Four Frlg
-Pic: Elite Four Frlg
+Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite four
 Items: Full Restore / Full Restore
@@ -13484,7 +13432,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
 Name: TERRY
 Class: Champion Frlg
-Pic: Champion Frlg
+Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
@@ -13542,7 +13490,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPION_REMATCH_BULBASAUR ===
 Name: TERRY
 Class: Champion Frlg
-Pic: Champion Frlg
+Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
@@ -13600,7 +13548,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPION_REMATCH_CHARMANDER ===
 Name: TERRY
 Class: Champion Frlg
-Pic: Champion Frlg
+Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore

@@ -2,6 +2,7 @@
 #Takes information from excel sheet and prepares .h file for custom pokemon
 import time
 import math
+import random
 from enum import Enum
 
 import openpyxl as pyxl
@@ -43,7 +44,7 @@ WriteOrAdd = 'w'
 FileName = "trainers_frlg.party"
 
 PkmnData = load_workbook('trainer-data.xlsx')
-SheetName = "low-level-data-final-3"
+SheetName = "scratchpad"
 
 if SheetName in PkmnData.sheetnames:
     PkmnDataFile = PkmnData[SheetName]
@@ -75,6 +76,8 @@ Check = 0
 with open(FileName, WriteOrAdd) as file:
     file.write(Header)
     #for row in PkmnDataFile.iter_rows(min_row=2, max_row=5, min_col=PkmnDataFile.min_column, max_col=1):
+    RivalEarly = ["OAK","ANNE","EARLY","CERULEAN"]
+    RivalLate = ["TOWER","SILPH","LATE"]
     for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=1):
         data = str(row[0].value)
         data = data.split(",")
@@ -83,12 +86,89 @@ with open(FileName, WriteOrAdd) as file:
             Check = 1
         
         elif Check == 1:
+            
             file.write(f"=== TRAINER_{data[Trainer.TYPE.value]}_{data[Trainer.ENCOUNTER.value]} ===\n")
             file.write(f"Name: {data[Trainer.NAME.value]}\n")
+            
+            if data[Trainer.TYPE.value] == "SWIMMER_MALE":
+                data[Trainer.TYPE.value] = "SWIMMER_M"
+            if data[Trainer.TYPE.value] == "SWIMMER_FEMALE":
+                data[Trainer.TYPE.value] = "SWIMMER_F"
+
             if "_" in data[Trainer.TYPE.value]:#I goofed during parsing and have to have this handler now
                 data[Trainer.TYPE.value] = data[Trainer.TYPE.value].replace("_"," ")
-                
+            
+            elif any(term in data[Trainer.ENCOUNTER.value] for term in RivalEarly):
+                data[Trainer.TYPE.value] = "RIVAL EARLY"
+            elif any(term in data[Trainer.ENCOUNTER.value] for term in RivalLate):
+                data[Trainer.TYPE.value] = "RIVAL LATE"
+            
             file.write(f"Class: {data[Trainer.TYPE.value].title()} Frlg\n")
+            
+            if data[Trainer.TYPE.value] == "PSYCHIC":
+                data[Trainer.TYPE.value] = "PSYCHIC F" #handles a dumb case for psychich were they are the same class but have different images
+            elif data[Trainer.TYPE.value] == "TUBER":
+                data[Trainer.TYPE.value] = "TUBER F" #handles a dumb case for psychich were they are the same class but have different images
+            elif data[Trainer.TYPE.value] == "PKMN BREEDER":
+                data[Trainer.TYPE.value] = "POKEMON BREEDER" #handles a dumb case for psychich were they are the same class but have different images
+            elif data[Trainer.TYPE.value] == "PKMN RANGER":
+                data[Trainer.TYPE.value] = "POKEMON RANGER M" #handles a dumb case for psychich were they are the same class but have different images
+            elif data[Trainer.TYPE.value] == "ELITE FOUR":
+                data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                 match data[Trainer.NAME.value]:
+#                     case "LORELEI":
+#                         data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                     case "BRUNO":
+#                         data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                     case "AGATHA":
+#                         data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                     case "LANCE":
+#                         data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                     case _:
+#                         print("elite four error")
+            elif data[Trainer.TYPE.value] == "LEADER":
+                data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                 match data[Trainer.NAME.value]:
+#                     case "BROCK":
+#                     case "BRUNO":
+#                         data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                     case "AGATHA":
+#                         data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                     case "LANCE":
+#                         data[Trainer.TYPE.value] = data[Trainer.TYPE.value] + " " + data[Trainer.NAME.value] #handles a dumb case for psychich were they are the same class but have different images
+#                     case _:
+#                         print("elite four error")
+
+            elif data[Trainer.TYPE.value] == "BOSS":
+                data[Trainer.TYPE.value] = "LEADER GIOVANNI" #handles a dumb case for psychich were they are the same class but have different images
+
+            elif data[Trainer.TYPE.value] == "CHAMPION":
+                data[Trainer.TYPE.value] = "CHAMPION RIVAL" #handles a dumb case for psychich were they are the same class but have different images
+
+            elif data[Trainer.TYPE.value] == "PKMN PROF":
+                data[Trainer.TYPE.value] = "PROFESSOR OAK" #handles a dumb case for psychich were they are the same class but have different images
+
+            elif data[Trainer.TYPE.value] == "TEAM ROCKET":
+                gender = ["M","F"]
+                gender = random.choice([0,1])
+                if gender > 0:
+                    data[Trainer.TYPE.value] = "ROCKET GRUNT F" #handles a dumb case for psychich were they are the same class but have different images
+                else:
+                    data[Trainer.TYPE.value] = "ROCKET GRUNT M" #handles a dumb case for psychich were they are the same class but have different images
+            elif data[Trainer.TYPE.value] == "COOLTRAINER":
+                gender = ["M","F"]
+                gender = random.choice([0,1])
+                if gender > 0:
+                    data[Trainer.TYPE.value] = "COOLTRAINER F" #handles a dumb case for psychich were they are the same class but have different images
+                else:
+                    data[Trainer.TYPE.value] = "COOLTRAINER M" #handles a dumb case for psychich were they are the same class but have different images
+                    
+#             elif any(term in data[Trainer.ENCOUNTER.value] for term in RivalEarly):
+#                 data[Trainer.TYPE.value] = "RIVAL EARLY"
+#             elif any(term in data[Trainer.ENCOUNTER.value] for term in RivalLate):
+#                 data[Trainer.TYPE.value] = "RIVAL LATE"
+            
+            
             file.write(f"Pic: {data[Trainer.TYPE.value].title()} Frlg\n")
             file.write(f"Gender: {data[Trainer.GENDER.value].capitalize()}\n")
             file.write(f"Music: {data[Trainer.MUSIC.value].capitalize()}\n")
