@@ -11,22 +11,18 @@ from openpyxl import load_workbook
 Debug = 0
 WriteOrAdd = 'w'
 
-FileName = "trainer-data-fix.xlsx"
+FileName = "battles.xlsx"
 GenName = "PkmnEvolved"
 
 PkmnData = load_workbook('trainer-data.xlsx')
 #SheetName = "low-level-data-raw"
-SheetName = "low-level-data-working"
+SheetName = "low-level-data-final"
 
 if SheetName in PkmnData.sheetnames:
     PkmnDataFile = PkmnData[SheetName]
 else:
     print(f"No sheet found")
     print(f"{PkmnData.sheetnames}")
-
-#whatFix = "encounter-data"
-#whatFix = "trainer-data"
-whatFix = "tilde"
 
 if Debug:
     print(f"First row for species {PkmnDataFile.min_row}")
@@ -36,35 +32,24 @@ if Debug:
     print(f"First column of tutor-data #{PkmnDataFile.min_column}, Letter:{get_column_letter(PkmnDataFile.min_column)}")
     print(f"Last column of tutor-data  #{PkmnDataFile.max_column}, Letter:{get_column_letter(PkmnDataFile.max_column)}")    
 
+start = time.time()
 
 for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=PkmnDataFile.min_column, max_col=1):
-#for row in PkmnDataFile.iter_rows(min_row=2, max_row=10, min_col=PkmnDataFile.min_column, max_col=1):
+#for row in PkmnDataFile.iter_rows(min_row=2, max_row=5, min_col=PkmnDataFile.min_column, max_col=1):
     data = str(row[0].value)
-    if "@{" in data:
-        row[0].value = data[:data.find("@{")]
-        if Debug: print(row[0].value)
-        
-        PkmnDataFile.insert_rows(row[0].row + 1, amount = 1)
-        data = data[data.find("@{"):]
-        data = data.replace("@{","")
-        PkmnDataFile.cell(row[0].row + 1, 1).value = data
+    data = data.split(",")
+    print(data)
+    if data[0] == "NEW_TRAINER":
+#        for item in data:
+        print("new trainer")
+        continue
+    else:
+#        for item in data:
+        print("new mon")
+        continue
 
-#     elif "@{" in data:
-#         row[0].value = data[:data.find("@{")]
-#         if Debug: print(data[:data.find("@{")])
-#         
-#         PkmnDataFile.insert_rows(row[0].row + 1, amount = 1)
-#         data = data[data.find("@{"):]
-#         data = data.replace("@{","")
-#         PkmnDataFile.cell(row[0].row + 1, 1).value = data
-
-    elif "@}" in data:
-        row[0].value = data.replace("@}","")
-        if Debug: print(row[0].value)
-        PkmnDataFile.insert_rows(row[0].row + 1, amount = 1)
-        PkmnDataFile.cell(row[0].row + 1, 1).value = "NEW_TRAINER"
-
+end = time.time()
 PkmnData.save(FileName)
 PkmnData.close()
-print(f"{time.time()} seconds")
+print(f"{end-start} seconds")
 print("Program completed")
