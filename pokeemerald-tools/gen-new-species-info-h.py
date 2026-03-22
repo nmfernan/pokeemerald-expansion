@@ -145,39 +145,39 @@ if OnlyNewSpecies != 1:
                     continue
                 
                 elif Attribute == ".frontPic":
-                    #file.write(f"\t\t{Attribute} = gMonFrontPic_{CurrentSpeciesCptl},\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = gMonFrontPic_{CurrentSpeciesCptl},\n")
+                    #continue
                 elif Attribute == ".frontPicSize":
-                    #file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
+                    #continue
                 
                 elif Attribute == ".backPic":
-#                    file.write(f"\t\t{Attribute} = gMonBackPic_{CurrentSpeciesCptl},\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = gMonBackPic_{CurrentSpeciesCptl},\n")
+                    #continue
                 
                 elif Attribute == ".backPicSize":
-#                    file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = MON_COORDS_SIZE({data.value}),\n")
+                    #continue
                 
                 elif Attribute == ".palette":
-#                    file.write(f"\t\t{Attribute} = gMonPalette_{CurrentSpeciesCptl},\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = gMonPalette_{CurrentSpeciesCptl},\n")
+                    #continue
                 
                 elif Attribute == ".shinyPalette":
-#                    file.write(f"\t\t{Attribute} = gMonShinyPalette_{CurrentSpeciesCptl},\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = gMonShinyPalette_{CurrentSpeciesCptl},\n")
+                    #continue
                 
                 elif Attribute == "FOOTPRINT":
 #                    file.write(f"\t\t{Attribute}({CurrentSpeciesCptl})\n")    
                     continue
 
                 elif Attribute == ".iconSprite":
-#                    file.write(f"\t\t{Attribute} = gMonIcon_{CurrentSpeciesCptl},\n")
-                    continue
+                    file.write(f"\t\t{Attribute} = gMonIcon_{CurrentSpeciesCptl},\n")
+                    #continue
                 
                 elif Attribute == ".levelUpLearnset":
                     file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}LevelUpLearnset,\n")
-#                    continue
+                    #continue
                 
                 elif Attribute == ".teachableLearnset":
                     file.write(f"\t\t{Attribute} = s{CurrentSpeciesCptl}TeachableLearnset,\n")

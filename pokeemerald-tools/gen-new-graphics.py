@@ -4,8 +4,8 @@ import openpyxl as pyxl
 from openpyxl.workbook import Workbook
 from openpyxl import load_workbook
 
-Debug = 0
-OnlyNewSpecies = 1
+Debug = 1
+OnlyNewSpecies = 0
 WriteOrAdd = 'w'
 Anim = False
 Footprint = False
@@ -13,6 +13,8 @@ GenName = "pkmnevolved"
 PkmnData = load_workbook('pkmndata.xlsx')
 PkmnDataFile = PkmnData['sanity-data']
 CurrentSpecies = ""
+CurrentSpeciesCptl = ""
+CurrentFamily = ""
 
 with open("pokemon.h", WriteOrAdd) as file:
     if Debug == 1:
@@ -39,51 +41,57 @@ with open("pokemon.h", WriteOrAdd) as file:
     
     if OnlyNewSpecies == 0:
         for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
-            fixCase = row[PkmnDataFile.min_column - 1].value
-            fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
+            
+            CurrentSpeciesCptl = row[0].value.capitalize()
+            print(CurrentSpeciesCptl)
             
             if row[PkmnDataFile.max_column - 1].value == 1:
-                CurrentSpecies = row[PkmnDataFile.min_column - 1].value
-                file.write(f"#if P_FAMILY_{CurrentSpecies}\n")
+                CurrentFamily = row[0].value
+                if CurrentFamily == "NIDORAN_F":
+                    CurrentFamily = "NIDORAN"
+                elif CurrentFamily == "HITMONLEE":
+                    CurrentFamily = "HITMONS"
+                elif CurrentFamily == "KANGAKID":
+                    CurrentFamily = "KANGASKHAN"
+                file.write(f"#if P_FAMILY_{CurrentFamily}\n")
             
             if Anim == True:
-                file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/anim_front.4bpp.smol\");\n")
+                file.write(f"\t const u32 gMonFrontPic_{CurrentSpeciesCptl}[] = INCBIN_U32(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/anim_front.4bpp.smol\");\n")
             else:
-                file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/front.4bpp.smol\");\n")
+                file.write(f"\t const u32 gMonFrontPic_{CurrentSpeciesCptl}[] = INCBIN_U32(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/front.4bpp.smol\");\n")
             
-            file.write("\t const u32 gMonBackPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/back.4bpp.smol\");\n")
-            file.write("\t const u16 gMonPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/front.gbapal\");\n")
-            file.write("\t const u16 gMonShinyPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/back.gbapal\");\n")
-            file.write("\t const u8 gMonIcon_" + fixCase + "[] = INCBIN_U8(\"graphics/pokemon/" + fixCase.lower() + "/icon.4bpp\");\n")
+            file.write(f"\t const u32 gMonBackPic_{CurrentSpeciesCptl}[] = INCBIN_U32(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/back.4bpp.smol\");\n")
+            file.write(f"\t const u16 gMonPalette_{CurrentSpeciesCptl}[] = INCBIN_U16(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/front.gbapal\");\n")
+            file.write(f"\t const u16 gMonShinyPalette_{CurrentSpeciesCptl}[] = INCBIN_U16(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/back.gbapal\");\n")
+            file.write(f"\t const u8 gMonIcon_{CurrentSpeciesCptl}[] = INCBIN_U8(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/icon.4bpp\");\n")
             if Footprint == True:
-                file.write("\t const u8 gMonFootprint_" + fixCase + "[] = INCBIN_U8(\"graphics/pokemon/" + fixCase.lower() + "/footprint.1bpp\");\n")
+                file.write("\t const u8 gMonFootprint_{CurrentSpeciesCptl.lower()}[] = INCBIN_U8(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/footprint.1bpp\");\n")
             
             file.write("\n")
                   
             if PkmnDataFile.cell(row[0].row + 1, PkmnDataFile.max_column).value == 1:#if the next mon is a new species
-                file.write(f"#endif //P_FAMILY_{CurrentSpecies}\n\n")
-            elif PkmnDataFile.cell(row[0].row + 1, PkmnDataFile.min_column).value == None:#if the next mon is a new species
+                file.write(f"#endif //P_FAMILY_{CurrentFamily}\n\n")
+            elif PkmnDataFile.cell(row[0].row + 1, PkmnDataFile.min_column).value == None:#handle missingno case?
                 file.write(f"#endif //P_FAMILY_{CurrentSpecies}\n\n")
     
     else:
         #for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=PkmnDataFile.max_column):
         for row in PkmnDataFile.iter_rows(min_row=2, max_row=6, min_col=1, max_col=PkmnDataFile.max_column):
-            fixCase = row[PkmnDataFile.min_column - 1].value
-            fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
             
+            CurrentSpeciesCptl = row[0].value.capitalize()
             if row[PkmnDataFile.max_column - 2].value == 1:
             
                 if Anim == True:
-                    file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/anim_front.4bpp.smol\");\n")
+                    file.write("\t const u32 gMonFrontPic_" + CurrentSpeciesCptl + "[] = INCBIN_U32(\"graphics/pokemon/" + CurrentSpeciesCptl.lower() + "/anim_front.4bpp.smol\");\n")
                 else:
-                    file.write("\t const u32 gMonFrontPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/front.4bpp.smol\");\n")
+                    file.write("\t const u32 gMonFrontPic_" + CurrentSpeciesCptl + "[] = INCBIN_U32(\"graphics/pokemon/" + CurrentSpeciesCptl.lower() + "/front.4bpp.smol\");\n")
                 
-                file.write("\t const u32 gMonBackPic_" + fixCase + "[] = INCBIN_U32(\"graphics/pokemon/" + fixCase.lower() + "/back.4bpp.smol\");\n")
-                file.write("\t const u16 gMonPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/front.gbapal\");\n")
-                file.write("\t const u16 gMonShinyPalette_" + fixCase + "[] = INCBIN_U16(\"graphics/pokemon/" + fixCase.lower() + "/back.gbapal\");\n")
-                file.write("\t const u8 gMonIcon_" + fixCase + "[] = INCBIN_U8(\"graphics/pokemon/" + fixCase.lower() + "/icon.4bpp\");\n")
+                file.write("\t const u32 gMonBackPic_" + CurrentSpeciesCptl + "[] = INCBIN_U32(\"graphics/pokemon/" + CurrentSpeciesCptl.lower() + "/back.4bpp.smol\");\n")
+                file.write("\t const u16 gMonPalette_" + CurrentSpeciesCptl + "[] = INCBIN_U16(\"graphics/pokemon/" + CurrentSpeciesCptl.lower() + "/front.gbapal\");\n")
+                file.write("\t const u16 gMonShinyPalette_" + CurrentSpeciesCptl + "[] = INCBIN_U16(\"graphics/pokemon/" + CurrentSpeciesCptl.lower() + "/back.gbapal\");\n")
+                file.write("\t const u8 gMonIcon_" + CurrentSpeciesCptl + "[] = INCBIN_U8(\"graphics/pokemon/" + CurrentSpeciesCptl.lower() + "/icon.4bpp\");\n")
                 if Footprint == True:
-                    file.write("\t const u8 gMonFootprint_" + fixCase + "[] = INCBIN_U8(\"graphics/pokemon/" + fixCase.lower() + "/footprint.1bpp\");\n")
+                    file.write("\t const u8 gMonFootprint_" + CurrentSpeciesCptl + "[] = INCBIN_U8(\"graphics/pokemon/" + CurrentSpeciesCptl.lower() + "/footprint.1bpp\");\n")
                 file.write("\n")
 
     file.write("\tconst u32 gMonFrontPic_Egg[] = INCBIN_U32(\"graphics/pokemon/egg/anim_front.4bpp.smol\");\n")
@@ -94,7 +102,7 @@ with open("pokemon.h", WriteOrAdd) as file:
                 
 #        for data in species:
 #            if PkmnDataFile.cell(row = PkmnDataFile.min_row, column = data.column).value == ".natDexNeeded" and data.value == 1:
-#                fixCase = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
-#                fixCase = fixCase[0] + fixCase[1:len(fixCase)].lower()
-#                file.write("SINGLE_ANIMATION(" + fixCase + ");\n")
+#                CurrentSpeciesCptl = PkmnDataFile.cell(row = data.row, column = PkmnDataFile.min_column).value
+#                CurrentSpeciesCptl = CurrentSpeciesCptl[0] + CurrentSpeciesCptl[1:len(CurrentSpeciesCptl)].lower()
+#                file.write("SINGLE_ANIMATION(" + CurrentSpeciesCptl + ");\n")
 #                file.write("\n")
