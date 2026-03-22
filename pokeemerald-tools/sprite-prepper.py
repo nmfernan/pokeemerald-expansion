@@ -41,20 +41,16 @@ os.makedirs(OutputFolderPath, exist_ok = True)
 #Step through source file and see if sprite files have a matching sprite
 #for species in PkmnDataFile.iter_rows(min_row=2, max_row=2, min_col=1, max_col=1):
 if Debug == 0:
-    #for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
-    for row in PkmnDataFile.iter_rows(min_row=126, max_row=127, min_col=1, max_col=1):
+    for row in PkmnDataFile.iter_rows(min_row=2, max_row=PkmnDataFile.max_row, min_col=1, max_col=1):
+    #for row in PkmnDataFile.iter_rows(min_row=126, max_row=127, min_col=1, max_col=1):
     #for row in PkmnDataFile.iter_rows(min_row=2, max_row=6, min_col=1, max_col=1):
         for file in os.listdir(f"{InputFolderPath + FrontSpritePath}"):
             fileSplit = re.split(r"[_.]",file)
-            
-#            for word in fileSplit:
-#                if re.search(rf'\b{re.escape(row[0].value)}\b',word):
-            if re.search(rf'\b{re.escape(row[0].value)}\b',fileSplit):
-#                    print(row[0].value)
-#                    print(fileSplit)
-                os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
-                shutil.copy(f"{InputFolderPath + FrontSpritePath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/front.png")
-                break
+            for word in fileSplit:
+                if row[0].value == word:
+                    os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
+                    shutil.copy(f"{InputFolderPath + FrontSpritePath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/front.png")
+                    break
             
 #         for file in os.listdir("./Sprites-MASTER/FrontSpriteShiny"):
 #             if data.value in file:
@@ -68,7 +64,6 @@ if Debug == 0:
             fileSplit = re.split(r"[_.]",file)
             for word in fileSplit:
                 if row[0].value == word:
-                    print(fileSplit)
                     os.makedirs(f"{OutputFolderPath}/{row[0].value.lower()}", exist_ok = True)
                     shutil.copy(f"{InputFolderPath + BackSpriteShinyPath}/{file}", f"{OutputFolderPath}/{row[0].value.lower()}/back.png")
                 

@@ -63,7 +63,7 @@ with open("pokemon.h", WriteOrAdd) as file:
             file.write(f"\t const u32 gMonBackPic_{CurrentSpeciesCptl}[] = INCBIN_U32(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/back.4bpp.smol\");\n")
             file.write(f"\t const u16 gMonPalette_{CurrentSpeciesCptl}[] = INCBIN_U16(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/front.gbapal\");\n")
             file.write(f"\t const u16 gMonShinyPalette_{CurrentSpeciesCptl}[] = INCBIN_U16(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/back.gbapal\");\n")
-            file.write(f"\t const u8 gMonIcon_{CurrentSpeciesCptl}[] = INCBIN_U8(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/icon.4bpp\");\n")
+            file.write(f"\t const u8 gMonIcon_{CurrentSpeciesCptl}[] = INCBIN_U8(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/icon.4bpp.smol\");\n")
             if Footprint == True:
                 file.write("\t const u8 gMonFootprint_{CurrentSpeciesCptl.lower()}[] = INCBIN_U8(\"graphics/pokemon/{CurrentSpeciesCptl.lower()}/footprint.1bpp\");\n")
             

@@ -100,10 +100,7 @@ if OnlyNewSpecies != 1:
                         file.write(f"\t\t{Attribute} = MON_TYPES(TYPE_{type1}),\n")
                     else:
                         file.write(f"\t\t{Attribute} = MON_TYPES(TYPE_{type1}, TYPE_{type2}),\n")    
-                
-                elif Attribute == ".frontAnimFrames":
-                    continue
-                
+                                
                 elif Attribute == ".itemCommon" and data.value != None:
                     file.write(f"\t\t{Attribute} = ITEM_{data.value},\n")
 
